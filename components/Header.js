@@ -3,6 +3,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import resumeData from "../resumeData.json";
 import Typical from "react-typical";
 import { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 function Header() {
   const [animated, setAnimated] = useState(false);
@@ -13,6 +14,7 @@ function Header() {
 
   return (
     <div
+      id="header"
       style={{ background: "#091c29" }}
       className="min-h-screen flex items-center justify-center "
     >
@@ -49,9 +51,11 @@ function Header() {
               className="inline-block"
             />
           </h1>
-          <button className="bg-indigo-500 transition duration-150 transform hover:scale-110 py-3 px-10 text-lg uppercase rounded-xl mt-5 mb-3 focus:outline-none">
-            {resumeData.header.btnText}
-          </button>
+          <ScrollLink to="stack" smooth="true">
+            <button className="bg-indigo-500 transition duration-150 transform hover:scale-110 py-3 px-10 text-lg uppercase rounded-xl mt-5 mb-3 focus:outline-none">
+              {resumeData.header.btnText}
+            </button>
+          </ScrollLink>
         </div>
       </div>
     </div>

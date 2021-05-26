@@ -4,10 +4,11 @@ import resumeData from "../resumeData.json";
 
 function Stack() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-300">
-      <h1 className="text-5xl font-bold mb-5">Tech I use</h1>
-      {/* <p>HTML,CSS,Vanilla js, React, jQuery, Firebase, MySQL, Tailwind CSS......</p> */}
-      {/* images: */}
+    <div
+      id="stack"
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-300"
+    >
+      <h1 className="text-5xl font-bold mb-5 mt-4">Tech I use</h1>
       <div className="flex flex-wrap justify-center mt-10">
         {resumeData.stack.tech.map((item, i) => (
           <span className="p-3 group bg-white  w-40 h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full">
@@ -17,7 +18,7 @@ function Stack() {
               key={i}
               className="rounded-full object-contain"
             />
-            <p className="flex  font-extralight justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-sm">
+            <p className="flex cursor-default font-extralight justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-sm">
               {item.desc}
             </p>
           </span>
