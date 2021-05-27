@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import resumeData from "../resumeData.json";
 import Header from "../components/Header";
 import Stack from "../components/Stack";
+import Work from "../components/Work";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navigation />
       <Header />
       <Stack />
+      <Work />
     </div>
   );
 }
