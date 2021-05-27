@@ -42,6 +42,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ![cod-portal-pic2](https://user-images.githubusercontent.com/17027312/119871913-35110300-bf23-11eb-8c03-ee6f91b567df.png)
 
-![todo-app-pic](https://user-images.githubusercontent.com/17027312/119872676-06475c80-bf24-11eb-8bcb-d45cb2db380f.png)
-
 ![ta-pic2](https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png)
