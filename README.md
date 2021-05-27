@@ -35,3 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ![portpic](https://user-images.githubusercontent.com/17027312/119741154-7226b800-be85-11eb-9c4e-5b6d74566523.png)
 ![peter-profil](https://user-images.githubusercontent.com/17027312/119741414-efeac380-be85-11eb-9b6c-f86b7d6e8179.png)
+
+![cod-portal-pic](https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png)
+
+![cod-portal-pic2](https://user-images.githubusercontent.com/17027312/119871913-35110300-bf23-11eb-8c03-ee6f91b567df.png)
