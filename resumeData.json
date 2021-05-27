@@ -71,14 +71,14 @@
     {
       "title": "Random quote generator",
       "desc": "Covering basic JavaScript syntax and data structures by building a Random Quote Generator.",
-      "url": "https://user-images.githubusercontent.com/17027312/119741821-c716fe00-be86-11eb-8ed0-e7f9ccd9a00a.png",
-      "tags": "JS, HTML, CSS"
+      "url": "https://user-images.githubusercontent.com/17027312/119829660-c2406180-befb-11eb-8575-490d95b64167.png",
+      "tags": "Vanilla js, HTML, CSS"
     },
     {
       "title": "Game show app",
       "desc": "Using Vanilla JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase. A player tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
       "url": "https://user-images.githubusercontent.com/17027312/119741286-b1550900-be85-11eb-8e56-70c92b034f5a.jpeg",
-      "tags": "JS, HTML, CSS"
+      "tags": "Vanilla js, HTML, CSS"
     }
   ]
 }

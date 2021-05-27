@@ -24,7 +24,7 @@ function Stack() {
           </span>
         ))}
       </div>
-      <p className="w-10/12 md:max-w-2xl text-center font-extralight mt-8">
+      <p className="w-10/12 md:max-w-2xl text-center font-extralight mt-6 mb-4">
         {resumeData.stack.dummyText}
         {/* {resumeData.stack.desc} */}
       </p>
