@@ -16,9 +16,11 @@ function Navigation() {
         </ScrollLink>
         <div className=" ">
           {resumeData.nav.links.map((item, i) => (
-            <span key={i} className="cursor-pointer text-xl mr-4">
-              {item.text}
-            </span>
+            <ScrollLink to={item.to} smooth="true">
+              <span key={i} className="cursor-pointer text-xl mr-4">
+                {item.text}
+              </span>
+            </ScrollLink>
           ))}
         </div>
       </div>

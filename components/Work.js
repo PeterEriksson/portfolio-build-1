@@ -3,7 +3,10 @@ import resumeData from "../resumeData.json";
 
 function Work() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div
+      id="work"
+      className="min-h-screen flex flex-col items-center justify-center"
+    >
       {/* Heading text */}
       <div className="flex flex-col items-center space-y-2 mb-3">
         <h1 className="text-5xl font-bold">Projects</h1>

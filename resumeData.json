@@ -2,8 +2,8 @@
   "nav": {
     "logo": "PE",
     "links": [
-      { "text": "Work", "to": "mywork" },
-      { "text": "Contact", "to": "mycontact" }
+      { "text": "Work", "to": "work" },
+      { "text": "Contact", "to": "contact" }
     ]
   },
   "header": {
