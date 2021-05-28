@@ -5,6 +5,7 @@ import resumeData from "../resumeData.json";
 import Header from "../components/Header";
 import Stack from "../components/Stack";
 import Work from "../components/Work";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <Stack />
       <Work />
+      <Contact />
     </div>
   );
 }

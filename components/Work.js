@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import TinderCard from "react-tinder-card";
 import resumeData from "../resumeData.json";
 
 function Work() {
@@ -18,46 +19,25 @@ function Work() {
       id="work"
       className="min-h-screen flex flex-col items-center justify-center"
     >
-      {/* Heading text */}
-      <div className="flex flex-col items-center space-y-2 mb-3">
+      <div
+        aria-label="Heading text"
+        className="flex flex-col items-center space-y-2 mb-3"
+      >
         <h1 className="text-5xl font-bold">Projects</h1>
-        <h3 className="text-xl font-extralight">I have done</h3>
+        <h3 className="text-xl font-extralight">Some of my work</h3>
       </div>
-
-      {/* ProjectItems container */}
-      <div className="flex flex-col w-10/12 items-center">
-        {/* ProjectItem div */}
-        <div className="flex flex-col justify-center border-solid border-4">
-          {/* Image div */}
-          <div className="h-1/2">
-            <LazyLoadImage
-              src={resumeData.work[index].url}
-              effect="blur"
-              className=""
-            />
-          </div>
-          {/* Project title plus description plus tags plus button(GitHub) */}
-          <div className=" text-center bg-gray-50 rounded-b-xl">
-            <h1 className="text-2xl font-semibold">
-              {resumeData.work[index].title}
-            </h1>
-            <p className="text-sm font-light mx-3 mt-2">
-              {resumeData.work[index].desc}
-            </p>
-            <p className="text-xs font-extralight italic mt-3">
-              {resumeData.work[index].tags}
-            </p>
-            {/*  <a
-              href="https://aftonbladet.se"
-              target="_blank"
-              className="bg-black text-white w-1/4 px-3 font-light text-xl uppercase rounded-xl mt-3 mb-4 focus:outline-none"
-            >
-              Github
-            </a> */}
-          </div>
+      {resumeData.work.map((item) => (
+        <div className="flex flex-col">
+          <h3>{item.title}</h3>
+          <LazyLoadImage
+            src={item.url}
+            effect="blur"
+            className="rounded-xl "
+            height="400px"
+            width="300px"
+          />
         </div>
-        <button onClick={handleClick}>next project</button>
-      </div>
+      ))}
     </div>
   );
 }
