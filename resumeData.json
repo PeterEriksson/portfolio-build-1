@@ -58,11 +58,11 @@
     "desc": "I am Peter Eriksson, a passionate self-taught front end-developer. I am especially in to React. Love the process of building new cool stuff - from original idea along the way of design to craftmanship (coding + testing + user feedback) to final product.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English, B1-level in German. 1.31 KD in Warzone, 53 wins although I mostly play with Jonez who is fucking useless.",
     "additionalTypical": [
-      "75 credits computer science at university",
+      "75 credits computer science at university.",
       4000,
-      "Several React & Firebase projects built",
+      "Several React & Firebase projects built.",
       2000,
-      "Fluent in Swedish and English, B1-level in German",
+      "Fluent in Swedish and English, B1-level in German.",
       3000,
       "1.31 kd in Warzone 53 wins although I mostly play with Jonez who is fucking useless",
       5000
@@ -94,7 +94,7 @@
     },
     {
       "title": "Gaming portal",
-      "desc": "App dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Firebase backend.",
+      "desc": "Larger build dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/119871913-35110300-bf23-11eb-8c03-ee6f91b567df.png",
       "tags": "React, Firebase",

@@ -68,18 +68,18 @@ function Work() {
           >
             Github
           </a>
+          <div className="flex mt-2 space-x-2">
+            <ArrowCircleLeftIcon
+              onClick={handleClickLeft}
+              className="h-8 cursor-pointer"
+            />
+            <ArrowCircleRightIcon
+              onClick={handleClickRight}
+              className="h-8 cursor-pointer"
+            />
+          </div>
         </div>
       ))}
-      <div className="flex mt-4 space-x-2">
-        <ArrowCircleLeftIcon
-          onClick={handleClickLeft}
-          className="h-8 cursor-pointer"
-        />
-        <ArrowCircleRightIcon
-          onClick={handleClickRight}
-          className="h-8 cursor-pointer"
-        />
-      </div>
     </div>
   );
 }
