@@ -59,28 +59,27 @@ function Work() {
           <p className="max-w-sm text-center text-sm font-light transition duration-150 ease-in-out transform">
             {resumeData.work[index].desc}
           </p>
+          <p className="text-xs font-extralight italic mt-3">
+            {resumeData.work[index].tags}
+          </p>
           <a
             href={resumeData.work[index].githubUrl}
             className="font-light text-sm mt-3 hover:underline"
           >
             Github
           </a>
-          <p className="text-xs font-extralight italic mt-3">
-            {resumeData.work[index].tags}
-          </p>
-
-          <div className="flex mt-4">
-            <ArrowCircleLeftIcon
-              onClick={handleClickLeft}
-              className="h-8 cursor-pointer"
-            />
-            <ArrowCircleRightIcon
-              onClick={handleClickRight}
-              className="h-8 cursor-pointer"
-            />
-          </div>
         </div>
       ))}
+      <div className="flex mt-4 space-x-2">
+        <ArrowCircleLeftIcon
+          onClick={handleClickLeft}
+          className="h-8 cursor-pointer"
+        />
+        <ArrowCircleRightIcon
+          onClick={handleClickRight}
+          className="h-8 cursor-pointer"
+        />
+      </div>
     </div>
   );
 }
