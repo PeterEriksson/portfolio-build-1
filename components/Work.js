@@ -2,15 +2,27 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TinderCard from "react-tinder-card";
 import resumeData from "../resumeData.json";
+import {
+  ArrowCircleLeftIcon,
+  ArrowCircleRightIcon,
+} from "@heroicons/react/solid";
 
 function Work() {
   const [index, setIndex] = useState(0);
 
-  const handleClick = () => {
-    if (index !== 3) {
+  const handleClickRight = () => {
+    if (index !== resumeData.work.length - 1) {
       setIndex((i) => i + 1);
     } else {
       setIndex(0);
+    }
+  };
+
+  const handleClickLeft = () => {
+    if (index !== 0) {
+      setIndex((i) => i - 1);
+    } else {
+      setIndex(resumeData.work.length - 1);
     }
   };
 
@@ -26,18 +38,40 @@ function Work() {
         <h1 className="text-5xl font-bold">Projects</h1>
         <h3 className="text-xl font-extralight">Some of my work</h3>
       </div>
-      {resumeData.work.map((item) => (
-        <div className="flex flex-col">
-          <h3>{item.title}</h3>
-          <LazyLoadImage
-            src={item.url}
-            effect="blur"
-            className="rounded-xl "
-            height="400px"
-            width="300px"
+
+      <div className="flex flex-col justify-center items-center">
+        <LazyLoadImage
+          src={resumeData.work[index].url}
+          effect="blur"
+          className="rounded-xl "
+          height="300px"
+          width="300px"
+          /* key={i} */
+        />
+        <h2 className="text-xl font-bold">{resumeData.work[index].title}</h2>
+        <p className="max-w-sm text-center text-sm font-light">
+          {resumeData.work[index].desc}
+        </p>
+        <a
+          href={resumeData.work[index].githubUrl}
+          className="font-light text-sm mt-3"
+        >
+          Github
+        </a>
+        <p className="text-xs font-extralight italic mt-3">
+          {resumeData.work[index].tags}
+        </p>
+        <div className="flex mt-4">
+          <ArrowCircleLeftIcon
+            onClick={handleClickLeft}
+            className="h-8 cursor-pointer"
+          />
+          <ArrowCircleRightIcon
+            onClick={handleClickRight}
+            className="h-8 cursor-pointer"
           />
         </div>
-      ))}
+      </div>
     </div>
   );
 }

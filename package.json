@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.1",
+    "heroicons": "^1.0.1",
     "next": "10.2.2",
     "node": "^16.1.0",
     "react": "17.0.2",
