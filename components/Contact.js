@@ -9,7 +9,12 @@ function Contact() {
       className="flex min-h-screen justify-center"
     >
       <div className="flex mt-10">
-        <h1 className="text-5xl text-white font-bold mr-10">Ping me!</h1>
+        <div className="flex flex-col text-white w-80">
+          <h1 className="text-5xl text-white font-bold mr-10 mb-4">Ping me!</h1>
+          <p>Several React & Firebase projects built</p>
+          <p>Fluent in Swedish and English, B1-level in German</p>
+          <p>75 university credits computer science</p>
+        </div>
         <LazyLoadImage
           src={resumeData.header.imgGuinness}
           effect="blur"
