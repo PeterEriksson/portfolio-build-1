@@ -41,6 +41,7 @@ function Work() {
 
       {resumeData.work.map((item, i) => (
         <div
+          key={i}
           className={`${
             i === index
               ? "flex flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
@@ -48,38 +49,44 @@ function Work() {
           }`}
         >
           <LazyLoadImage
-            src={resumeData.work[index].url}
+            src={resumeData.work[index].url2}
             /* effect="blur" */
             className="rounded-xl "
-            height="300px"
-            width="300px"
-            /* key={i} */
+            /* height="300px" */
+            /* width="300px" */
           />
-          <h2 className="text-xl font-bold">{resumeData.work[index].title}</h2>
-          <p className="max-w-sm text-center text-sm font-light transition duration-150 ease-in-out transform">
-            {resumeData.work[index].desc}
-          </p>
-          <p className="text-xs font-extralight italic mt-3">
-            {resumeData.work[index].tags}
-          </p>
-          <a
-            href={resumeData.work[index].githubUrl}
-            className="font-light text-sm mt-3 hover:underline"
+          <div
+            aria-label="DIV FOR:project Header until Github"
+            className="flex flex-col h-40 text-center"
           >
-            Github
-          </a>
-          <div className="flex mt-2 space-x-2">
-            <ArrowCircleLeftIcon
-              onClick={handleClickLeft}
-              className="h-8 cursor-pointer"
-            />
-            <ArrowCircleRightIcon
-              onClick={handleClickRight}
-              className="h-8 cursor-pointer"
-            />
+            <h2 className="text-xl font-bold">
+              {resumeData.work[index].title}
+            </h2>
+            <p className="max-w-sm text-center text-sm font-light ">
+              {resumeData.work[index].desc}
+            </p>
+            <p className="text-xs font-extralight italic mt-2">
+              {resumeData.work[index].tags}
+            </p>
+            <a
+              href={resumeData.work[index].githubUrl}
+              className="font-extralight text-sm mt-2 hover:underline"
+            >
+              Github
+            </a>
           </div>
         </div>
       ))}
+      <div className="flex mt-5 space-x-2">
+        <ArrowCircleLeftIcon
+          onClick={handleClickLeft}
+          className="h-8 cursor-pointer"
+        />
+        <ArrowCircleRightIcon
+          onClick={handleClickRight}
+          className="h-8 cursor-pointer"
+        />
+      </div>
     </div>
   );
 }

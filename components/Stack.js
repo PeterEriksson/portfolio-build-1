@@ -11,7 +11,10 @@ function Stack() {
       <h1 className="text-5xl font-bold mb-5 mt-4">Tech I use</h1>
       <div className="flex flex-wrap justify-center mt-10">
         {resumeData.stack.tech.map((item, i) => (
-          <span className="p-3 group bg-white  w-40 h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full">
+          <span
+            key={i}
+            className="transition duration-200 transform hover:scale-110 p-3 group bg-white  w-40 h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full"
+          >
             <LazyLoadImage
               src={item.img}
               alt={item.alt}

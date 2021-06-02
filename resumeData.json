@@ -46,7 +46,7 @@
       {
         "img": "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
         "alt": "Tailwind",
-        "desc": "Tailwind CSS"
+        "desc": "TailwindCSS"
       },
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png",
@@ -54,7 +54,7 @@
         "desc": "Next.js"
       }
     ],
-    "dummyText": "Insert som nice text here for the reader....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.",
+    "dummyText": "Also mention Figma and Canva for design and prototyping. Maybe insert as cards/circles......... Insert som text here about the tech I use.....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.",
     "desc": "I am Peter Eriksson, a passionate self-taught front end-developer. I am especially in to React. Love the process of building new cool stuff - from original idea along the way of design to craftmanship (coding + testing + user feedback) to final product.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English, B1-level in German. 1.31 KD in Warzone, 53 wins although I mostly play with Jonez who is fucking useless.",
     "additionalTypical": [
@@ -71,31 +71,34 @@
       "title": "Random quote generator",
       "desc": "Covering basic JavaScript syntax and data structures by building a Random Quote Generator.",
       "url": "https://user-images.githubusercontent.com/17027312/119829660-c2406180-befb-11eb-8575-490d95b64167.png",
-      "tags": "Vanilla js, HTML, CSS",
-      "githubUrl": "https://github.com/PeterEriksson/basic-js-famous-quotes"
+      "tags": "#Vanilla-js, #HTML, #CSS",
+      "githubUrl": "https://github.com/PeterEriksson/basic-js-famous-quotes",
+      "url2": "https://user-images.githubusercontent.com/17027312/120502802-05e70f80-c3c3-11eb-87e1-387a7b0de12c.png"
     },
 
     {
       "title": "Game show app",
       "desc": "Using Vanilla JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase. A player tries to guess the phrase before life runs out by selecting individual letters from an onscreen keyboard.",
       "url": "https://user-images.githubusercontent.com/17027312/119741286-b1550900-be85-11eb-8e56-70c92b034f5a.jpeg",
-      "tags": "Vanilla js, HTML, CSS",
-      "githubUrl": "https://github.com/PeterEriksson/OOP-Game-Show-App"
+      "tags": "#Vanilla-js, #HTML, #CSS",
+      "githubUrl": "https://github.com/PeterEriksson/OOP-Game-Show-App",
+      "url2": "https://user-images.githubusercontent.com/17027312/120502797-054e7900-c3c3-11eb-8584-883a370d9b90.png"
     },
 
     {
       "title": "Todo app",
       "desc": "Simple todo app built for practicing purposes with some nice styling. Made in React.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
-      "tags": "React",
-      "githubUrl": "https://github.com/PeterEriksson/todo-app-p"
+      "tags": "#React",
+      "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
+      "url2": "https://user-images.githubusercontent.com/17027312/120502794-04b5e280-c3c3-11eb-8e51-653ca36abff6.png"
     },
     {
       "title": "Gaming portal",
       "desc": "Larger build dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
-      "url2": "https://user-images.githubusercontent.com/17027312/119871913-35110300-bf23-11eb-8c03-ee6f91b567df.png",
-      "tags": "React, Firebase",
+      "url2": "https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png",
+      "tags": "#React, #Firebase",
       "githubUrl": "https://github.com/PeterEriksson"
     }
   ]
