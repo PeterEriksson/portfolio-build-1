@@ -32,7 +32,7 @@ function Work() {
       className="min-h-screen flex flex-col items-center justify-center "
     >
       <div
-        aria-label="Heading text"
+        aria-label="PROJECTS + Some of my work"
         className="flex flex-col items-center space-y-2 mb-3"
       >
         <h1 className="text-5xl font-bold">Projects</h1>
@@ -45,18 +45,18 @@ function Work() {
           className={`${
             i === index
               ? "flex flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
-              : "opacity-0 absolute"
+              : "opacity-0 flex absolute"
           }`}
         >
           <LazyLoadImage
             src={resumeData.work[index].url2}
             /* effect="blur" */
             className="rounded-xl "
-            /* height="300px" */
-            /* width="300px" */
+            /* height="200px" */
+            /* width="200px" */
           />
           <div
-            aria-label="DIV FOR:project Header until Github"
+            aria-label="DIV FOR:project header desc tags github. Fixed height -> so buttons pos below are consistent"
             className="flex flex-col h-40 text-center"
           >
             <h2 className="text-xl font-bold">
@@ -65,18 +65,26 @@ function Work() {
             <p className="max-w-sm text-center text-sm font-light ">
               {resumeData.work[index].desc}
             </p>
-            <p className="text-xs font-extralight italic mt-2">
-              {resumeData.work[index].tags}
-            </p>
-            <a
+
+            {/* <a
               href={resumeData.work[index].githubUrl}
               className="font-extralight text-sm mt-2 hover:underline"
             >
               Github
-            </a>
+            </a> */}
+
+            <p className="text-xs font-extralight italic mt-2">
+              {resumeData.work[index].tags}
+            </p>
           </div>
         </div>
       ))}
+      <a
+        href={resumeData.work[index].githubUrl}
+        className="font-extralight text-xs hover:underline"
+      >
+        Project-Github
+      </a>
       <div className="flex mt-5 space-x-2">
         <ArrowCircleLeftIcon
           onClick={handleClickLeft}
