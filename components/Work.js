@@ -44,8 +44,8 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "flex flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
-              : "opacity-0 flex absolute"
+              ? "flex z-10 flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
+              : "opacity-0 flex absolute z-0"
           }`}
         >
           <LazyLoadImage
@@ -73,18 +73,19 @@ function Work() {
               Github
             </a> */}
 
-            <p className="text-xs font-extralight italic mt-2">
+            <p className="text-xs font-extralight italic mt-2 p-0">
               {resumeData.work[index].tags}
             </p>
+            <a
+              href={resumeData.work[index].githubUrl}
+              className="font-extralight text-xs hover:underline mt-2"
+            >
+              Github
+            </a>
           </div>
         </div>
       ))}
-      <a
-        href={resumeData.work[index].githubUrl}
-        className="font-extralight text-xs hover:underline"
-      >
-        Project-Github
-      </a>
+
       <div className="flex mt-5 space-x-2">
         <ArrowCircleLeftIcon
           onClick={handleClickLeft}
