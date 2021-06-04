@@ -14,10 +14,11 @@ function Navigation() {
         <ScrollLink
           to="header"
           smooth="true"
-          /* activeClass="active" */
           activeClass={styles._active}
           spy={true}
           offset={-100}
+          /* for some space between link and border -> */
+          /* className="pb-2" */
         >
           <h1 className="cursor-pointer text-3xl font-bold">
             {resumeData.nav.logo}
@@ -32,6 +33,9 @@ function Navigation() {
               key={i}
               activeClass={styles._active}
               spy={true}
+              /* offset={-100} */
+              /* for some space between link and border -> */
+              className="pb-3"
             >
               <span key={i} className="cursor-pointer text-xl mr-8">
                 {item.text}

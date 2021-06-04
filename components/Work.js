@@ -44,20 +44,20 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "flex z-10 flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
+              ? "shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
               : "opacity-0 flex absolute z-0"
           }`}
         >
           <LazyLoadImage
             src={resumeData.work[index].url2}
             /* effect="blur" */
-            className="rounded-xl "
+            className="rounded-xl mt-3"
             /* height="200px" */
             /* width="200px" */
           />
           <div
-            aria-label="DIV FOR:project header desc tags github. Fixed height -> so buttons pos below are consistent"
-            className="flex flex-col h-40 text-center"
+            aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
+            className="flex flex-col h-40 text-center mt-3"
           >
             <h2 className="text-xl font-bold">
               {resumeData.work[index].title}
