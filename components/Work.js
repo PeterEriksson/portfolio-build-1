@@ -44,7 +44,7 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
+              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center opacity-1 transition duration-700 ease-in"
               : "opacity-0 flex absolute z-0"
           }`}
         >

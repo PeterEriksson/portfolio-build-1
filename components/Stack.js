@@ -8,8 +8,8 @@ function Stack() {
       id="stack"
       className="min-h-screen flex flex-col items-center justify-center bg-gray-200"
     >
-      <h1 className="text-5xl font-bold mb-5 mt-4">Tech I use</h1>
-      <div className="flex flex-wrap justify-center mt-10">
+      <h1 className="text-5xl font-bold mt-4">Tech I use</h1>
+      <div className="flex flex-wrap justify-center mt-5">
         {resumeData.stack.tech.map((item, i) => (
           <span
             key={i}
@@ -27,7 +27,7 @@ function Stack() {
           </span>
         ))}
       </div>
-      <p className="w-10/12 md:max-w-2xl text-center font-extralight mt-6 mb-4">
+      <p className="w-10/12 md:max-w-2xl text-center font-extralight mt-4 mb-2">
         {resumeData.stack.dummyText}
       </p>
     </div>

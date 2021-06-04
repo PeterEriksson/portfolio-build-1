@@ -11,12 +11,13 @@ function Navigation() {
       style={{ background: "#091c29" }}
     >
       <div className="flex items-center  text-white justify-between w-10/12 mx-auto py-3">
+        {/* LEFT section */}
         <ScrollLink
           to="header"
           smooth="true"
           activeClass={styles._active}
           spy={true}
-          offset={-100}
+          offset={-40}
           /* for some space between link and border -> */
           /* className="pb-2" */
         >
@@ -25,23 +26,52 @@ function Navigation() {
             <span className="w-2 h-2 bg-red-500 inline-block rounded-full ml-2 mb-1"></span>
           </h1>
         </ScrollLink>
-        <div className=" ">
-          {resumeData.nav.links.map((item, i) => (
-            <ScrollLink
-              to={item.to}
-              smooth="true"
-              key={i}
-              activeClass={styles._active}
-              spy={true}
-              /* offset={-100} */
-              /* for some space between link and border -> */
-              className="pb-3"
-            >
-              <span key={i} className="cursor-pointer text-xl mr-8">
-                {item.text}
-              </span>
-            </ScrollLink>
-          ))}
+
+        {/* RIGHT section */}
+        <div className="flex space-x-5 mt-2">
+          <ScrollLink
+            to={resumeData.nav.links[0].to}
+            smooth="true"
+            key={resumeData.nav.links[0].text}
+            activeClass={styles._active}
+            spy={true}
+            /* offset={-100} */
+            /* for some space between link and border -> */
+            className="pb-3"
+          >
+            <span className="cursor-pointer text-xl ">
+              {resumeData.nav.links[0].text}
+            </span>
+          </ScrollLink>
+          <ScrollLink
+            to={resumeData.nav.links[1].to}
+            smooth="true"
+            key={resumeData.nav.links[1].text}
+            activeClass={styles._active}
+            spy={true}
+            /* offset={-100} */
+            /* for some space between link and border-bottom -> */
+            className="pb-3"
+          >
+            <span className="cursor-pointer text-xl ">
+              {resumeData.nav.links[1].text}
+            </span>
+          </ScrollLink>
+
+          <ScrollLink
+            to={resumeData.nav.links[2].to}
+            smooth="true"
+            key={resumeData.nav.links[2].text}
+            activeClass={styles._active}
+            spy={true}
+            /* offset={-100} */
+            /* for some space between link and border -> */
+            className="pb-3"
+          >
+            <span className="cursor-pointer text-xl ">
+              {resumeData.nav.links[2].text}
+            </span>
+          </ScrollLink>
         </div>
       </div>
     </div>
