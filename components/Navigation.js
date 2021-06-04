@@ -1,5 +1,7 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
+import ButtonProps from "./ButtonProps";
+import styles from "./button-active.module.css";
 
 function Navigation() {
   const hej = true;
@@ -12,9 +14,10 @@ function Navigation() {
         <ScrollLink
           to="header"
           smooth="true"
-          activeClass="active"
+          /* activeClass="active" */
+          activeClass={styles._active}
           spy={true}
-          /* style={`${{ activeClass } && { background: "red" }}`} */
+          offset={-100}
         >
           <h1 className="cursor-pointer text-3xl font-bold">
             {resumeData.nav.logo}
@@ -23,8 +26,14 @@ function Navigation() {
         </ScrollLink>
         <div className=" ">
           {resumeData.nav.links.map((item, i) => (
-            <ScrollLink to={item.to} smooth="true" key={i}>
-              <span key={i} className="cursor-pointer text-xl mr-4">
+            <ScrollLink
+              to={item.to}
+              smooth="true"
+              key={i}
+              activeClass={styles._active}
+              spy={true}
+            >
+              <span key={i} className="cursor-pointer text-xl mr-8">
                 {item.text}
               </span>
             </ScrollLink>

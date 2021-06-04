@@ -66,13 +66,6 @@ function Work() {
               {resumeData.work[index].desc}
             </p>
 
-            {/* <a
-              href={resumeData.work[index].githubUrl}
-              className="font-extralight text-sm mt-2 hover:underline"
-            >
-              Github
-            </a> */}
-
             <p className="text-xs font-extralight italic mt-2 p-0">
               {resumeData.work[index].tags}
             </p>

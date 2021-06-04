@@ -2,6 +2,7 @@
   "nav": {
     "logo": "PE",
     "links": [
+      { "text": "Skills", "to": "stack" },
       { "text": "Work", "to": "work" },
       { "text": "Contact", "to": "contact" }
     ]
@@ -54,7 +55,7 @@
         "desc": "Next.js"
       }
     ],
-    "dummyText": "Also mention Figma and Canva for design and prototyping. Maybe insert as cards/circles......... Insert som text here about the tech I use.....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.",
+    "dummyText": "Mention Figma and Canva for design and prototyping. Maybe insert as cards/circles......... Insert som text here about the tech I use.....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.",
     "desc": "I am Peter Eriksson, a passionate self-taught front end-developer. I am especially in to React. Love the process of building new cool stuff - from original idea along the way of design to craftmanship (coding + testing + user feedback) to final product.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English, B1-level in German. 1.31 KD in Warzone, 53 wins although I mostly play with Jonez who is fucking useless.",
     "additionalTypical": [
