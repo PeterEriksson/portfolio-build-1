@@ -1,15 +1,26 @@
+import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import resumeData from "../resumeData.json";
 
 function Contact() {
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
+
   return (
     <div
       id="contact"
       style={{ background: "#091c29" }}
-      className="flex min-h-screen justify-center"
+      className="flex min-h-screen justify-center items-center"
     >
-      <div className="flex mt-auto space-x-2">
-        <div className="flex flex-col text-white w-80">
+      <div
+        className={`${
+          !animated && "opacity-0"
+        } transform transition duration-1000 mr-5 ease-in-out flex text-white w-80`}
+      >
+        <div className="flex flex-col">
           <h1 className="text-5xl text-white font-bold mr-10 mb-4">Ping me!</h1>
           <p>
             I am Peter Eriksson, a self-taught front end-developer. I am
@@ -25,12 +36,14 @@ function Contact() {
             <p>Linkedin:</p>
           </div>
         </div>
-        <LazyLoadImage
-          src={resumeData.header.imgGuinness}
-          effect="blur"
-          className="rounded-xl"
-        />
       </div>
+      <LazyLoadImage
+        src={resumeData.header.imgGuinness2}
+        effect="blur"
+        className="rounded-xl"
+        /* height="350px"
+          width="200px" */
+      />
     </div>
   );
 }
