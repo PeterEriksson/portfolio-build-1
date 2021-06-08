@@ -62,7 +62,7 @@ function Work() {
             <h2 className="text-xl font-bold">
               {resumeData.work[index].title}
             </h2>
-            <p className="max-w-sm text-center text-sm font-light ">
+            <p className="max-w-sm text-center text-sm font-extralight ">
               {resumeData.work[index].desc}
             </p>
 

@@ -20,7 +20,7 @@
       1500,
       "Explorer 🌎",
       1500,
-      "Petir 😎",
+      "Peter 😎",
       3000
     ],
     "btnText": "Discover More"
@@ -55,7 +55,7 @@
         "desc": "Next.js"
       }
     ],
-    "dummyText": "Mention Figma and Canva for design and prototyping. Maybe insert as cards/circles......... Insert som text here about the tech I use.....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ",
+    "dummyText": "Mention Figma and Canva for design and prototyping. Maybe insert as cards/circles......... Mention code editors.....Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ",
     "desc": "I am Peter Eriksson, a passionate self-taught front end-developer. I am especially in to React. Love the process of building new cool stuff - from original idea along the way of design to craftmanship (coding + testing + user feedback) to final product.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English, B1-level in German. 1.31 KD in Warzone, 53 wins although I mostly play with Jonez who is fucking useless.",
     "additionalTypical": [
@@ -96,7 +96,7 @@
     },
     {
       "title": "Gaming portal",
-      "desc": "Larger build dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Firebase backend.",
+      "desc": "Larger build dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Context api used for state management. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png",
       "tags": "#React, #Firebase",

@@ -1,6 +1,5 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
-import ButtonProps from "./ButtonProps";
 import styles from "./button-active.module.css";
 
 function Navigation() {
@@ -19,7 +18,7 @@ function Navigation() {
           spy={true}
           offset={-40}
           /* for some space between link and border -> */
-          /* className="pb-2" */
+          /* className="pb-1" */
         >
           <h1 className="cursor-pointer text-3xl font-bold">
             {resumeData.nav.logo}
@@ -35,9 +34,9 @@ function Navigation() {
             key={resumeData.nav.links[0].text}
             activeClass={styles._active}
             spy={true}
-            /* offset={-100} */
+            /* offset={} */
             /* for some space between link and border -> */
-            className="pb-3"
+            className="pb-1"
           >
             <span className="cursor-pointer text-xl ">
               {resumeData.nav.links[0].text}
@@ -51,7 +50,7 @@ function Navigation() {
             spy={true}
             /* offset={-100} */
             /* for some space between link and border-bottom -> */
-            className="pb-3"
+            className="pb-1"
           >
             <span className="cursor-pointer text-xl ">
               {resumeData.nav.links[1].text}
@@ -66,7 +65,7 @@ function Navigation() {
             spy={true}
             /* offset={-100} */
             /* for some space between link and border -> */
-            className="pb-3"
+            className="pb-1"
           >
             <span className="cursor-pointer text-xl ">
               {resumeData.nav.links[2].text}
