@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import TinderCard from "react-tinder-card";
 import resumeData from "../resumeData.json";
 import {
   ArrowCircleLeftIcon,
