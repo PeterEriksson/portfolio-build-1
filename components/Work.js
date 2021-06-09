@@ -29,7 +29,7 @@ function Work() {
   return (
     <div
       id="work"
-      className="min-h-screen flex flex-col items-center justify-center "
+      className="min-h-screen flex flex-col items-center justify-center"
     >
       <div
         aria-label="PROJECTS + Some of my work"
@@ -57,12 +57,12 @@ function Work() {
           />
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
-            className="flex flex-col h-40 text-center mt-3"
+            className="flex flex-col h-44 text-center mt-3"
           >
             <h2 className="text-xl font-bold">
               {resumeData.work[index].title}
             </h2>
-            <p className="max-w-sm text-center text-sm font-extralight ">
+            <p className="max-w-sm text-center text-sm font-extralight mx-3.5 ">
               {resumeData.work[index].desc}
             </p>
 
