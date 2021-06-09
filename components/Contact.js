@@ -27,7 +27,7 @@ function Contact() {
             especially in to React, where I've built several pojects.
           </p>
           <p>Always eager to learn new stuff.</p>
-          <p>Fluent in Swedish and English, B1-level in German.</p>
+          <p>Fluent in Swedish and English.</p>
           <p>75 university credits computer science.</p>
           <div className="font-extralight text-sm space-y-2">
             <p className="mt-4">Mail:</p>
