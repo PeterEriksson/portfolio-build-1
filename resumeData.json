@@ -8,7 +8,7 @@
     ]
   },
   "header": {
-    "img": "https://scontent.fbma4-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Igrs8HoQ8PIAX8J6rfh&_nc_ht=scontent.fbma4-1.fna&oh=93a74458843e3e12460814fd0277f4f8&oe=60DBB99C",
+    "img": "https://scontent.fbma3-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lfDgkAfcbkMAX8H1kQE&_nc_ht=scontent.fbma3-1.fna&oh=d3964612dd781507f42f1bac35c18b04&oe=612AD39C",
     "img2": "https://scontent.fbma3-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=pNNJfjwACl8AX-xCoCO&_nc_ht=scontent.fbma3-1.fna&oh=d2fe20f91cf66737775fb88c36d3b29f&oe=60CFDC1C",
     "imgGuinness": "https://user-images.githubusercontent.com/17027312/119741414-efeac380-be85-11eb-9b6c-f86b7d6e8179.png",
     "imgGuinness2": "https://user-images.githubusercontent.com/17027312/121216942-a638aa80-c881-11eb-8ea2-dc0d44815731.png",
@@ -93,7 +93,7 @@
 
     {
       "title": "Todo app",
-      "desc": "Simple todo app built for practicing purposes with some nice styling. Made in React.",
+      "desc": "Simple todo app built for practicing purposes. Styling inspired by Dev Ed on youtube. Made in React.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
@@ -101,7 +101,7 @@
     },
     {
       "title": "Gaming portal",
-      "desc": "Larger build dedicated to Call of Duty Warzone gamers. Login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Context api used for state management. Firebase backend.",
+      "desc": "Larger build dedicated to gamers. Started of as a Twitter-clone by coding along youtuber Sonny Sangha. Expanded the build myself into a Call of Duty social media site with login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Context api used for state management. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png",
       "tags": "#React, #Firebase",
