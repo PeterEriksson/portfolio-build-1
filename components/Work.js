@@ -53,6 +53,7 @@ function Work() {
             className="rounded-xl mt-3"
             /* height="200px" */
             /* width="200px" */
+            /* Canva edited images sizes 👆 */
           />
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
