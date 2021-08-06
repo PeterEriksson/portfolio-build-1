@@ -78,16 +78,30 @@ function Work() {
           </div>
         </div>
       ))}
-
-      <div className="flex mt-5 space-x-2">
-        <ArrowCircleLeftIcon
-          onClick={handleClickLeft}
-          className="h-8 cursor-pointer"
-        />
-        <ArrowCircleRightIcon
-          onClick={handleClickRight}
-          className="h-8 cursor-pointer"
-        />
+      <div
+        aria-label="DIV FOR ALIGNING ARROWS AND DOTS"
+        className="flex flex-col items-center"
+      >
+        <div className="flex mt-5 space-x-2">
+          <ArrowCircleLeftIcon
+            onClick={handleClickLeft}
+            className="h-8 cursor-pointer"
+          />
+          <ArrowCircleRightIcon
+            onClick={handleClickRight}
+            className="h-8 cursor-pointer"
+          />
+        </div>
+        {/* EXPERIMENT NEW DOT SLIDE FEATURE */}
+        <div className="flex mt-2">
+          {resumeData.work.map((item, i) => (
+            <span
+              className={`h-2 w-2 rounded-full mx-1 ${
+                i === index ? "bg-black" : "bg-gray-500"
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );
