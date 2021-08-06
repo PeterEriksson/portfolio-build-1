@@ -57,7 +57,7 @@ function Work() {
           />
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
-            className="flex flex-col h-44 text-center mt-3"
+            className="flex flex-col h-48 text-center mt-3"
           >
             <h2 className="text-xl font-bold">
               {resumeData.work[index].title}
