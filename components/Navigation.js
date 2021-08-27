@@ -1,6 +1,7 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
-import styles from "./button-active.module.css";
+
+import styles from "../styles/button-active.module.css";
 
 function Navigation() {
   const hej = true;

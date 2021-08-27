@@ -96,6 +96,7 @@ function Work() {
         <div className="flex mt-2">
           {resumeData.work.map((item, i) => (
             <span
+              key={i}
               className={`h-2 w-2 rounded-full mx-1 ${
                 i === index ? "bg-black" : "bg-gray-500"
               }`}
