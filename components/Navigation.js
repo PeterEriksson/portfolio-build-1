@@ -4,7 +4,6 @@ import { Link as ScrollLink } from "react-scroll";
 import styles from "../styles/button-active.module.css";
 
 function Navigation() {
-  const hej = true;
   return (
     <div
       className="fixed top-0 w-screen z-40"
@@ -27,51 +26,22 @@ function Navigation() {
           </h1>
         </ScrollLink>
 
-        {/* RIGHT section */}
+        {/* RIGHT section -> loop through instead -> cleaner. ok. */}
         <div className="flex space-x-5 mt-2">
-          <ScrollLink
-            to={resumeData.nav.links[0].to}
-            smooth="true"
-            key={resumeData.nav.links[0].text}
-            activeClass={styles._active}
-            spy={true}
-            /* offset={} */
-            /* for some space between link and border -> */
-            className="pb-1"
-          >
-            <span className="cursor-pointer text-xl ">
-              {resumeData.nav.links[0].text}
-            </span>
-          </ScrollLink>
-          <ScrollLink
-            to={resumeData.nav.links[1].to}
-            smooth="true"
-            key={resumeData.nav.links[1].text}
-            activeClass={styles._active}
-            spy={true}
-            /* offset={-100} */
-            /* for some space between link and border-bottom -> */
-            className="pb-1"
-          >
-            <span className="cursor-pointer text-xl ">
-              {resumeData.nav.links[1].text}
-            </span>
-          </ScrollLink>
-
-          <ScrollLink
-            to={resumeData.nav.links[2].to}
-            smooth="true"
-            key={resumeData.nav.links[2].text}
-            activeClass={styles._active}
-            spy={true}
-            /* offset={-100} */
-            /* for some space between link and border -> */
-            className="pb-1"
-          >
-            <span className="cursor-pointer text-xl ">
-              {resumeData.nav.links[2].text}
-            </span>
-          </ScrollLink>
+          {resumeData.nav.links.map((item, i) => (
+            <ScrollLink
+              to={item.to}
+              smooth="true"
+              key={i}
+              activeClass={styles._active}
+              spy={true}
+              /* offset={} */
+              /* for some space between link and border -> */
+              className="pb-1"
+            >
+              <span className="cursor-pointer text-xl ">{item.text}</span>
+            </ScrollLink>
+          ))}
         </div>
       </div>
     </div>
