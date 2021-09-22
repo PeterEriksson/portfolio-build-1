@@ -36,15 +36,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ![portpic](https://user-images.githubusercontent.com/17027312/119741154-7226b800-be85-11eb-9c4e-5b6d74566523.png)
 ![peter-profil](https://user-images.githubusercontent.com/17027312/119741414-efeac380-be85-11eb-9b6c-f86b7d6e8179.png)
 
-![cod-portal-pic](https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png)
-
-![cod-portal-pic2](https://user-images.githubusercontent.com/17027312/119871913-35110300-bf23-11eb-8c03-ee6f91b567df.png)
-
-![ta-pic2](https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png)
 
 ![1](https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png)
 ![2](https://user-images.githubusercontent.com/17027312/120502794-04b5e280-c3c3-11eb-8e51-653ca36abff6.png)
-![3](https://user-images.githubusercontent.com/17027312/120502797-054e7900-c3c3-11eb-8584-883a370d9b90.png)
+![3](https://user-images.githubusercontent.com/17027312/120502797-054e7900-c3c3-11eb-8584-883a370d9b90.png)![peterTodo](https://user-images.githubusercontent.com/17027312/134347264-6f07051a-4066-4bc9-baf9-96df541547fd.png)
+
 ![4](https://user-images.githubusercontent.com/17027312/120502802-05e70f80-c3c3-11eb-87e1-387a7b0de12c.png)
 
 ![pt](https://user-images.githubusercontent.com/17027312/121216942-a638aa80-c881-11eb-8ea2-dc0d44815731.png)
+
+![peterProfilFb](https://user-images.githubusercontent.com/17027312/134349999-06919dce-11f2-42b9-9c0c-2b27d8dcce51.jpeg)
