@@ -75,6 +75,14 @@ function Work() {
             >
               Github
             </a>
+            {resumeData.work[index].link && (
+              <a
+                href={resumeData.work[index]?.link}
+                className="font-extralight text-xs hover:underline mt-2"
+              >
+                Link to site
+              </a>
+            )}
           </div>
         </div>
       ))}

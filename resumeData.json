@@ -8,7 +8,7 @@
     ]
   },
   "header": {
-    "img": "https://scontent.fbma3-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lfDgkAfcbkMAX8H1kQE&_nc_ht=scontent.fbma3-1.fna&oh=d3964612dd781507f42f1bac35c18b04&oe=612AD39C",
+    "img": "https://user-images.githubusercontent.com/17027312/134349999-06919dce-11f2-42b9-9c0c-2b27d8dcce51.jpeg",
     "img2": "https://scontent.fbma3-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=pNNJfjwACl8AX-xCoCO&_nc_ht=scontent.fbma3-1.fna&oh=d2fe20f91cf66737775fb88c36d3b29f&oe=60CFDC1C",
     "imgGuinness": "https://user-images.githubusercontent.com/17027312/119741414-efeac380-be85-11eb-9b6c-f86b7d6e8179.png",
     "imgGuinness2": "https://user-images.githubusercontent.com/17027312/121216942-a638aa80-c881-11eb-8ea2-dc0d44815731.png",
@@ -61,7 +61,7 @@
         "desc": "React Native"
       }
     ],
-    "dummyText2": "Solid understanding of HTML, CSS & Javascript. Big fan of React which I've built most my projects in (usually with Firebase backend). Currently learning React Native for mobile app development. Write in VS Code.",
+    "dummyText2": "Solid understanding of HTML, CSS & Javascript. Big fan of React which I've built most my projects in (usually with Firebase backend). Currently learning Next.js, Typescript and also React Native for mobile app development. Write in VS Code.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English.",
     "additionalTypical": [
       "75 credits computer science at university.",
@@ -93,11 +93,12 @@
 
     {
       "title": "Todo app",
-      "desc": "Simple todo app built for practicing purposes. Styling inspired by Dev Ed on youtube. Made in React.",
+      "desc": "Todo app built for practicing purposes (challenge from frontendmentor.io). Responsive layout, filtering capabilities and drag n drop functionality.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
-      "url2": "https://user-images.githubusercontent.com/17027312/120502794-04b5e280-c3c3-11eb-8e51-653ca36abff6.png"
+      "url2": "https://user-images.githubusercontent.com/17027312/134347264-6f07051a-4066-4bc9-baf9-96df541547fd.png",
+      "link": "https://todo-app-by-peter.netlify.app/"
     },
     {
       "title": "Gaming portal",
