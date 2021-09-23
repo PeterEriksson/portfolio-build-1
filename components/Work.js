@@ -105,7 +105,7 @@ function Work() {
           {resumeData.work.map((item, i) => (
             <span
               key={i}
-              className={`h-2 w-2 rounded-full mx-1 ${
+              className={`h-2 w-2 rounded-full mx-1 transition duration-300 ease-in ${
                 i === index ? "bg-black" : "bg-gray-500"
               }`}
             ></span>
