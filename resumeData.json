@@ -93,7 +93,7 @@
 
     {
       "title": "Todo app",
-      "desc": "Todo app built for practicing purposes (challenge from frontendmentor.io). Responsive layout, filtering capabilities and drag n drop functionality.",
+      "desc": "Todo app challenge from frontendmentor.io. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
