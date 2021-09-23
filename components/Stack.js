@@ -21,13 +21,13 @@ function Stack() {
               key={i}
               className="rounded-full object-contain"
             />
-            <p className="flex cursor-default font-extralight justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-sm">
+            <p className="flex cursor-default font-normal justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-sm">
               {item.desc}
             </p>
           </span>
         ))}
       </div>
-      <p className="w-10/12 md:max-w-2xl text-center font-extralight mt-4 mb-2">
+      <p className="w-10/12 sm:max-w-md md:max-w-2xl text-center font-extralight mt-4 mb-2">
         {resumeData.stack.dummyText2}
       </p>
     </div>
