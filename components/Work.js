@@ -100,12 +100,13 @@ function Work() {
             className="h-8 cursor-pointer"
           />
         </div>
-        {/* EXPERIMENT NEW DOT SLIDE FEATURE */}
+        {/* (EXPERIMENT) NEW DOT SLIDE FEATURE */}
         <div className="flex mt-2">
           {resumeData.work.map((item, i) => (
             <span
+              onClick={() => setIndex(i)}
               key={i}
-              className={`h-2 w-2 rounded-full mx-1 transition duration-300 ease-in ${
+              className={`h-2 w-2 cursor-pointer rounded-full mx-1 transition duration-300 ease-in ${
                 i === index ? "bg-black" : "bg-gray-500"
               }`}
             ></span>
