@@ -32,7 +32,7 @@ function Work() {
     >
       <div
         aria-label="PROJECTS + Some of my work"
-        className="flex flex-col items-center space-y-2 mb-3"
+        className="flex flex-col items-center space-y-2 mb-2"
       >
         <h1 className="text-5xl font-bold">Projects</h1>
         <h3 className="text-xl font-extralight">Some of my work</h3>
