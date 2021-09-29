@@ -106,6 +106,16 @@
       "link": "https://todo-app-by-peter.netlify.app/"
     },
     {
+      "title": "Online store",
+      "desc": "Pic-Some online store for purchasing photos. A simple retail site with checkout. Using Redux for state management, Next.js for easy routing and TailwindCss for styling. (Not completely finished yet)",
+      "url": "",
+      "tags": "#React, #TailwindCss, #Next.js, #Redux",
+      "githubUrl": "https://github.com/PeterEriksson/picsome",
+      "url2": "https://user-images.githubusercontent.com/17027312/135295466-545f7fb3-fbbe-42bd-a217-e6a2b2d065f8.png",
+      "link": "https://picsome-onlinestore.netlify.app/"
+    },
+
+    {
       "title": "Gaming portal",
       "desc": "Started of as a Twitter-clone by coding along a youtuber. Expanded the build myself into a Call of Duty social media site with login functionality, share posts, view personal statistics + more. Built in React as a hobby project. Context api is used for global state management. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
