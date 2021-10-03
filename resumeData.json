@@ -107,7 +107,7 @@
     },
     {
       "title": "Online store",
-      "desc": "Pic-Some online store for purchasing photos. A simple retail site with checkout. Using Redux for state management, Next.js for easy routing and TailwindCss for styling.",
+      "desc": "Pic-Some online store for purchasing photos. A simple retail site with checkout, built in order to understand Redux state management. Next.js is used for easy routing and TailwindCss for styling.",
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Redux",
       "githubUrl": "https://github.com/PeterEriksson/picsome",
