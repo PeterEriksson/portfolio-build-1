@@ -79,15 +79,6 @@
   },
   "work": [
     {
-      "title": "Random quote generator",
-      "desc": "Covering basic JavaScript syntax and data structures by building a Random Quote Generator.",
-      "url": "https://user-images.githubusercontent.com/17027312/119829660-c2406180-befb-11eb-8575-490d95b64167.png",
-      "tags": "#Vanilla-js, #HTML, #CSS",
-      "githubUrl": "https://github.com/PeterEriksson/basic-js-famous-quotes",
-      "url2": "https://user-images.githubusercontent.com/17027312/120502802-05e70f80-c3c3-11eb-87e1-387a7b0de12c.png"
-    },
-
-    {
       "title": "Game show app",
       "desc": "Using Vanilla JavaScript to select a random, hidden phrase. A player tries to guess the phrase before life runs out by selecting individual letters from an onscreen keyboard.",
       "url": "https://user-images.githubusercontent.com/17027312/119741286-b1550900-be85-11eb-8e56-70c92b034f5a.jpeg",
@@ -98,7 +89,7 @@
 
     {
       "title": "Todo app",
-      "desc": "Todo app challenge from frontendmentor.io. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
+      "desc": "A fun challenge from frontendmentor.io. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode. A good challenge for rehearsing the basics.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React, #TailwindCss",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
@@ -113,6 +104,16 @@
       "githubUrl": "https://github.com/PeterEriksson/picsome",
       "url2": "https://user-images.githubusercontent.com/17027312/135295466-545f7fb3-fbbe-42bd-a217-e6a2b2d065f8.png",
       "link": "https://picsome-onlinestore.netlify.app/"
+    },
+
+    {
+      "title": "Countries app",
+      "desc": "Advanced challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Also detailed page for each country. Next.js is used for data fetching and routing between different pages. Dark/light theme with the help of Context api.",
+      "url": "",
+      "tags": "#React, #TailwindCss, #Next.js, #Context-api",
+      "githubUrl": "https://github.com/PeterEriksson/Countries-app-main",
+      "url2": "https://user-images.githubusercontent.com/17027312/136710035-d0e7cb3f-b620-4dfc-a26e-a9719fa6bae7.png",
+      "link": "https://countries-app-peter.netlify.app/"
     },
 
     {
