@@ -108,7 +108,7 @@
 
     {
       "title": "Countries app",
-      "desc": "Advanced challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js is used for data fetching and dynamic routing between different country pages. Dark/light theme with the help of Context api.",
+      "desc": "Advanced challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js is used for data fetching and dynamic routing between different country pages.",
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Context-api",
       "githubUrl": "https://github.com/PeterEriksson/Countries-app-main",
