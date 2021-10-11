@@ -89,7 +89,7 @@
 
     {
       "title": "Todo app",
-      "desc": "A fun challenge from frontendmentor.io. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode. A good challenge for rehearsing the basics.",
+      "desc": "A fun challenge from frontendmentor.io, built for rehearsing the basics. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React, #TailwindCss",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
@@ -118,7 +118,7 @@
 
     {
       "title": "Gaming portal",
-      "desc": "Started of as a Twitter-clone by coding along a youtuber. Expanded the build myself into a Call of Duty social media site with login functionality, share posts, view personal statistics + more. Context api is used for global state management. Firebase backend.",
+      "desc": "Started of as a Twitter-clone, expanded the build into a Call of Duty social media site with login functionality, share posts, view personal statistics + more. Context api is used for global state management. Firebase backend.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png",
       "tags": "#React, #Firebase, #Context-api",
