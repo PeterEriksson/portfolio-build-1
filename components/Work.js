@@ -72,6 +72,7 @@ function Work() {
             <a
               href={resumeData.work[index].githubUrl}
               className="font-extralight text-xs hover:underline mt-2"
+              target="_blank"
             >
               Github
             </a>
@@ -79,6 +80,7 @@ function Work() {
               <a
                 href={resumeData.work[index]?.link}
                 className="font-extralight text-xs hover:underline mt-2"
+                target="_blank"
               >
                 Link to site
               </a>
