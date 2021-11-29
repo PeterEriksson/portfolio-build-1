@@ -32,7 +32,7 @@ function Work() {
     >
       <div
         aria-label="PROJECTS + Some of my work"
-        className="flex flex-col items-center space-y-2 mb-2"
+        className="flex flex-col items-center space-y-2 mb-4"
       >
         <h1 className="text-5xl font-bold">Projects</h1>
         <h3 className="text-xl font-extralight">Some of my work</h3>
@@ -92,7 +92,7 @@ function Work() {
         aria-label="DIV FOR ALIGNING ARROWS AND DOTS"
         className="flex flex-col items-center"
       >
-        <div className="flex mt-5 space-x-2">
+        <div className="flex mt-3 space-x-2">
           <ArrowCircleLeftIcon
             onClick={handleClickLeft}
             className="h-8 cursor-pointer"
@@ -108,7 +108,7 @@ function Work() {
             <span
               onClick={() => setIndex(i)}
               key={i}
-              className={`h-2 w-2 cursor-pointer rounded-full mx-1 transition duration-300 ease-in ${
+              className={`h-2 w-2 cursor-pointer rounded-full  mx-1 transition duration-300 ease-in ${
                 i === index ? "bg-black" : "bg-gray-500"
               }`}
             ></span>
