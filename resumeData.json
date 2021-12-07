@@ -118,10 +118,10 @@
 
     {
       "title": "Gaming portal",
-      "desc": "Started of as a Twitter-clone, expanded the build into a Call of Duty social media site with login functionality, share posts, view personal statistics + more. Context api is used for global state management. Firebase backend.",
+      "desc": "A social media site for Call of Duty players. Login, share posts, rank your friends, view personal/friends statistics. Context api is used for state management. Firebase backend. Statistics is fetched from rapidApi.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/120502786-0384b580-c3c3-11eb-8eee-ac15e0feaf4d.png",
-      "tags": "#React, #Firebase, #Context-api",
+      "tags": "#React, #Firebase, #Context-api, #Next.js",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/"
     }
