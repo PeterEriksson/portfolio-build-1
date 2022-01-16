@@ -89,16 +89,16 @@
 
     {
       "title": "Todo app",
-      "desc": "A fun challenge from frontendmentor.io, built for rehearsing the basics. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
+      "desc": "A fun challenge from frontendmentor.io. Great project for rehearsing the basics. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
-      "tags": "#React, #TailwindCss",
+      "tags": "#React, #TailwindCss, #react-beautiful-dnd",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
       "url2": "https://user-images.githubusercontent.com/17027312/134347264-6f07051a-4066-4bc9-baf9-96df541547fd.png",
       "link": "https://todo-app-by-peter.netlify.app/"
     },
     {
-      "title": "Online store",
-      "desc": "Pic-Some online store for purchasing photos. A simple retail site with checkout, built with the purpose to understand Redux state management.",
+      "title": "Pic-Some online store",
+      "desc": "A simple retail site with checkout, built with the purpose to understand Redux state management.",
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Redux",
       "githubUrl": "https://github.com/PeterEriksson/picsome",
@@ -108,9 +108,9 @@
 
     {
       "title": "Countries app",
-      "desc": "Advanced challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js is used for data fetching and dynamic routing between different country pages.",
+      "desc": "Challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js used for data fetching and dynamic routing between different country pages. Search+filter capabilities.",
       "url": "",
-      "tags": "#React, #TailwindCss, #Next.js, #Context-api",
+      "tags": "#React, #TailwindCss, #Next.js, #dynamic-routes",
       "githubUrl": "https://github.com/PeterEriksson/Countries-app-main",
       "url2": "https://user-images.githubusercontent.com/17027312/136710035-d0e7cb3f-b620-4dfc-a26e-a9719fa6bae7.png",
       "link": "https://countries-app-peter.netlify.app/"
@@ -118,10 +118,10 @@
 
     {
       "title": "Gaming portal",
-      "desc": "A social media site for Call of Duty players. Login, share posts, rank your friends, view personal/friends statistics. Context api is used for state management. Firebase backend. Statistics is fetched from rapidApi.",
+      "desc": "A social media site for Call of Duty players. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidApi.",
       "url": "https://user-images.githubusercontent.com/17027312/119871844-26c2e700-bf23-11eb-9dd1-b64046330740.png",
       "url2": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
-      "tags": "#React, #Firebase, #Context-api, #Next.js",
+      "tags": "#React, #Firebase, #Context-api, #Next.js, #Cloud-functions",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/"
     }
