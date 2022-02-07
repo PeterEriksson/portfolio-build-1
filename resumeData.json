@@ -102,7 +102,7 @@
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Redux",
       "githubUrl": "https://github.com/PeterEriksson/picsome",
-      "url2": "https://user-images.githubusercontent.com/17027312/152553834-201d2c42-0d97-43a6-a97b-c00e2a22e33a.png",
+      "url2": "https://user-images.githubusercontent.com/17027312/152823181-755b4256-ae92-4ab3-8057-75ac7036c8d9.png",
       "link": "https://picsome-onlinestore.netlify.app/"
     },
     {
@@ -117,9 +117,9 @@
 
     {
       "title": "Gaming portal",
-      "desc": "Social media app for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidApi.",
+      "desc": "Social media app for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
-      "url2": "https://i.pinimg.com/564x/a6/65/25/a6652515edf9bf431b9faf457c568c91.jpg",
+      "url2": "https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png",
       "tags": "#React, #Firebase, #Context-api, #Next.js, #Cloud-functions",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/"

@@ -32,10 +32,12 @@ function Work() {
     >
       <div
         aria-label="PROJECTS + Some of my work"
-        className="flex flex-col items-center space-y-2 mb-4"
+        className="flex flex-col items-center space-y-2    xs:mb-4 mb-1"
       >
-        <h1 className="text-5xl font-bold     pt-7">Projects</h1>
-        <h3 className="text-xl font-extralight">Some of my work</h3>
+        <h1 className="xs:text-5xl text-3xl font-bold    //center: pt-7">
+          Projects
+        </h1>
+        <h3 className="xs:text-xl text-lg font-extralight">Some of my work</h3>
       </div>
 
       {resumeData.work.map((item, i) => (
