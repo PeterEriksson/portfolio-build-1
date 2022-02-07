@@ -52,5 +52,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ![dhgbCanv](https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png)
 
 ![picsome2 2](https://user-images.githubusercontent.com/17027312/152553834-201d2c42-0d97-43a6-a97b-c00e2a22e33a.png)
+![dhgbTest200ggr200](https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png)
+![picSome200ggr200](https://user-images.githubusercontent.com/17027312/152823181-755b4256-ae92-4ab3-8057-75ac7036c8d9.png)
 
 
