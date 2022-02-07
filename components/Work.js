@@ -61,7 +61,7 @@ function Work() {
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
             className="flex flex-col h-48 text-center mt-3"
           >
-            <h2 className="text-xl font-bold">
+            <h2 className="xs:text-xl text-base font-bold">
               {resumeData.work[index].title}
             </h2>
             <p className="max-w-sm text-center text-sm font-extralight mx-3.5 ">
@@ -97,11 +97,11 @@ function Work() {
         <div className="flex mt-3 space-x-2">
           <ArrowCircleLeftIcon
             onClick={handleClickLeft}
-            className="h-8 cursor-pointer"
+            className="xs:h-8 h-7 cursor-pointer"
           />
           <ArrowCircleRightIcon
             onClick={handleClickRight}
-            className="h-8 cursor-pointer"
+            className="xs:h-8 h-7 cursor-pointer"
           />
         </div>
         {/* (EXPERIMENT) NEW DOT SLIDE FEATURE */}
