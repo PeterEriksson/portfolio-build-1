@@ -1,7 +1,8 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
-
 import styles from "../styles/button-active.module.css";
+import { MenuIcon } from "@heroicons/react/outline";
+import { useState } from "react";
 
 function Navigation() {
   return (
