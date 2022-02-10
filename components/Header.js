@@ -13,7 +13,7 @@ function Header() {
   }, []);
 
   return (
-    <div
+    <header
       id="header"
       style={{ background: "#091c29" }}
       className="min-h-screen flex items-center justify-center "
@@ -58,7 +58,7 @@ function Header() {
           </ScrollLink>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -10,6 +10,9 @@ module.exports = {
       fontSize: {
         verySmall: "10px",
       },
+      colors: {
+        mainDarkBlue: "#091c29",
+      },
     },
   },
   variants: {
