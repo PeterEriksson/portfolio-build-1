@@ -92,6 +92,7 @@ function Navigation() {
           </ScrollLink>
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
+              key={i}
               to={item.to}
               smooth="true"
               activeClass={styles._active}
