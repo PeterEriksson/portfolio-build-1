@@ -117,7 +117,7 @@
 
     {
       "title": "Gaming portal",
-      "desc": "Social media app for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
+      "desc": "A larger app for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
       "url2": "https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png",
       "tags": "#React, #Firebase, #Context-api, #Next.js, #Cloud-functions",

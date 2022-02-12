@@ -26,6 +26,8 @@ function Navigation() {
             offset={-40}
             /* for some space between link and border -> */
             /* className="pb-1" */
+            /* avoid navbar changing height -> have an "invinsible" bottom border -> */
+            className="border-b-2 border-mainDarkBlue"
           >
             <h1 className="cursor-pointer text-3xl font-bold">
               {resumeData.nav.logo}
@@ -57,6 +59,7 @@ function Navigation() {
               /* offset={} */
               /* for some space between link and border -> */
               /* className="pb-1" */
+              className="border-b-2 border-mainDarkBlue"
             >
               <span className="cursor-pointer text-xl ">{item.text}</span>
             </ScrollLink>
@@ -64,19 +67,13 @@ function Navigation() {
         </div>
 
         {/* SKILLS, WORK, CONTACT HAMBURGER MENU CONTAINER */}
-        {/* <div
-          className={`${
-            menuActive
-              ? " flex flex-col space-y-1 items-center pb-2 w-full  //bg-red-500 ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue   //transform //transition //ease-in-out "
-              : "hidden "
-          } sm:hidden    `}
-        > */}
+
         <Transition
           show={menuActive}
           enter="transition-opacity duration-100"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-opacity duration-500"
+          leave="transition-opacity duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
           className={`sm:hidden flex flex-col space-y-1 items-center pb-2 w-full  //bg-red-500 ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue   //transform //transition //ease-in-out   `}
@@ -97,7 +94,7 @@ function Navigation() {
               smooth="true"
               activeClass={styles._active}
               spy={true}
-              className="flex justify-center "
+              className="flex justify-center border-b-2 border-mainDarkBlue"
             >
               <p className="cursor-pointer text-lg font-semibold">
                 {item.text}
@@ -105,7 +102,6 @@ function Navigation() {
             </ScrollLink>
           ))}
         </Transition>
-        {/* </div> */}
       </div>
     </div>
   );
