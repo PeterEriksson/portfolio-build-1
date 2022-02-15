@@ -38,6 +38,9 @@ function Work() {
           Projects
         </h1>
         <h3 className="xs:text-xl text-lg font-extralight">Some of my work</h3>
+        {/* <h3 className="text-xs font-light">
+          Check Github readme for thorough explanation
+        </h3> */}
       </div>
 
       {resumeData.work.map((item, i) => (
@@ -76,7 +79,7 @@ function Work() {
               className="font-extralight text-xs hover:underline mt-2"
               target="_blank"
             >
-              Github
+              Github - read more
             </a>
             {resumeData.work[index].link && (
               <a

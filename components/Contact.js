@@ -14,14 +14,14 @@ function Contact() {
     <div
       id="contact"
       style={{ background: "#091c29" }}
-      className="flex min-h-screen justify-center items-center"
+      className="flex min-h-screen justify-center items-center "
     >
       <div
         className={`${
           !animated && "opacity-0"
         } transform transition duration-1000 mr-5 ease-in-out flex text-white w-80`}
       >
-        <div className="flex flex-col pl-4">
+        <div className="flex flex-col pl-5">
           <h1 className="xs:text-5xl text-3xl text-white font-bold mr-10 mb-4">
             Ping me!
           </h1>
