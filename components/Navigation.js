@@ -15,7 +15,7 @@ function Navigation() {
       className="fixed top-0 w-screen z-40"
       style={{ background: "#091c29" }}
     >
-      <div className="//flex items-center  text-white justify-between    w-11/12 mx-auto xs:w-10/12      py-3  flex flex-col sm:flex-row  sm:flex">
+      <div className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col sm:flex-row  sm:flex">
         {/* LEFT section */}
         <div className="flex justify-between items-center //bg-red-500 w-full">
           <ScrollLink

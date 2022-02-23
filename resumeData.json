@@ -31,7 +31,7 @@
     "title": "Tech/Stack I use",
     "tech": [
       {
-        "img": "https://www.juicymedia.co.uk/application/files/4615/1838/4923/html_css_js.png",
+        "img": "https://i.pinimg.com/236x/53/19/88/5319885958f89815e5431363f39ff937.jpg",
         "alt": "CSS HTML JS",
         "desc": "HTML, JS, CSS"
       },
@@ -66,7 +66,7 @@
         "desc": "Redux"
       }
     ],
-    "dummyText2": "Solid understanding of HTML, CSS & Javascript. Big fan of React which I've built most my projects in (often with Firebase backend). Currently learning Next.js, Typescript and also React Native for mobile app development. Write in VS Code.",
+    "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp online. Big fan of TailwindCss for styling. Often use Firebase for serverless backend. Currently learning Next.js, Typescript and also React Native for mobile app development. Write in VS Code.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English.",
     "additionalTypical": [
       "75 credits computer science at university.",
@@ -92,7 +92,7 @@
       "desc": "A fun challenge from frontendmentor.io. Great project for rehearsing the basics. Responsive layout, filtering capabilities, drag n drop functionality, light/dark mode.",
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React, #TailwindCss, #react-beautiful-dnd",
-      "githubUrl": "https://github.com/PeterEriksson/todo-app-p",
+      "githubUrl": "https://github.com/PeterEriksson/todo-app-2",
       "url2": "https://user-images.githubusercontent.com/17027312/134347264-6f07051a-4066-4bc9-baf9-96df541547fd.png",
       "link": "https://todo-app-by-peter.netlify.app/"
     },
@@ -117,7 +117,7 @@
 
     {
       "title": "Gaming portal",
-      "desc": "A larger app for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
+      "desc": "A larger app built for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
       "url2": "https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png",
       "tags": "#React, #Firebase, #Context-api, #Next.js, #Cloud-functions",

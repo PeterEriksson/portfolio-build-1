@@ -14,7 +14,7 @@ function Stack() {
         {resumeData.stack.tech.map((item, i) => (
           <span
             key={i}
-            className="transition duration-200 transform hover:scale-110 p-3 group bg-white  w-28 h-28 xs:w-40 xs:h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full"
+            className="transition duration-200 transform hover:scale-110 p-3 group bg-white  w-24 h-24 //w-28 //h-28 xs:w-40 xs:h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full"
           >
             <LazyLoadImage
               src={item.img}
@@ -28,7 +28,7 @@ function Stack() {
           </span>
         ))}
       </div>
-      <p className="w-10/12 sm:max-w-md md:max-w-2xl text-center font-extralight mt-4 mb-2 text-sm  xs:text-base">
+      <p className="w-10/12 //sm:max-w-md //md:max-w-2xl max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-sm  xs:text-base">
         {resumeData.stack.dummyText2}
       </p>
     </div>

@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         mainDarkBlue: "#091c29",
       },
+      maxWidth: {
+        twoPointFivexl: "700px",
+      },
     },
   },
   variants: {
