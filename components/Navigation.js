@@ -66,8 +66,7 @@ function Navigation() {
           ))}
         </div>
 
-        {/* SKILLS, WORK, CONTACT HAMBURGER MENU CONTAINER */}
-
+        {/*HAMBURGER MENU CONTAINER */}
         <Transition
           show={menuActive}
           enter="transition-opacity duration-100"

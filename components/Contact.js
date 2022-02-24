@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import resumeData from "../resumeData.json";
-import { MailIcon } from "@heroicons/react/solid";
+import { MailIcon, AtSymbolIcon, PhoneIcon } from "@heroicons/react/solid";
 
 function Contact() {
   const [animated, setAnimated] = useState(false);
@@ -14,7 +14,7 @@ function Contact() {
     <div
       id="contact"
       style={{ background: "#091c29" }}
-      className="flex min-h-screen justify-center items-center "
+      className="flex min-h-screen justify-center "
     >
       <div className="w-10/12 flex items-center justify-between">
         <div
@@ -33,12 +33,39 @@ function Contact() {
               university credits computer science.
             </p>
 
-            <div className="flex flex-row items-center font-extralight space-x-2 text-sm ">
-              <MailIcon className="h-9 w-9 cursor-pointer" />
-              <p>Github</p>
-              <p>Instagram</p>
-              <p>Linkedin</p>
-            </div>
+            {/*Contact info section  */}
+            <section className="flex flex-col lg:flex-row lg:items-center mt-2.5 space-y-2 lg:space-y-0 lg:space-x-3">
+              <div>
+                <h3 className="text-lg font-bold">Phone</h3>
+                <div className="flex items-center space-x-2">
+                  <PhoneIcon className="h-5 w-5" />
+                  <p>070-41...39..</p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Mail</h3>
+                <div className="flex items-center space-x-2">
+                  <MailIcon className="h-5 w-5" />
+                  <p>peter...@hotmail.com</p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Linkedin</h3>
+                <img
+                  className="h-6 w-6 rounded-lg lg:mx-auto"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
+                  alt="linkedin"
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold">Github</h3>
+                <img
+                  className="h-6 w-6 rounded-lg lg:mx-auto"
+                  src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
+                  alt="github"
+                />
+              </div>
+            </section>
           </div>
         </div>
 
