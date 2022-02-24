@@ -37,22 +37,22 @@ function Contact() {
             <section className="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 //picture-covering-mail-text: mt-6 xs:mt-2.5">
               <div>
                 <h3 className="xs:text-lg font-bold">Phone</h3>
-                <div className="flex items-center xs:space-x-2">
-                  <PhoneIcon className="xs:h-5 xs:w-5  w-3 h-5" />
+                <div className="flex items-center xs:space-x-2 space-x-1">
+                  <PhoneIcon className=" xs:w-5  w-3 h-5" />
                   <p className="text-sm">070-41...39..</p>
                 </div>
               </div>
               <div>
                 <h3 className="xs:text-lg font-bold">Mail</h3>
-                <div className="flex items-center xs:space-x-2">
-                  <MailIcon className="xs:h-5 xs:w-5  w-3 h-5" />
+                <div className="flex items-center xs:space-x-2 space-x-1">
+                  <MailIcon className=" xs:w-5  w-3 h-5" />
                   <p className="text-sm">peter...@hotmail.com</p>
                 </div>
               </div>
               <div>
                 <h3 className="xs:text-lg font-bold">Linkedin</h3>
                 <img
-                  className="h-6 w-6 rounded-lg lg:mx-auto"
+                  className="h-5 w-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
                   alt="linkedin"
                 />
@@ -60,7 +60,7 @@ function Contact() {
               <div>
                 <h3 className="xs:text-lg font-bold">Github</h3>
                 <img
-                  className="h-6 w-6 rounded-lg lg:mx-auto"
+                  className="w-5 h-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
                   src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
                   alt="github"
                 />
