@@ -26,7 +26,7 @@ function Contact() {
             <h1 className="xs:text-5xl text-3xl text-white font-bold //mr-10 mb-2 xs:mb-4">
               Ping me!
             </h1>
-            <p className="xs:text-base text-sm   //picture-covering-mail-text: w-10/12 xs:w-full">
+            <p className="xs:text-base text-sm   //picture-covering-mail-text: w-10/12 xs:w-2/3">
               I am Peter Eriksson, a self-taught front end-developer, especially
               in to React.js. Always eager to learn new stuff. Fluent in Swedish
               and English.
@@ -57,21 +57,28 @@ function Contact() {
                 <h3 className="xs:text-lg font-bold   hidden xs:inline">
                   Linkedin
                 </h3>
-                <img
-                  className="h-5 w-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
-                  alt="linkedin"
-                />
+                <a
+                  href="https://www.linkedin.com/in/peter-eriksson-13b8b1120/"
+                  target="_blank"
+                >
+                  <img
+                    className="h-5 w-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
+                    alt="linkedin"
+                  />
+                </a>
               </div>
               <div>
                 <h3 className="xs:text-lg font-bold   hidden xs:inline">
                   Github
                 </h3>
-                <img
-                  className="w-5 h-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
-                  src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
-                  alt="github"
-                />
+                <a href="https://github.com/PeterEriksson" target="_blank">
+                  <img
+                    className="w-5 h-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
+                    src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
+                    alt="github"
+                  />
+                </a>
               </div>
             </section>
           </div>
