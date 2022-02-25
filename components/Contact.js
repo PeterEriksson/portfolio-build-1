@@ -20,13 +20,13 @@ function Contact() {
         <div
           className={`${
             !animated && "opacity-0"
-          } transform transition duration-1000  ease-in-out flex text-white w-2/3 xs:w1/2`}
+          } transform transition duration-1000  ease-in-out flex text-white w-2/3 xs:w1/2  `}
         >
           <div className="flex flex-col">
             <h1 className="xs:text-5xl text-3xl text-white font-bold //mr-10 mb-2 xs:mb-4">
               Ping me!
             </h1>
-            <p className="xs:text-base text-sm   //picture-covering-mail-text: w-10/12 xs:w-2/3">
+            <p className="xs:text-base text-sm   //picture-covering-mail-text: w-10/12 xs:w-2/3   max-w-3xl">
               I am Peter Eriksson, a self-taught front end-developer, especially
               in to React.js. Always eager to learn new stuff. Fluent in Swedish
               and English.
@@ -34,9 +34,9 @@ function Contact() {
             {/*  <p>75 university credits computer science.</p> */}
 
             {/*Contact info section  */}
-            <section className="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 //picture-covering-mail-text: mt-4 xs:mt-2.5">
+            <section className="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 //picture-covering-mail-text: mt-4 xs:mt-2.5   ">
               <div>
-                <h3 className="xs:text-lg font-bold   hidden xs:inline">
+                <h3 className="xs:text-md font-bold   hidden xs:inline">
                   Phone
                 </h3>
                 <div className="flex items-center xs:space-x-2 space-x-1">
@@ -45,7 +45,7 @@ function Contact() {
                 </div>
               </div>
               <div>
-                <h3 className="xs:text-lg font-bold   hidden xs:inline">
+                <h3 className="xs:text-md font-bold   hidden xs:inline">
                   Mail
                 </h3>
                 <div className="flex items-center xs:space-x-2 space-x-1">
@@ -54,7 +54,7 @@ function Contact() {
                 </div>
               </div>
               <div>
-                <h3 className="xs:text-lg font-bold   hidden xs:inline">
+                <h3 className="xs:text-md font-bold   hidden xs:inline">
                   Linkedin
                 </h3>
                 <a
@@ -69,7 +69,7 @@ function Contact() {
                 </a>
               </div>
               <div>
-                <h3 className="xs:text-lg font-bold   hidden xs:inline">
+                <h3 className="xs:text-md font-bold   hidden xs:inline">
                   Github
                 </h3>
                 <a href="https://github.com/PeterEriksson" target="_blank">

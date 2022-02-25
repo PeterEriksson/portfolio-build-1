@@ -48,8 +48,8 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center //opacity-1 transition duration-700 ease-in   border border-gray-200"
-              : "opacity-0 flex absolute z-0"
+              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition duration-700 ease-in border border-gray-200    xs:mx-0 mx-5   "
+              : "opacity-0 flex z-0  absolute"
           }`}
         >
           <LazyLoadImage
