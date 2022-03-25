@@ -10,6 +10,8 @@ function Contact() {
     setAnimated(true);
   }, []);
 
+  /* in resumeData -> replace react native with styled components */
+
   return (
     <div
       id="contact"
@@ -90,8 +92,6 @@ function Contact() {
             src={resumeData.header.imgGuinness2}
             effect="blur"
             className="rounded-xl  "
-            /* height="350px"
-          width="200px" */
           />
         </div>
       </div>
