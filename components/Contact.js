@@ -32,7 +32,7 @@ function Contact({ myRef, myElementIsVisible }) {
         >
           <div className="flex flex-col">
             <h1
-              className={` xs:text-5xl text-3xl text-white font-bold mb-2 xs:mb-4   xs:flex `}
+              className={` xs:text-5xl text-3xl text-white font-bold mb-2 xs:mb-4   smaller:flex `}
             >
               Ping me!&nbsp;&nbsp;
               <InView triggerOnce>

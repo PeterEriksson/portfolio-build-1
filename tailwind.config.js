@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       screens: {
         xs: "500px",
+        smaller: "540px",
       },
       fontSize: {
         verySmall: "10px",
