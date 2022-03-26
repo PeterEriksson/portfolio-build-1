@@ -7,6 +7,8 @@ import {
 } from "@heroicons/react/solid";
 
 function Work() {
+  /* Try a light gray line under project desc. */
+
   const [index, setIndex] = useState(0);
 
   const handleClickRight = () => {
@@ -71,9 +73,12 @@ function Work() {
               {resumeData.work[index].desc}
             </p>
 
-            <p className="text-xs font-extralight italic mt-2 p-0">
+            <h4 className="text-xs font-extralight italic mt-2 p-0">
               {resumeData.work[index].tags}
-            </p>
+            </h4>
+
+            <hr className="border border-gray-200 w-11/12 mx-auto mt-1.5" />
+
             <a
               href={resumeData.work[index].githubUrl}
               className="font-extralight text-xs hover:underline mt-2"

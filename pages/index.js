@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myEmojiRef, inView: myEmojiElementIsVisible } = useInView();
 
   return (
     <div>
@@ -23,7 +23,10 @@ export default function Home() {
       <Header />
       <Stack />
       <Work />
-      <Contact myRef={myRef} myElementIsVisible={myElementIsVisible} />
+      <Contact
+        myEmojiRef={myEmojiRef}
+        myEmojiElementIsVisible={myEmojiElementIsVisible}
+      />
     </div>
   );
 }

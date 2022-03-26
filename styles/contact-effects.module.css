@@ -4,11 +4,11 @@
 
 .animateEmoji {
   animation-duration: 4s;
-  animation-name: animate-rocket;
+  animation-name: shake;
 }
 
-@keyframes animate-rocket {
-  /* 0% {
+@keyframes rocket {
+  0% {
     transform: scale(1) rotate(10deg);
   }
   5% {
@@ -25,26 +25,10 @@
   }
   100% {
     transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
-
-    
-
-  } */
-
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  20%,
-  60% {
-    transform: rotate(10deg);
-  }
-  40%,
-  80% {
-    transform: rotate(-10deg);
   }
 }
 
-/* @keyframes shake {
+@keyframes shake {
   0%,
   100% {
     transform: rotate(0deg);
@@ -57,7 +41,7 @@
   80% {
     transform: rotate(-6deg);
   }
-} */
+}
 
 /* 🚀  📞  🤙  ☎️ */
 

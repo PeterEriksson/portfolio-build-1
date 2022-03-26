@@ -7,7 +7,9 @@ import styles from "../styles/contact-effects.module.css";
 
 import { InView } from "react-intersection-observer";
 
-function Contact({ myRef, myElementIsVisible }) {
+function Contact({ myEmojiRef, myEmojiElementIsVisible }) {
+  /* https://www.npmjs.com/package/react-intersection-observer */
+
   const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
@@ -36,14 +38,18 @@ function Contact({ myRef, myElementIsVisible }) {
             >
               Ping me!&nbsp;&nbsp;
               <InView triggerOnce>
-                {({ inView: myElementIsVisible, ref: myRef, entry }) => (
+                {({
+                  inView: myEmojiElementIsVisible,
+                  ref: myEmojiRef,
+                  entry,
+                }) => (
                   <p
-                    ref={myRef}
+                    ref={myEmojiRef}
                     className={`${styles.eomji} ${
-                      myElementIsVisible ? styles.animateEmoji : ""
+                      myEmojiElementIsVisible ? styles.animateEmoji : ""
                     }   `}
                   >
-                    ☎️
+                    {/* 🚀  📞  🤙  ☎️  */} ☎️
                   </p>
                 )}
               </InView>
