@@ -3,7 +3,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import resumeData from "../resumeData.json";
 import { MailIcon, AtSymbolIcon, PhoneIcon } from "@heroicons/react/solid";
 
-function Contact() {
+import styles from "../styles/contact-effects.module.css";
+
+import { InView } from "react-intersection-observer";
+
+function Contact({ myRef, myElementIsVisible }) {
   const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
@@ -11,6 +15,8 @@ function Contact() {
   }, []);
 
   /* in resumeData -> replace react native with styled components */
+
+  /* console.log(myElementIsVisible); */
 
   return (
     <div
@@ -25,17 +31,34 @@ function Contact() {
           } transform transition duration-1000  ease-in-out flex text-white w-2/3 xs:w1/2  `}
         >
           <div className="flex flex-col">
-            <h1 className="xs:text-5xl text-3xl text-white font-bold //mr-10 mb-2 xs:mb-4">
-              Ping me!
+            <h1
+              className={` xs:text-5xl text-3xl text-white font-bold mb-2 xs:mb-4   xs:flex `}
+            >
+              Ping me!&nbsp;&nbsp;
+              <InView triggerOnce>
+                {({ inView: myElementIsVisible, ref: myRef, entry }) => (
+                  <p
+                    ref={myRef}
+                    className={`${styles.eomji} ${
+                      myElementIsVisible ? styles.animateEmoji : ""
+                    }   `}
+                  >
+                    ☎️
+                  </p>
+                )}
+              </InView>
             </h1>
-            <p className="xs:text-base text-sm   //picture-covering-mail-text: w-10/12 xs:w-2/3   max-w-3xl">
+
+            <p
+              className={`xs:text-base text-sm //picture-covering-mail-text: w-10/12 xs:w-2/3 max-w-3xl`}
+            >
               I am Peter Eriksson, a self-taught front end-developer, especially
               in to React.js. Always eager to learn new stuff. Fluent in Swedish
               and English.
             </p>
             {/*  <p>75 university credits computer science.</p> */}
 
-            {/*Contact info section  */}
+            {/*Contact info */}
             <section className="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 //picture-covering-mail-text: mt-4 xs:mt-2.5   ">
               <div>
                 <h3 className="xs:text-md font-bold   hidden xs:inline">

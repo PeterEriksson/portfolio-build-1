@@ -6,8 +6,11 @@ import Header from "../components/Header";
 import Stack from "../components/Stack";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
   return (
     <div>
       <Head>
@@ -20,7 +23,7 @@ export default function Home() {
       <Header />
       <Stack />
       <Work />
-      <Contact />
+      <Contact myRef={myRef} myElementIsVisible={myElementIsVisible} />
     </div>
   );
 }
