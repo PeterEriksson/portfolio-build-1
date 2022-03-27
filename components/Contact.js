@@ -116,7 +116,7 @@ function Contact({ myEmojiRef, myEmojiElementIsVisible }) {
         </div>
 
         {/* right image container */}
-        <div className="//picture-covering-mail-text: pb-14 xs:pb-0">
+        <div className="//picture-covering-mail-text: //pb-14 xs:pb-0  ">
           <LazyLoadImage
             src={resumeData.header.imgGuinness2}
             effect="blur"

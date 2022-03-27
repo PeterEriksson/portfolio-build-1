@@ -81,7 +81,7 @@ function Work() {
 
             <a
               href={resumeData.work[index].githubUrl}
-              className="font-extralight text-xs hover:underline mt-2"
+              className="font-extralight text-xs hover:underline mt-1.5     //bg-red-500 w-1/3 mx-auto"
               target="_blank"
             >
               Github - read more
@@ -89,7 +89,7 @@ function Work() {
             {resumeData.work[index].link && (
               <a
                 href={resumeData.work[index]?.link}
-                className="font-extralight text-xs hover:underline mt-2"
+                className="font-extralight text-xs hover:underline mt-1.5      //bg-red-500 w-1/5  mx-auto"
                 target="_blank"
               >
                 Link to site
