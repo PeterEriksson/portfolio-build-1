@@ -1,5 +1,5 @@
 # 💼 Resume/Portfolio website
-A single page portfolio-presentation project. Built in React with Tailwind css. A brief introduction of myself and my skills + some work presented
+A single page portfolio-presentation project. Responsive layout for both desktop and mobile sizes. Built in React with Tailwind css. A brief introduction of myself and my skills + some work presented
 
 ## Author
 
