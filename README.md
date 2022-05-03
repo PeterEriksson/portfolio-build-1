@@ -14,6 +14,7 @@ Website: [Peter resume](https://peter-portfolio-app.netlify.app/) <br />
 
 - React
 - Tailwind CSS
+- Flexbox
 - react-intersection-observer
 - react-scroll
 - react-typical
@@ -31,4 +32,15 @@ $ npm run dev
 Open http://localhost:3007 with your browser to see the result.
 
 ## Screenshots
-#### Intro page ....
+#### Intro page 
+![intro](https://user-images.githubusercontent.com/17027312/166433485-47389d33-8d9e-4f07-9a1e-47a5f3e8165e.png)
+
+#### Tech-stack page 
+![tech-stack](https://user-images.githubusercontent.com/17027312/166433538-2e195c3a-ecd2-4dd6-9e67-441033e58eef.png)
+
+#### Projects presentation page 
+![projects](https://user-images.githubusercontent.com/17027312/166433594-2443ff53-120b-429f-b2b0-47677ebbbc37.png)
+
+#### Contact page 
+![contact](https://user-images.githubusercontent.com/17027312/166433619-a3df9a54-5dc3-4461-b918-d77daaf0e3be.png)
+
