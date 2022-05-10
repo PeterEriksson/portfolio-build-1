@@ -10,6 +10,11 @@ import { useInView } from "react-intersection-observer";
 
 export default function Home() {
   const { ref: myEmojiRef, inView: myEmojiElementIsVisible } = useInView();
+  const { ref: myStackRef, inView: myStackElementIsVisible } = useInView();
+  const { ref: myStackCardsRef, inView: myStackCardsElementIsVisible } =
+    useInView();
+  const { ref: myContactTextRef, inView: myContactTextElementIsVisible } =
+    useInView();
 
   return (
     <div>
@@ -21,11 +26,18 @@ export default function Home() {
 
       <Navigation />
       <Header />
-      <Stack />
+      <Stack
+        myStackRef={myStackRef}
+        myStackElementIsVisible={myStackElementIsVisible}
+        myStackCardsRef={myStackCardsRef}
+        myStackCardsElementIsVisible={myStackCardsElementIsVisible}
+      />
       <Work />
       <Contact
         myEmojiRef={myEmojiRef}
         myEmojiElementIsVisible={myEmojiElementIsVisible}
+        myContactTextRef={myContactTextRef}
+        myContactTextElementIsVisible={myContactTextElementIsVisible}
       />
     </div>
   );

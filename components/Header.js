@@ -27,7 +27,7 @@ function Header() {
           />
         </div>
         <div className="text-white text-center md:text-left ">
-          <h2
+          <h1
             className={`
           ${
             !animated && "translate-y-10 opacity-0"
@@ -37,8 +37,8 @@ function Header() {
             {resumeData.header.text[0]}
             <br />
             {resumeData.header.text[1]}
-          </h2>
-          <h1
+          </h1>
+          <h2
             className={`${
               !animated && "translate-y-10 opacity-0"
             } transform transition duration-1000 ease-in-out text-2xl  text-gray-500`}
@@ -50,7 +50,7 @@ function Header() {
               loop={Infinity}
               className="inline-block"
             />
-          </h1>
+          </h2>
           <ScrollLink to="stack" smooth="true">
             <button className="bg-indigo-500 transition duration-150 transform hover:scale-110 py-3 px-10 text-lg uppercase rounded-xl mt-5 mb-3 focus:outline-none">
               {resumeData.header.btnText}

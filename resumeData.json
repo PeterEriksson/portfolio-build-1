@@ -40,20 +40,26 @@
         "alt": "React",
         "desc": "React.js"
       },
+
       {
-        "img": "https://firebase.google.com/images/social.png",
+        "img": "https://i.pinimg.com/236x/09/63/a6/0963a6051212c3268e25d640c0410583.jpg",
         "alt": "Firebase",
-        "desc": "Firebase"
+        "desc": ""
       },
       {
         "img": "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
         "alt": "Tailwind",
-        "desc": "TailwindCSS"
+        "desc": ""
       },
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png",
         "alt": "Next.js",
         "desc": "Next.js"
+      },
+      {
+        "img": "https://i.pinimg.com/564x/66/d5/23/66d5238900aab3d7b86dc5e53a77c817.jpg",
+        "alt": "Typescript",
+        "desc": ""
       },
 
       {
