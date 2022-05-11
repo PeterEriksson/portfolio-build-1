@@ -47,6 +47,11 @@
         "desc": ""
       },
       {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8Cg1tWBxmCU8jL-fLW-TbZ48DXeb8YtUaw&usqp=CAU",
+        "alt": "Sanity",
+        "desc": "Sanity"
+      },
+      {
         "img": "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
         "alt": "Tailwind",
         "desc": ""
@@ -68,7 +73,7 @@
         "desc": "Redux"
       }
     ],
-    "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend. For state management I can use Context api, Redux or Recoil. Currently learning Typescript and also React Native. Write in VS Code.",
+    "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend, can also use Sanity. For state management I can use Context api, Redux or Recoil. Currently learning Typescript and also React Native. Write in VS Code.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English.",
     "additionalTypical": [
       "75 credits computer science at university.",

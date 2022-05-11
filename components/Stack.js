@@ -70,9 +70,11 @@ function Stack({
         {({ inView: myStackElementIsVisible, ref: myStackRef, entry }) => (
           <p
             ref={myStackRef}
-            className={`${
+            className={`xs:${
               myStackElementIsVisible && styles.slidingElement
-            } /w-4/5  w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-sm  xs:text-base`}
+            } ${
+              !myStackElementIsVisible && "translate-y-10 opacity-0"
+            } transform transition duration-1000 ease-in-out      w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-xs  xs:text-base`}
           >
             {resumeData.stack.dummyText2}
           </p>
