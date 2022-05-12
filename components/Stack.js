@@ -49,13 +49,13 @@ function Stack({
                   myStackCardsElementIsVisible
                     ? "transform transition duration-1000  ease-in-out "
                     : "opacity-0"
-                }        p-3 group bg-white  w-24 h-24 //w-28 //h-28 xs:w-40 xs:h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full`}
+                }   p-3 group bg-white  w-24 h-24   xs:w-40 xs:h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full`}
               >
                 <LazyLoadImage
                   src={item.img}
                   alt={item.alt}
                   key={i}
-                  className="rounded-full object-contain"
+                  className="rounded-full object-contain "
                 />
                 <p className="flex cursor-default font-normal justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-verySmall xs:text-sm">
                   {item.desc}
@@ -72,7 +72,7 @@ function Stack({
             ref={myStackRef}
             className={`  ${
               !myStackElementIsVisible &&
-              "/translate-y-10 translate-x-16 opacity-0"
+              "translate-y-10 /translate-x-10 opacity-0"
             } transform transition duration-1000 ease-in-out      w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-xs  xs:text-base`}
           >
             {resumeData.stack.dummyText2}

@@ -23,7 +23,7 @@ function Contact({
     <div
       id="contact"
       style={{ background: "#091c29" }}
-      className="flex min-h-screen justify-center    forShape: relative"
+      className="flex min-h-screen justify-center    for-shape:-> relative"
     >
       {/* TEST TEMP SHAPE DIVIDER */}
       <div className={`${styles.customShapeDividerTop}`}>
@@ -45,7 +45,7 @@ function Contact({
           <h1
             className={` xs:text-5xl text-3xl text-white font-bold mb-2 xs:mb-4   smaller:flex `}
           >
-            Ping me!&nbsp;&nbsp;
+            Ping me!&nbsp;
             <InView triggerOnce>
               {({
                 inView: myEmojiElementIsVisible,

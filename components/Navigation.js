@@ -4,11 +4,21 @@ import styles from "../styles/button-active.module.css";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
+import mobileStyles from "../styles/navigation-effects.module.css";
 
 function Navigation() {
   const [menuActive, setMenuActive] = useState(false);
+  const [slideClose, setSlideClose] = useState(false);
 
-  const [isShowing, setIsShowing] = useState(false);
+  const handleMenuClose = () => {
+    setMenuActive(false);
+    setSlideClose(true);
+  };
+
+  const handleMenuOpen = () => {
+    setMenuActive(true);
+    setSlideClose(false);
+  };
 
   return (
     <div
@@ -37,12 +47,12 @@ function Navigation() {
 
           {menuActive ? (
             <XIcon
-              onClick={() => setMenuActive((prev) => !prev)}
+              onClick={handleMenuClose}
               className=" h-7 w-7 cursor-pointer sm:hidden    transform transition duration-150 ease-in-out"
             />
           ) : (
             <MenuIcon
-              onClick={() => setMenuActive((prev) => !prev)}
+              onClick={handleMenuOpen}
               className=" h-7 w-7 cursor-pointer sm:hidden     transform transition duration-150 ease-in-out"
             />
           )}
@@ -69,13 +79,12 @@ function Navigation() {
         {/*HAMBURGER MENU CONTAINER */}
         <Transition
           show={menuActive}
-          enter="transition-opacity duration-100"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-300"
+          leave="transition-opacity duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-          className={`sm:hidden flex flex-col space-y-1 items-center pb-2 w-full  //bg-red-500 ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue   //transform //transition //ease-in-out   `}
+          className={` ${menuActive ? mobileStyles.slideDown : ""}    ${
+            slideClose && mobileStyles.slideClose
+          }     sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
             to="header"

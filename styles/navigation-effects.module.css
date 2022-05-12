@@ -1,0 +1,41 @@
+/* https://stackoverflow.com/questions/44871712/making-nav-bar-slide-into-view-from-top */
+
+.slideDown {
+  z-index: 1030;
+  animation-name: _slideDown;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate(0, -15px);
+}
+
+@keyframes _slideDown {
+  0% {
+    transform: translate(0, -15px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.slideClose {
+  z-index: 1030;
+  animation-name: _slideClose;
+  animation-duration: 2.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+  transform: translate(0, 0px);
+}
+
+@keyframes _slideClose {
+  0% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -250px);
+    opacity: 0;
+  }
+}
