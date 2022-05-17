@@ -52,7 +52,7 @@ function Header() {
               className="inline-block"
             />
           </h2>
-          <ScrollLink to="stack" smooth="true">
+          <ScrollLink to="skills" smooth="true">
             <button className="bg-indigo-500 transition duration-150 transform hover:scale-110 py-3 px-10 text-lg uppercase rounded-xl mt-5 mb-3 focus:outline-none">
               {resumeData.header.btnText}
             </button>
