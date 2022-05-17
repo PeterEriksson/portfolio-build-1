@@ -5,10 +5,9 @@ import {
   ArrowCircleLeftIcon,
   ArrowCircleRightIcon,
 } from "@heroicons/react/solid";
+import Image from "next/image";
 
 function Work() {
-  /* Try a light gray line under project desc. */
-
   const [index, setIndex] = useState(0);
 
   const handleClickRight = () => {
@@ -52,15 +51,16 @@ function Work() {
             i === index
               ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition duration-700 ease-in border border-gray-200    xs:mx-0 mx-5   "
               : "opacity-0 flex z-0  absolute"
-          }`}
+          } pt-2`}
         >
-          <LazyLoadImage
+          <Image
             src={resumeData.work[index].url2}
             /* effect="blur" */
             className="rounded-xl mt-3"
-            /* height="200px" */
-            /* width="200px" */
+            height="200px"
+            width="300px"
             /* Canva edited images sizes 👆 */
+            /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
           />
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"

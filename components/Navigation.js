@@ -1,15 +1,22 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
-import styles from "../styles/button-active.module.css";
+import styles from "../styles/navigation.module.css";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
-import mobileStyles from "../styles/navigation-effects.module.css";
+import mobileStyles from "../styles/navMobile-effects.module.css";
 
 function Navigation() {
   const [menuActive, setMenuActive] = useState(false);
   const [slideClose, setSlideClose] = useState(false);
+  const [linkActive, setLinkActive] = useState("");
 
+  const handleSetActive = (to) => {
+    setLinkActive(to);
+    /*  console.log(linkActive); */
+  };
+
+  /* Look for :hover::after solution instead */
   const handleMenuClose = () => {
     setMenuActive(false);
     setSlideClose(true);
@@ -34,14 +41,23 @@ function Navigation() {
             activeClass={styles._active}
             spy={true}
             offset={-40}
+            onSetActive={handleSetActive}
             /* for some space between link and border -> */
             /* className="pb-1" */
             /* avoid navbar changing height -> have an "invinsible" bottom border -> */
-            className="border-b-2 border-mainDarkBlue"
+            className={`border-b-2 border-mainDarkBlue ${
+              linkActive !== "header" && styles.hoverAnimation
+            } `}
           >
-            <h1 className="cursor-pointer text-3xl font-bold">
+            <h1
+              className={`cursor-pointer text-3xl font-bold  opacity-75 hover:opacity-100   ${
+                "header" == linkActive && "!opacity-100"
+              }   `}
+            >
               {resumeData.nav.logo}
-              <span className="w-2 h-2 bg-red-500 inline-block rounded-full ml-2 mb-1"></span>
+              <span
+                className={` w-2 h-2 bg-red-500 inline-block rounded-full ml-2 mb-1`}
+              ></span>
             </h1>
           </ScrollLink>
 
@@ -66,12 +82,21 @@ function Navigation() {
               key={i}
               activeClass={styles._active}
               spy={true}
+              onSetActive={handleSetActive}
               /* offset={} */
               /* for some space between link and border -> */
               /* className="pb-1" */
-              className="border-b-2 border-mainDarkBlue"
+              className={` //avoidNavChangingSize: border-b-2 border-mainDarkBlue `}
             >
-              <span className="cursor-pointer text-xl ">{item.text}</span>
+              <span
+                className={`cursor-pointer text-xl    ${
+                  item.to !== linkActive && styles.hoverAnimation
+                }  opacity-75 hover:opacity-100 ${
+                  item.to == linkActive && "!opacity-100"
+                } `}
+              >
+                {item.text}
+              </span>
             </ScrollLink>
           ))}
         </div>

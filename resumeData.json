@@ -2,14 +2,14 @@
   "nav": {
     "logo": "PE",
     "links": [
-      { "text": "Skills", "to": "stack" },
+      { "text": "Skills", "to": "skills" },
       { "text": "Work", "to": "work" },
       { "text": "Contact", "to": "contact" }
     ]
   },
   "header": {
-    "img": "https://user-images.githubusercontent.com/17027312/134349999-06919dce-11f2-42b9-9c0c-2b27d8dcce51.jpeg",
-    "img2": "https://scontent.fbma3-1.fna.fbcdn.net/v/t1.6435-9/33653530_10156725656547345_1057922892513148928_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=pNNJfjwACl8AX-xCoCO&_nc_ht=scontent.fbma3-1.fna&oh=d2fe20f91cf66737775fb88c36d3b29f&oe=60CFDC1C",
+    "img": "/peterWedding.jpeg",
+    "img2": "https://user-images.githubusercontent.com/17027312/134349999-06919dce-11f2-42b9-9c0c-2b27d8dcce51.jpeg",
     "imgGuinness": "https://user-images.githubusercontent.com/17027312/119741414-efeac380-be85-11eb-9b6c-f86b7d6e8179.png",
     "imgGuinness2": "https://user-images.githubusercontent.com/17027312/121216942-a638aa80-c881-11eb-8ea2-dc0d44815731.png",
     "imgPlaceholder": "data:image/jpeg;base64,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",
@@ -33,12 +33,12 @@
       {
         "img": "https://i.pinimg.com/236x/53/19/88/5319885958f89815e5431363f39ff937.jpg",
         "alt": "CSS HTML JS",
-        "desc": "HTML, JS, CSS"
+        "desc": ""
       },
       {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png",
+        "img": "https://i.pinimg.com/236x/e4/92/e5/e492e5c18a7f6d7aa650b36438b75860.jpg",
         "alt": "React",
-        "desc": "React.js"
+        "desc": ""
       },
 
       {
@@ -47,9 +47,9 @@
         "desc": ""
       },
       {
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8Cg1tWBxmCU8jL-fLW-TbZ48DXeb8YtUaw&usqp=CAU",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANKY-1lmxsQlt1ucGeiN-ImnopzhvgaKzBQ&usqp=CAU",
         "alt": "Sanity",
-        "desc": "Sanity"
+        "desc": ""
       },
       {
         "img": "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
@@ -59,7 +59,7 @@
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png",
         "alt": "Next.js",
-        "desc": "Next.js"
+        "desc": ""
       },
       {
         "img": "https://i.pinimg.com/564x/66/d5/23/66d5238900aab3d7b86dc5e53a77c817.jpg",
@@ -68,9 +68,9 @@
       },
 
       {
-        "img": "data:image/png;base64,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",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAOPBUXd1_EelWgweD4mpQgj305mtMC-Vgw&usqp=CAU",
         "alt": "Redux",
-        "desc": "Redux"
+        "desc": ""
       }
     ],
     "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend, can also use Sanity. For state management I can use Context api, Redux or Recoil. Currently learning Typescript and also React Native. Write in VS Code.",
@@ -91,7 +91,7 @@
       "url": "https://user-images.githubusercontent.com/17027312/119741286-b1550900-be85-11eb-8e56-70c92b034f5a.jpeg",
       "tags": "#Vanilla-js, #HTML, #CSS",
       "githubUrl": "https://github.com/PeterEriksson/OOP-Game-Show-App",
-      "url2": "https://user-images.githubusercontent.com/17027312/120502797-054e7900-c3c3-11eb-8584-883a370d9b90.png"
+      "url2": "/projGame.png"
     },
 
     {
@@ -100,7 +100,7 @@
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React, #TailwindCss, #react-beautiful-dnd",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-2",
-      "url2": "https://user-images.githubusercontent.com/17027312/134347264-6f07051a-4066-4bc9-baf9-96df541547fd.png",
+      "url2": "/projTodo.png",
       "link": "https://todo-app-by-peter.netlify.app/"
     },
     {
@@ -109,7 +109,7 @@
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Redux",
       "githubUrl": "https://github.com/PeterEriksson/picsome",
-      "url2": "https://user-images.githubusercontent.com/17027312/152823181-755b4256-ae92-4ab3-8057-75ac7036c8d9.png",
+      "url2": "/projPicSome.png",
       "link": "https://picsome-onlinestore.netlify.app/"
     },
     {
@@ -118,7 +118,7 @@
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #dynamic-routes",
       "githubUrl": "https://github.com/PeterEriksson/Countries-app-main",
-      "url2": "https://user-images.githubusercontent.com/17027312/136710035-d0e7cb3f-b620-4dfc-a26e-a9719fa6bae7.png",
+      "url2": "/projCountries.png",
       "link": "https://countries-app-peter.netlify.app/"
     },
 
@@ -126,7 +126,7 @@
       "title": "Gaming portal",
       "desc": "A larger app built for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
-      "url2": "https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png",
+      "url2": "/projDhgb.png",
       "tags": "#React, #Firebase, #Context-api, #Cloud-functions",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/"

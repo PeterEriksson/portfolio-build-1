@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import resumeData from "../resumeData.json";
 import { MailIcon, AtSymbolIcon, PhoneIcon } from "@heroicons/react/solid";
-
 import styles from "../styles/contact-effects.module.css";
-
 import { InView } from "react-intersection-observer";
+import Image from "next/image";
 
 function Contact({
   myEmojiRef,
@@ -13,12 +12,6 @@ function Contact({
   myContactTextRef,
   myContactTextElementIsVisible,
 }) {
-  const [animated, setAnimated] = useState(false);
-
-  useEffect(() => {
-    setAnimated(true);
-  }, []);
-
   return (
     <div
       id="contact"
@@ -114,32 +107,41 @@ function Contact({
                     <p className="text-sm">peter...@hotmail.com</p>
                   </div>
                 </div>
-                <div>
+                <div className="">
                   <h3 className="xs:text-md font-bold   hidden xs:inline">
                     Linkedin
                   </h3>
-                  <a
-                    href="https://www.linkedin.com/in/peter-eriksson-13b8b1120/"
-                    target="_blank"
-                  >
-                    <img
-                      className="h-5 w-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
-                      alt="linkedin"
-                    />
-                  </a>
+
+                  <div className="/bg-red-500 w-6">
+                    <a
+                      href="https://www.linkedin.com/in/peter-eriksson-13b8b1120/"
+                      target="_blank"
+                    >
+                      <img
+                        className="h-5 w-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
                 </div>
                 <div>
-                  <h3 className="xs:text-md font-bold   hidden xs:inline">
+                  <h3 className="xs:text-md font-bold hidden xs:inline">
                     Github
                   </h3>
-                  <a href="https://github.com/PeterEriksson" target="_blank">
-                    <img
-                      className="w-5 h-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
-                      src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
-                      alt="github"
-                    />
-                  </a>
+                  <div className="/bg-red-500 w-6">
+                    <a
+                      className=""
+                      href="https://github.com/PeterEriksson"
+                      target="_blank"
+                    >
+                      <img
+                        className="w-5 h-5 xs:w-6 xs:h-6 rounded-lg lg:mx-auto"
+                        src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
+                        alt="github"
+                      />
+                    </a>
+                  </div>
                 </div>
               </section>
             )}
@@ -149,9 +151,10 @@ function Contact({
         {/* right image container */}
         <div className="//picture-covering-mail-text: //pb-14 xs:pb-0  ">
           <LazyLoadImage
-            src={resumeData.header.imgGuinness2}
+            src="/peterprofilebeer.png"
+            /* src={resumeData.header.imgGuinness2} */
             effect="blur"
-            className="rounded-xl  "
+            className="rounded-xl "
           />
         </div>
       </div>

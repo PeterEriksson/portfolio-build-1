@@ -4,6 +4,7 @@ import resumeData from "../resumeData.json";
 import Typical from "react-typical";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import Image from "next/image";
 
 function Header() {
   const [animated, setAnimated] = useState(false);
@@ -23,7 +24,7 @@ function Header() {
           <LazyLoadImage
             src={resumeData.header.img}
             effect="blur"
-            className="rounded-xl"
+            className={`rounded-xl`}
           />
         </div>
         <div className="text-white text-center md:text-left ">

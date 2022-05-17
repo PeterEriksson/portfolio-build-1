@@ -12,7 +12,8 @@ function Stack({
 }) {
   return (
     <div
-      id="stack"
+      /* id="stack" */
+      id="skills"
       className="min-h-screen flex flex-col items-center justify-center bg-gray-200   "
     >
       <InView triggerOnce>
