@@ -11,19 +11,11 @@ function Work() {
   const [index, setIndex] = useState(0);
 
   const handleClickRight = () => {
-    setTimeout(() => {
-      if (index !== resumeData.work.length - 1) {
-        setIndex((i) => i + 1);
-      } else {
-        setIndex(0);
-      }
-    }, 500);
-
-    /* if (index !== resumeData.work.length - 1) {
+    if (index !== resumeData.work.length - 1) {
       setIndex((i) => i + 1);
     } else {
       setIndex(0);
-    } */
+    }
   };
 
   const handleClickLeft = () => {
@@ -57,12 +49,13 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition      /commentOut,tryTimeout,do200/duration-700 duration-200      ease-in border border-gray-200    xs:mx-0 mx-5   "
+              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition       duration-500      ease-in border border-gray-200    xs:mx-0 mx-5   "
               : "opacity-0 flex z-0  absolute"
           } pt-2`}
         >
           <Image
             src={resumeData.work[index].url2}
+            priority
             /* effect="blur" */
             className={`rounded-xl //mt-3   `}
             height="200px"
