@@ -53,12 +53,12 @@ function Work() {
               : "opacity-0 flex z-0  absolute"
           } pt-2`}
         >
-          <Image
+          <img
             src={resumeData.work[index].url2}
             /* effect="blur" */
             className="rounded-xl mt-3"
-            height="200px"
-            width="300px"
+            /* height="200px"
+            width="300px" */
             /* Canva edited images sizes 👆 */
             /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
           />
