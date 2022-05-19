@@ -1,6 +1,9 @@
 .animateEmoji {
-  animation-duration: 4s;
-  animation-name: shake;
+  animation-duration: 4.5s;
+  animation-name: rocket;
+
+  /* For the rocket -> make it stay disappeared */
+  animation-fill-mode: forwards;
 }
 
 @keyframes rocket {

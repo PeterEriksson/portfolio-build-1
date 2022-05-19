@@ -50,7 +50,7 @@ function Navigation() {
             } `}
           >
             <h1
-              className={`cursor-pointer text-3xl font-bold  opacity-75 hover:opacity-100   ${
+              className={`cursor-pointer text-3xl font-bold  opacity-opacityNavLink hover:opacity-100   ${
                 "header" == linkActive && "!opacity-100"
               }   `}
             >
@@ -91,9 +91,7 @@ function Navigation() {
               <span
                 className={`cursor-pointer text-xl    ${
                   item.to !== linkActive && styles.hoverAnimation
-                }  opacity-75 hover:opacity-100 ${
-                  item.to == linkActive && "!opacity-100"
-                } `}
+                }  opacity-opacityNavLink hover:opacity-100  `}
               >
                 {item.text}
               </span>

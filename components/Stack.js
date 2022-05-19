@@ -71,10 +71,12 @@ function Stack({
         {({ inView: myStackElementIsVisible, ref: myStackRef, entry }) => (
           <p
             ref={myStackRef}
-            className={`  ${
-              !myStackElementIsVisible &&
-              "translate-y-10 /translate-x-10 opacity-0"
-            } transform transition duration-1000 ease-in-out      w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-xs  xs:text-base`}
+            className={`
+              ${
+                !myStackElementIsVisible &&
+                "translate-y-10 /translate-x-10 opacity-0"
+              }
+             transform transition duration-1000 ease-in-out      w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-xs  xs:text-base`}
           >
             {resumeData.stack.dummyText2}
           </p>

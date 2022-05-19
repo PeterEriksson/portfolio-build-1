@@ -16,6 +16,10 @@ module.exports = {
       },
       maxWidth: {
         twoPointFivexl: "700px",
+        projectContent: "320px",
+      },
+      opacity: {
+        opacityNavLink: 0.85,
       },
     },
   },

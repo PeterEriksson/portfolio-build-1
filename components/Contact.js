@@ -49,9 +49,10 @@ function Contact({
                   ref={myEmojiRef}
                   className={`${styles.eomji} ${
                     myEmojiElementIsVisible ? styles.animateEmoji : ""
-                  }   `}
+                  } sm:inline-block hidden  `}
                 >
-                  ☎️
+                  {/* ☎️  */}
+                  🚀
                 </p>
               )}
             </InView>

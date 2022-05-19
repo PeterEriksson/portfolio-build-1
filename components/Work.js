@@ -39,9 +39,6 @@ function Work() {
           Projects
         </h1>
         <h3 className="xs:text-xl text-lg font-extralight">Some of my work</h3>
-        {/* <h3 className="text-xs font-light">
-          Check Github readme for thorough explanation
-        </h3> */}
       </div>
 
       {resumeData.work.map((item, i) => (
@@ -50,27 +47,41 @@ function Work() {
           className={`${
             i === index
               ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition       duration-500      ease-in border border-gray-200    xs:mx-0 mx-5   "
-              : "opacity-0 flex z-0  absolute"
-          } pt-2`}
+              : "opacity-0 /flex z-0  absolute     "
+          } pt-3  px-8 pb-6   `}
         >
-          <Image
-            src={resumeData.work[index].url2}
-            priority
-            /* effect="blur" */
-            className={`rounded-xl //mt-3   `}
-            height="200px"
-            width="300px"
-            /* Canva edited images sizes 200*200 👆 */
-            /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
-          />
+          <a
+            href={resumeData.work[index]?.link}
+            target="_blank"
+            className={` ${
+              i === index &&
+              "overflow-hidden rounded-xl //bg-red-500  heightEqualsWithImageHeightBelow: h-52  "
+            }    `}
+          >
+            <Image
+              src={resumeData.work[index].url2}
+              /* priority */
+              /* effect="blur" */
+              className={`  hover:scale-105   transition transform duration-150 ease-in   `}
+              height="208px"
+              width="320px" /* projectContent: "320px", (used in description) */
+
+              /* Canva edited images sizes 200*200 👆 */
+              /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
+            />
+          </a>
+
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
-            className="flex flex-col h-48 text-center mt-3"
+            className="flex flex-col h-48  text-center mt-2"
           >
-            <h2 className="xs:text-xl text-base font-bold">
+            <h2
+              className={`xs:text-xl text-base font-bold     "
+               `}
+            >
               {resumeData.work[index].title}
             </h2>
-            <p className="max-w-sm text-center font-extralight mx-3.5   xs:text-sm text-xs">
+            <p className="/max-w-sm max-w-projectContent  text-center font-extralight mx-3.5   xs:text-sm text-xs">
               {resumeData.work[index].desc}
             </p>
 
@@ -82,7 +93,7 @@ function Work() {
 
             <a
               href={resumeData.work[index].githubUrl}
-              className="font-extralight text-xs hover:underline mt-1.5     //bg-red-500 w-1/3 mx-auto"
+              className="font-extralight text-xs hover:underline mt-1.5     //bg-red-500 /w-1/3 mx-auto"
               target="_blank"
             >
               Github - read more
@@ -90,7 +101,7 @@ function Work() {
             {resumeData.work[index].link && (
               <a
                 href={resumeData.work[index]?.link}
-                className="font-extralight text-xs hover:underline mt-1.5      //bg-red-500 w-1/5  mx-auto"
+                className="font-extralight text-xs hover:underline mt-1.5      //bg-red-500 /w-1/5  mx-auto"
                 target="_blank"
               >
                 Link to site

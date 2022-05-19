@@ -100,7 +100,7 @@
       "url": "https://user-images.githubusercontent.com/17027312/119873191-91285700-bf24-11eb-9ee5-72db243db28b.png",
       "tags": "#React, #TailwindCss, #react-beautiful-dnd",
       "githubUrl": "https://github.com/PeterEriksson/todo-app-2",
-      "url2": "/projTodo.png",
+      "url2": "/projTodoTest.png",
       "link": "https://todo-app-by-peter.netlify.app/"
     },
     {
@@ -109,16 +109,16 @@
       "url": "",
       "tags": "#React, #TailwindCss, #Next.js, #Redux",
       "githubUrl": "https://github.com/PeterEriksson/picsome",
-      "url2": "/projPicSome.png",
+      "url2": "/projPicSomeTest.png",
       "link": "https://picsome-onlinestore.netlify.app/"
     },
     {
       "title": "Countries app",
-      "desc": "Challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js used for data fetching and dynamic routing between different country pages. Search+filter features.",
+      "desc": "Challenge from frontendmentor.io. Working with the REST countries api, the app displays info about each country. Next.js features used for data fetching and dynamic routing between different country pages. Search+filter features.",
       "url": "",
-      "tags": "#React, #TailwindCss, #Next.js, #dynamic-routes",
+      "tags": "#React, #Next.js",
       "githubUrl": "https://github.com/PeterEriksson/Countries-app-main",
-      "url2": "/projCountries.png",
+      "url2": "/projCountriesTest.png",
       "link": "https://countries-app-peter.netlify.app/"
     },
 
@@ -126,7 +126,7 @@
       "title": "Gaming portal",
       "desc": "A larger app built for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
-      "url2": "/projDhgb.png",
+      "url2": "/projDhgbTest.png",
       "tags": "#React, #Firebase, #Context-api, #Cloud-functions",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/"
