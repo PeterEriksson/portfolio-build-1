@@ -21,6 +21,9 @@ module.exports = {
       opacity: {
         opacityNavLink: 0.85,
       },
+      height: {
+        projectCard: "450px",
+      },
     },
   },
   variants: {

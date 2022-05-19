@@ -43,12 +43,13 @@ function Work() {
 
       {resumeData.work.map((item, i) => (
         <div
+          aria-label="PROJECT CARD"
           key={i}
           className={`${
             i === index
               ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition       duration-500      ease-in border border-gray-200    xs:mx-0 mx-5   "
               : "opacity-0 /flex z-0  absolute     "
-          } pt-3  px-8 pb-6   `}
+          } pt-3 px-8 pb-6     xs:h-projectCard h-96 `}
         >
           <a
             href={resumeData.work[index]?.link}
@@ -73,7 +74,7 @@ function Work() {
 
           <div
             aria-label="DIV FOR:project header desc + tags github. Fixed height -> so buttons pos below are consistent"
-            className="flex flex-col h-48  text-center mt-2"
+            className="flex flex-col text-center pt-2  /h-48  "
           >
             <h2
               className={`xs:text-xl text-base font-bold     "
