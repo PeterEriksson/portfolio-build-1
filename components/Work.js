@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 
 function Work() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
 
   const handleClickRight = () => {
     if (index !== resumeData.work.length - 1) {
@@ -47,7 +47,7 @@ function Work() {
           key={i}
           className={`${
             i === index
-              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition       duration-500      ease-in border border-gray-200    xs:mx-0 mx-5   "
+              ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition duration-500  ease-in border border-gray-200 xs:mx-0 mx-5   "
               : "opacity-0 /flex z-0  absolute     "
           } pt-3 px-8 pb-6     xs:h-projectCard h-96 `}
         >
@@ -59,13 +59,15 @@ function Work() {
               "overflow-hidden rounded-xl //bg-red-500  heightEqualsWithImageHeightBelow: h-52  "
             }    `}
           >
-            <Image
+            <img
+              alt="current project pic"
               src={resumeData.work[index].url2}
               /* priority */
               /* effect="blur" */
-              className={`  hover:scale-105   transition transform duration-200 ease-in   `}
-              height="208px"
-              width="330px" /* projectContent: "320px", (used in description) */
+              className={`hover:scale-105 transition transform duration-200 ease-in     `}
+              /* height="208px"
+              width="330px" */
+              /* projectContent: "320px", (used in description) */
 
               /* Canva edited images sizes 200*200 👆 */
               /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
@@ -125,7 +127,8 @@ function Work() {
             className="xs:h-8 h-7 cursor-pointer"
           />
         </div>
-        {/* (EXPERIMENT) NEW DOT SLIDE FEATURE */}
+
+        {/* DOTS */}
         <div className="flex mt-2">
           {resumeData.work.map((item, i) => (
             <span
