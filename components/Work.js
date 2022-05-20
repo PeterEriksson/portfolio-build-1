@@ -63,9 +63,9 @@ function Work() {
               src={resumeData.work[index].url2}
               /* priority */
               /* effect="blur" */
-              className={`  hover:scale-105   transition transform duration-150 ease-in   `}
+              className={`  hover:scale-105   transition transform duration-200 ease-in   `}
               height="208px"
-              width="320px" /* projectContent: "320px", (used in description) */
+              width="330px" /* projectContent: "320px", (used in description) */
 
               /* Canva edited images sizes 200*200 👆 */
               /* Try use larger size pictures instead? (using Next element instead of LazyLoad) */
@@ -118,7 +118,7 @@ function Work() {
         <div className="flex mt-3 space-x-2">
           <ArrowCircleLeftIcon
             onClick={handleClickLeft}
-            className="xs:h-8 h-7 cursor-pointer"
+            className="xs:h-8 h-7 cursor-pointer   "
           />
           <ArrowCircleRightIcon
             onClick={handleClickRight}
