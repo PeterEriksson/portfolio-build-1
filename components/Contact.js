@@ -151,12 +151,19 @@ function Contact({
 
         {/* right image container */}
         <div className="//picture-covering-mail-text: //pb-14 xs:pb-0  ">
-          <LazyLoadImage
-            src="/peterprofilebeer.png"
-            /* src={resumeData.header.imgGuinness2} */
-            effect="blur"
-            className="rounded-xl "
-          />
+          <InView /* triggerOnce */>
+            {({ inView: myEmojiElementIsVisible, ref: myEmojiRef, entry }) => (
+              <img
+                ref={myEmojiRef}
+                src="/peterprofilebeer.png"
+                className={`rounded-xl    ${
+                  myEmojiElementIsVisible
+                    ? "transform transition duration-1000  ease-in-out"
+                    : "opacity-0"
+                }`}
+              />
+            )}
+          </InView>
         </div>
       </div>
     </div>

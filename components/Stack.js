@@ -36,7 +36,7 @@ function Stack({
       </InView>
 
       <div className="flex flex-wrap justify-center mt-5  max-w-3xl  ">
-        <InView triggerOnce>
+        <InView /* triggerOnce */>
           {({
             inView: myStackCardsElementIsVisible,
             ref: myStackCardsRef,
@@ -49,18 +49,18 @@ function Stack({
                 className={`${
                   myStackCardsElementIsVisible
                     ? "transform transition duration-1000  ease-in-out "
-                    : "opacity-0"
-                }   p-3 group bg-white  w-24 h-24   xs:w-40 xs:h-40 shadow-2xl m-4 flex flex-col justify-center  rounded-full`}
+                    : "transform transition duration-1000  ease-in-out opacity-0"
+                }    group bg-white xs:p-3  /w-24 /h-24 p-1.5 w-20 h-20   xs:w-36 xs:h-36 shadow-2xl m-3 flex flex-col justify-center  rounded-full`}
               >
                 <LazyLoadImage
                   src={item.img}
                   alt={item.alt}
                   key={i}
-                  className="rounded-full object-contain "
+                  className="rounded-full xs:object-contain    object-cover"
                 />
-                <p className="flex cursor-default font-normal justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-verySmall xs:text-sm">
+                {/* <p className=" flex cursor-default font-normal justify-center opacity-0 group-hover:opacity-100 transition duration-250 transform ease-in text-xs xs:text-sm">
                   {item.desc}
-                </p>
+                </p> */}
               </span>
             ))
           }
@@ -73,7 +73,7 @@ function Stack({
             ref={myStackRef}
             className={` /translate-y-10 /translate-x-10 /opacity-0
               ${myStackElementIsVisible && styles.slidingElement}
-                /transform /transition /duration-1000 /ease-in-out      w-full px-8  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-xs  xs:text-base`}
+                /transform /transition /duration-1000 /ease-in-out  px-10  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-verySmall  xs:text-base`}
           >
             {resumeData.stack.dummyText2}
           </p>

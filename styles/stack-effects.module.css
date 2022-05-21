@@ -30,7 +30,8 @@
 
 @media (max-width: 640px) {
   .slidingElement {
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
+    transform: translateY(60px);
     animation: come-in 0.8s ease forwards;
   }
 }
