@@ -16,7 +16,7 @@ function Stack({
       id="skills"
       className="min-h-screen flex flex-col items-center justify-center bg-gray-200   "
     >
-      <InView triggerOnce>
+      <InView /* triggerOnce */>
         {({
           inView: myStackCardsElementIsVisible,
           ref: myStackCardsRef,
@@ -27,7 +27,7 @@ function Stack({
             className={`${
               myStackCardsElementIsVisible
                 ? "transform transition duration-1000  ease-in-out"
-                : "opacity-0"
+                : "transform transition duration-1000  ease-in-out opacity-0"
             }   text-3xl xs:text-5xl font-bold pt-4`}
           >
             Tech I use

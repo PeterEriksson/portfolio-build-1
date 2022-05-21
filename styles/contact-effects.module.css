@@ -23,6 +23,7 @@
     transform: scale(2) rotate(0);
   }
   100% {
+    /* in parent div-container of Contact apply: overflow-hidden */
     transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
   }
 }

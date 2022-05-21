@@ -16,9 +16,9 @@ function Contact({
     <div
       id="contact"
       style={{ background: "#091c29" }}
-      className="flex min-h-screen justify-center    for-shape:-> relative"
+      className="flex min-h-screen justify-center   for-shape:-> relative      ForRocket-not-breaking-screen: overflow-hidden"
     >
-      {/* TEST TEMP SHAPE DIVIDER */}
+      {/* SHAPE DIVIDER */}
       <div className={`${styles.customShapeDividerTop}`}>
         <svg
           data-name="Layer 1"
@@ -34,7 +34,7 @@ function Contact({
       </div>
 
       <div className="w-10/12 flex items-center justify-between">
-        <div className={`    flex flex-col text-white w-2/3 xs:w1/2  `}>
+        <div className={`flex flex-col text-white w-2/3 xs:w1/2`}>
           <h1
             className={` xs:text-5xl text-3xl text-white font-bold mb-2 xs:mb-4   smaller:flex `}
           >
