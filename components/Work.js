@@ -40,16 +40,18 @@ function Work() {
     >
       <div
         aria-label="PROJECTS + Some of my work"
-        className="flex flex-col items-center space-y-2    xs:mb-4 mb-1"
+        className="flex flex-col items-center space-y-1    xs:mb-4 mb-1"
       >
-        <h1 className="xs:text-5xl text-3xl font-bold    //center: pt-7">
+        <h1 className="xs:text-5xl text-3xl font-bold    //center: pt-6">
           Projects
         </h1>
-        <h3 className="xs:text-xl text-lg font-extralight">Some of my work</h3>
+        <h3 className="xs:text-xl text-lg font-extralight  ">
+          Some of my work
+        </h3>
       </div>
 
       {resumeData.work.map((item, i) => (
-        <InView triggerOnce>
+        <InView key={i} triggerOnce>
           {({
             inView: myProjectCardElementIsVisible,
             ref: myProjectCardRef,
@@ -63,7 +65,7 @@ function Work() {
                 i === index
                   ? "bg-gray-100 shadow-2xl rounded-lg flex z-10 flex-col justify-center items-center transition duration-500  ease-in border border-gray-200 xs:mx-0 mx-5   "
                   : "opacity-0 /flex z-0  absolute     "
-              } pt-3 px-8 pb-6     xs:h-projectCard h-96    ${
+              } pt-2 px-8 pb-4     xs:h-projectCard h-96 ${
                 myProjectCardElementIsVisible && styles.highlightCard
               } `}
             >
@@ -110,7 +112,7 @@ function Work() {
 
                 <a
                   href={resumeData.work[index].githubUrl}
-                  className="font-extralight text-xs hover:underline mt-1.5     //bg-red-500 /w-1/3 mx-auto"
+                  className="font-extralight text-xs hover:underline mt-1.5   mx-auto"
                   target="_blank"
                 >
                   Github - read more
@@ -118,7 +120,7 @@ function Work() {
                 {resumeData.work[index].link && (
                   <a
                     href={resumeData.work[index]?.link}
-                    className="font-extralight text-xs hover:underline mt-1.5      //bg-red-500 /w-1/5  mx-auto"
+                    className="font-extralight text-xs hover:underline mt-1.5    mx-auto"
                     target="_blank"
                   >
                     Link to site
@@ -131,7 +133,7 @@ function Work() {
       ))}
       <div
         aria-label="DIV FOR ALIGNING ARROWS AND DOTS"
-        className="flex flex-col items-center"
+        className="flex flex-col items-center  //marginToShapeDivider: xs:pb-4"
       >
         <div className="flex mt-3 space-x-2">
           <ArrowCircleLeftIcon
@@ -145,7 +147,7 @@ function Work() {
         </div>
 
         {/* DOTS */}
-        <div className="flex mt-2">
+        <div className="flex mt-1.5">
           {resumeData.work.map((item, i) => (
             <span
               onClick={() => setIndex(i)}

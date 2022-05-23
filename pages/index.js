@@ -1,21 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navigation from "../components/Navigation";
-import resumeData from "../resumeData.json";
 import Header from "../components/Header";
 import Stack from "../components/Stack";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
-import { useInView } from "react-intersection-observer";
 
 export default function Home() {
-  const { ref: myEmojiRef, inView: myEmojiElementIsVisible } = useInView();
-  const { ref: myStackRef, inView: myStackElementIsVisible } = useInView();
-  const { ref: myStackCardsRef, inView: myStackCardsElementIsVisible } =
-    useInView();
-  const { ref: myContactTextRef, inView: myContactTextElementIsVisible } =
-    useInView();
-
   return (
     <div>
       <Head>
@@ -26,19 +17,9 @@ export default function Home() {
 
       <Navigation />
       <Header />
-      <Stack
-        myStackRef={myStackRef}
-        myStackElementIsVisible={myStackElementIsVisible}
-        myStackCardsRef={myStackCardsRef}
-        myStackCardsElementIsVisible={myStackCardsElementIsVisible}
-      />
+      <Stack />
       <Work />
-      <Contact
-        myEmojiRef={myEmojiRef}
-        myEmojiElementIsVisible={myEmojiElementIsVisible}
-        myContactTextRef={myContactTextRef}
-        myContactTextElementIsVisible={myContactTextElementIsVisible}
-      />
+      <Contact />
     </div>
   );
 }

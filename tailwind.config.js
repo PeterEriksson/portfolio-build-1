@@ -9,7 +9,8 @@ module.exports = {
         smaller: "540px",
       },
       fontSize: {
-        verySmall: "9px",
+        verySmall: "12px",
+        contactText: "13px",
       },
       colors: {
         mainDarkBlue: "#091c29",

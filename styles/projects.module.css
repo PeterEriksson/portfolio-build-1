@@ -1,44 +1,21 @@
 @media (min-width: 600px) {
   .highlightCard {
-    animation-duration: 3s;
+    animation-duration: 2.9s;
     animation-name: _highlight;
   }
 }
 @keyframes _highlight {
-  /*  0% {
-    transform: scale(1);
-    background-color: white;
-  }
-  55% {
-    transform: scale(1.06);
-    background-color: lightgray;
-  }
-
-  100% {
-    transform: scale(1);
-    background-color: rgb(249, 250, 251);
-  } */
-
-  /* 0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  20%,
-  60% {
-    transform: rotate(4deg);
-  }
-  40%,
-  80% {
-    transform: rotate(-4deg);
-  } */
   0% {
     transform: rotate(0deg);
   }
-  35% {
+  25% {
     transform: rotate(4deg);
   }
-  70% {
+  50% {
     transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
   }
   100% {
     transform: rotate(0deg);

@@ -2,17 +2,15 @@ import Image from "next/image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import resumeData from "../resumeData.json";
 import styles from "../styles/stack-effects.module.css";
-import { InView } from "react-intersection-observer";
+import { InView, useInView } from "react-intersection-observer";
 
-function Stack({
-  myStackRef,
-  myStackElementIsVisible,
-  myStackCardsRef,
-  myStackCardsElementIsVisible,
-}) {
+function Stack() {
+  const { ref: myStackRef, inView: myStackElementIsVisible } = useInView();
+  const { ref: myStackCardsRef, inView: myStackCardsElementIsVisible } =
+    useInView();
+
   return (
     <div
-      /* id="stack" */
       id="skills"
       className="min-h-screen flex flex-col items-center justify-center bg-gray-200   "
     >
