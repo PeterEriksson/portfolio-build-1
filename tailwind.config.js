@@ -18,6 +18,7 @@ module.exports = {
       maxWidth: {
         twoPointFivexl: "700px",
         projectContent: "320px",
+        contactMail: "140px",
       },
       opacity: {
         opacityNavLink: 0.85,

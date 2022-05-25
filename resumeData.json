@@ -136,5 +136,10 @@
       "link": "https://dhgb-3.netlify.app/",
       "blurDataURL": "https://user-images.githubusercontent.com/17027312/152823175-b95a83fc-e85a-4e7a-8558-291a71d3087a.png"
     }
-  ]
+  ],
+  "contact": {
+    "text": "I am Peter Eriksson, a self-taught front end-developer, especially in to React.js. Always eager to learn new stuff. Fluent in Swedish and English.",
+    "phone": "+46 70-413...70",
+    "mail": "peter_1...@outlook.com"
+  }
 }
