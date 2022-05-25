@@ -105,9 +105,9 @@ function Navigation() {
           leave="transition-opacity duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-          className={` ${menuActive ? mobileStyles.slideDown : ""}    ${
+          className={` ${menuActive ? mobileStyles.slideShow : ""}    ${
             slideClose && mobileStyles.slideClose
-          }     sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+          }   sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
             to="header"
