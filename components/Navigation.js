@@ -2,7 +2,7 @@ import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "../styles/navigation.module.css";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 
@@ -16,12 +16,11 @@ function Navigation() {
     /*  console.log(linkActive); */
   };
 
-  /* Look for :hover::after solution instead */
+  /* Look for cleaner solution ..?*/
   const handleMenuClose = () => {
     setMenuActive(false);
     setSlideClose(true);
   };
-
   const handleMenuOpen = () => {
     setMenuActive(true);
     setSlideClose(false);
@@ -64,12 +63,12 @@ function Navigation() {
           {menuActive ? (
             <XIcon
               onClick={handleMenuClose}
-              className=" h-7 w-7 cursor-pointer sm:hidden    transform transition duration-150 ease-in-out"
+              className=" h-7 w-7 cursor-pointer sm:hidden   "
             />
           ) : (
             <MenuIcon
               onClick={handleMenuOpen}
-              className=" h-7 w-7 cursor-pointer sm:hidden     transform transition duration-150 ease-in-out"
+              className=" h-7 w-7 cursor-pointer sm:hidden   "
             />
           )}
         </div>
@@ -102,11 +101,14 @@ function Navigation() {
         {/*HAMBURGER MENU CONTAINER */}
         <Transition
           show={menuActive}
-          leave="transition-opacity duration-200"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-          className={` ${menuActive ? mobileStyles.slideShow : ""}    ${
-            slideClose && mobileStyles.slideClose
+          leave="duration-500"
+          /* leaveFrom="opacity-100"
+          leaveTo="opacity-0" */
+
+          className={`    ${
+            menuActive && !slideClose && mobileStyles.slideShow
+          }    ${
+            slideClose && !menuActive && mobileStyles.slideClose
           }   sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink

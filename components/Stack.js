@@ -67,14 +67,14 @@ function Stack() {
 
       <InView triggerOnce>
         {({ inView: myStackElementIsVisible, ref: myStackRef, entry }) => (
-          <p
+          <article
             ref={myStackRef}
             className={` /translate-y-10 /translate-x-10 /opacity-0
               ${myStackElementIsVisible && styles.slidingElement}
                 /transform /transition /duration-1000 /ease-in-out  px-10  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-verySmall  xs:text-base`}
           >
             {resumeData.stack.dummyText2}
-          </p>
+          </article>
         )}
       </InView>
     </div>

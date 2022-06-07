@@ -70,14 +70,14 @@ function Contact(
               ref: myContactTextRef,
               entry,
             }) => (
-              <p
+              <article
                 ref={myContactTextRef}
                 className={`${
                   !myContactTextElementIsVisible && "translate-y-10 opacity-0"
                 }      transform transition duration-1000 ease-in-out     xs:text-base text-contactText /picture-covering-mail-text: w-10/12 xs:w-2/3 max-w-3xl`}
               >
                 {resumeData.contact.text}
-              </p>
+              </article>
             )}
           </InView>
 

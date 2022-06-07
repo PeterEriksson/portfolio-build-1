@@ -5,20 +5,60 @@
   animation-name: _slideShow;
   animation-duration: 0.7s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  /*   animation-fill-mode: forwards; */
+
+  transform-origin: top;
 }
 
 @keyframes _slideShow {
-  0% {
+  /* 0% {
     transform: translate(0, -100%);
   }
 
   100% {
     transform: translate(0, 0);
+  } */
+
+  /* from {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  } */
+
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
   }
 }
 
 .slideClose {
+  z-index: 1030;
+  animation-name: _slideClose2;
+  /* animation-duration: 0.4s; already declared: leave="duration-500"*/
+  animation-timing-function: ease-out;
+
+  transform-origin: top;
+
+  transform: scaleY(0);
+}
+
+@keyframes _slideClose2 {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(0);
+  }
+}
+
+/* .slideClose {
   z-index: 1030;
   animation-name: _slideClose;
   animation-duration: 1.3s;
@@ -35,4 +75,4 @@
   100% {
     transform: translate(0, -400%);
   }
-}
+} */
