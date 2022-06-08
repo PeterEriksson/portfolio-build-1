@@ -1,7 +1,7 @@
 import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "../styles/navigation.module.css";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import stylesMobile from "../styles/navMobile-effects.module.css";
 import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
@@ -16,7 +16,7 @@ function Navigation() {
     /*  console.log(linkActive); */
   };
 
-  /* Look for cleaner solution ..?*/
+  /* Look for cleaner solution ..? */
   const handleMenuClose = () => {
     setMenuActive(false);
     setSlideClose(true);
@@ -60,20 +60,21 @@ function Navigation() {
             </h1>
           </ScrollLink>
 
-          {menuActive ? (
-            <XIcon
-              onClick={handleMenuClose}
-              className=" h-7 w-7 cursor-pointer sm:hidden   "
-            />
-          ) : (
-            <MenuIcon
-              onClick={handleMenuOpen}
-              className=" h-7 w-7 cursor-pointer sm:hidden   "
-            />
-          )}
+          {/* menu-btn */}
+          <div
+            onClick={!menuActive ? handleMenuOpen : handleMenuClose}
+            className={`sm:hidden ${stylesMobile.menuBtn}`}
+          >
+            {/* menu-btn__burger */}
+            <div
+              className={`sm:hidden ${
+                menuActive && stylesMobile.burgerAnimation
+              } ${stylesMobile.burger}`}
+            ></div>
+          </div>
         </div>
         {/* RIGHT section */}
-        <div className="space-x-5 mt-2   sm:flex hidden">
+        <div className="space-x-5 mt-2 sm:flex hidden">
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               to={item.to}

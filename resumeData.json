@@ -130,7 +130,7 @@
       "title": "Gaming portal",
       "desc": "A larger app built for Call of Duty gamers. Login, share & like posts, rank your friends, view statistics + personal notifications. Context api used for state management. Firebase backend. Statistics fetched from rapidapi.",
       "url": "https://user-images.githubusercontent.com/17027312/147413283-1462114a-9cd8-4be0-9434-74e9a1d3650f.png",
-      "url2": "/projDhgb.png",
+      "url2": "/projDhgbTest2.png",
       "tags": "#React, #Firebase, #Context-api, #Cloud-functions",
       "githubUrl": "https://github.com/PeterEriksson/dugb-3",
       "link": "https://dhgb-3.netlify.app/",
