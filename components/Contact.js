@@ -88,7 +88,7 @@ function Contact(
               ref: myContactTextRef,
               entry,
             }) => (
-              <section
+              <div
                 ref={myContactTextRef}
                 className={`${
                   !myContactTextElementIsVisible && "translate-y-10 opacity-0"
@@ -199,7 +199,7 @@ function Contact(
                     <p className="text-sm">Github</p>
                   </a>
                 </div>
-              </section>
+              </div>
             )}
           </InView>
         </div>

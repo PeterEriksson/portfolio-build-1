@@ -5,10 +5,12 @@ import stylesMobile from "../styles/navMobile-effects.module.css";
 import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
+import useComponentVisible from "../utils/menuVisibleHelper";
 
 function Navigation() {
-  const [menuActive, setMenuActive] = useState(false);
-  const [slideClose, setSlideClose] = useState(false);
+  const { ref, isComponentVisible, setIsComponentVisible } =
+    useComponentVisible(false);
+
   const [linkActive, setLinkActive] = useState("");
 
   const handleSetActive = (to) => {
@@ -16,24 +18,20 @@ function Navigation() {
     /*  console.log(linkActive); */
   };
 
-  /* Look for cleaner solution ..? */
-  const handleMenuClose = () => {
-    setMenuActive(false);
-    setSlideClose(true);
-  };
-  const handleMenuOpen = () => {
-    setMenuActive(true);
-    setSlideClose(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const handleMenuClick = () => {
+    setIsComponentVisible((prev) => !prev);
+    setHasInteracted(true);
   };
 
   return (
-    <div
+    <nav
       className="fixed top-0 w-screen z-40"
       style={{ background: "#091c29" }}
     >
-      <div className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col sm:flex-row  sm:flex">
-        {/* LEFT section */}
-        <div className="flex justify-between items-center //bg-red-500 w-full">
+      <section className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col sm:flex-row  sm:flex">
+        {/* LEFT div */}
+        <section className="flex justify-between items-center //bg-red-500 w-full">
           <ScrollLink
             to="header"
             smooth="true"
@@ -61,20 +59,22 @@ function Navigation() {
           </ScrollLink>
 
           {/* menu-btn */}
-          <div
-            onClick={!menuActive ? handleMenuOpen : handleMenuClose}
+          <section
+            /* onClick={() => setIsComponentVisible((prev) => !prev)} */
+            onClick={handleMenuClick}
             className={`sm:hidden ${stylesMobile.menuBtn}`}
           >
             {/* menu-btn__burger */}
-            <div
+            <section
               className={`sm:hidden ${
-                menuActive && stylesMobile.burgerAnimation
+                isComponentVisible && stylesMobile.burgerAnimation
               } ${stylesMobile.burger}`}
-            ></div>
-          </div>
-        </div>
-        {/* RIGHT section */}
-        <div className="space-x-5 mt-2 sm:flex hidden">
+            ></section>
+          </section>
+        </section>
+
+        {/* RIGHT div */}
+        <section className="space-x-5 mt-2  sm:flex hidden">
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               to={item.to}
@@ -97,47 +97,50 @@ function Navigation() {
               </span>
             </ScrollLink>
           ))}
-        </div>
+        </section>
 
-        {/*HAMBURGER MENU CONTAINER */}
-        <Transition
-          show={menuActive}
-          leave="duration-500"
-          /* leaveFrom="opacity-100"
-          leaveTo="opacity-0" */
-
-          className={`    ${
-            menuActive && !slideClose && mobileStyles.slideShow
-          }    ${
-            slideClose && !menuActive && mobileStyles.slideClose
-          }   sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
-        >
-          <ScrollLink
-            to="header"
-            smooth="true"
-            //activeClass={styles._active}
-            spy={true}
-            className="flex justify-center "
+        {/*HAMBURGER MENU-CONTAINER */}
+        {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
+        {/* (solution for window resizing issue?) */}
+        {/* avoid slideClose-effect on page-reload:-> hasInteracted && ... */}
+        {/* ... with before-after-css we can remove hasInteracted plus solve issue..? Just like with hamburger cross transition */}
+        {hasInteracted && (
+          <div
+            ref={ref}
+            className={`  ${
+              isComponentVisible
+                ? mobileStyles.slideShow
+                : mobileStyles.slideClose
+            }        sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
           >
-            <p className="cursor-pointer text-lg font-semibold">Intro</p>
-          </ScrollLink>
-          {resumeData.nav.links.map((item, i) => (
             <ScrollLink
-              key={i}
-              to={item.to}
+              to="header"
               smooth="true"
-              activeClass={styles._active}
+              //activeClass={styles._active}
               spy={true}
-              className="flex justify-center border-b-2 border-mainDarkBlue"
+              className="flex justify-center "
             >
-              <p className="cursor-pointer text-lg font-semibold">
-                {item.text}
-              </p>
+              <p className="cursor-pointer text-lg font-semibold">Intro</p>
             </ScrollLink>
-          ))}
-        </Transition>
-      </div>
-    </div>
+            {resumeData.nav.links.map((item, i) => (
+              <ScrollLink
+                key={i}
+                to={item.to}
+                smooth="true"
+                activeClass={styles._active}
+                spy={true}
+                className="flex justify-center border-b-2 border-mainDarkBlue"
+              >
+                <p className="cursor-pointer text-lg font-semibold">
+                  {item.text}
+                </p>
+              </ScrollLink>
+            ))}
+          </div>
+        )}
+        {/* -- */}
+      </section>
+    </nav>
   );
 }
 
