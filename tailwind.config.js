@@ -21,7 +21,7 @@ module.exports = {
         contactMail: "140px",
       },
       opacity: {
-        opacityNavLink: 0.85,
+        opacityNavLink: 0.81,
       },
       height: {
         projectCard: "450px",

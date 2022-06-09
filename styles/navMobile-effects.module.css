@@ -1,44 +1,6 @@
 /* https://stackoverflow.com/questions/44871712/making-nav-bar-slide-into-view-from-top */
-
-.slideShow {
-  z-index: 1030;
-  animation-name: _slideShow;
-  animation-duration: 0.7s;
-  animation-timing-function: ease;
-  /*   animation-fill-mode: forwards; */
-
-  transform-origin: top;
-}
-
-@keyframes _slideShow {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
-
-.slideClose {
-  z-index: 1030;
-  animation-name: _slideClose2;
-  animation-duration: 0.4s; /* Now we have div. ... using Transition:already declared: leave="duration-500" */
-  animation-timing-function: ease-out;
-
-  transform-origin: top;
-
-  transform: scaleY(0);
-}
-
-@keyframes _slideClose2 {
-  from {
-    transform: scaleY(1);
-  }
-
-  to {
-    transform: scaleY(0);
-  }
-}
+/* slideOpen and slideClose with keyframes...  */
+/*...-> solved with tailwind instead. */
 
 /* -------------------------- */
 /* hamburger cross transitions */
@@ -80,11 +42,11 @@
 }
 
 .burger::before {
-  transform: translateY(-10px); /* exp with this value */
+  transform: translateY(-10px);
 }
 
 .burger::after {
-  transform: translateY(10px); /* exp with this value */
+  transform: translateY(10px);
 }
 
 /* ANIMATION */

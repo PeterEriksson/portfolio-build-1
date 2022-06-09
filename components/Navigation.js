@@ -8,7 +8,7 @@ import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 
 function Navigation() {
-  const { ref, isComponentVisible, setIsComponentVisible } =
+  const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
     useComponentVisible(false);
 
   const [linkActive, setLinkActive] = useState("");
@@ -16,12 +16,11 @@ function Navigation() {
   const handleSetActive = (to) => {
     setLinkActive(to);
     /*  console.log(linkActive); */
+    /* setIsComponentVisible(false); */
   };
 
-  const [hasInteracted, setHasInteracted] = useState(false);
   const handleMenuClick = () => {
-    setIsComponentVisible((prev) => !prev);
-    setHasInteracted(true);
+    setIsMenuComponentVisible((prev) => !prev);
   };
 
   return (
@@ -62,12 +61,12 @@ function Navigation() {
           <section
             /* onClick={() => setIsComponentVisible((prev) => !prev)} */
             onClick={handleMenuClick}
-            className={`sm:hidden ${stylesMobile.menuBtn}`}
+            className={`sm:hidden ${stylesMobile.menuBtn}   opacity-opacityNavLink hover:opacity-100`}
           >
             {/* menu-btn__burger */}
             <section
               className={`sm:hidden ${
-                isComponentVisible && stylesMobile.burgerAnimation
+                isMenuComponentVisible && stylesMobile.burgerAnimation
               } ${stylesMobile.burger}`}
             ></section>
           </section>
@@ -104,40 +103,53 @@ function Navigation() {
         {/* (solution for window resizing issue?) */}
         {/* avoid slideClose-effect on page-reload:-> hasInteracted && ... */}
         {/* ... with before-after-css we can remove hasInteracted plus solve issue..? Just like with hamburger cross transition */}
-        {hasInteracted && (
-          <div
-            ref={ref}
-            className={`  ${
-              isComponentVisible
-                ? mobileStyles.slideShow
-                : mobileStyles.slideClose
-            }        sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+        <div
+          ref={ref}
+          className={`  transform transition duration-1000 ease-in-out ${
+            isMenuComponentVisible
+              ? "scale-y-100 origin-top"
+              : "opacity-0 scale-y-0 origin-top"
+          }     sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+        >
+          <ScrollLink
+            /* TEST TEMP onClick */
+            onClick={() => setIsMenuComponentVisible(false)}
+            to="header"
+            smooth="true"
+            //activeClass={styles._active}
+            spy={true}
+            className="flex justify-center "
           >
-            <ScrollLink
-              to="header"
-              smooth="true"
-              //activeClass={styles._active}
-              spy={true}
-              className="flex justify-center "
+            <p
+              className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    ${
+                linkActive === "header" && "opacity-100 "
+              }`}
             >
-              <p className="cursor-pointer text-lg font-semibold">Intro</p>
-            </ScrollLink>
-            {resumeData.nav.links.map((item, i) => (
-              <ScrollLink
-                key={i}
-                to={item.to}
-                smooth="true"
-                activeClass={styles._active}
-                spy={true}
-                className="flex justify-center border-b-2 border-mainDarkBlue"
+              Intro
+            </p>
+          </ScrollLink>
+          {resumeData.nav.links.map((item, i) => (
+            <ScrollLink
+              /* TEST TEMP onClick */
+              onClick={() => setIsMenuComponentVisible(false)}
+              key={i}
+              to={item.to}
+              smooth="true"
+              activeClass={styles._active}
+              spy={true}
+              className="flex justify-center border-b-2 border-mainDarkBlue"
+            >
+              <p
+                className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 ${
+                  linkActive === item.to && "opacity-100 "
+                }`}
               >
-                <p className="cursor-pointer text-lg font-semibold">
-                  {item.text}
-                </p>
-              </ScrollLink>
-            ))}
-          </div>
-        )}
+                {item.text}
+              </p>
+            </ScrollLink>
+          ))}
+        </div>
+
         {/* -- */}
       </section>
     </nav>

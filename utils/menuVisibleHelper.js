@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 
 export default function useComponentVisible(initialIsVisible) {
-  const [isComponentVisible, setIsComponentVisible] =
+  const [isMenuComponentVisible, setIsMenuComponentVisible] =
     useState(initialIsVisible);
   const ref = useRef(null);
 
@@ -17,7 +17,7 @@ export default function useComponentVisible(initialIsVisible) {
       if (event.target.tagName.toLowerCase() === "section") return;
       if (event.target.tagName.toLowerCase() === "nav") return;
 
-      setIsComponentVisible(false);
+      setIsMenuComponentVisible(false);
     }
   };
 
@@ -30,7 +30,7 @@ export default function useComponentVisible(initialIsVisible) {
 
   return {
     ref,
-    isComponentVisible,
-    setIsComponentVisible,
+    isMenuComponentVisible,
+    setIsMenuComponentVisible,
   };
 }
