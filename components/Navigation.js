@@ -7,19 +7,7 @@ import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 
-/* export async function getStaticProps() {
-  let initialState = true;
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      initialState,
-    },
-  };
-} */
-
-function Navigation() {
+function Navigation({ _initialState }) {
   const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
     useComponentVisible(false);
 
@@ -116,7 +104,7 @@ function Navigation() {
         {/*HAMBURGER MENU-CONTAINER */}
         {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
         {/* avoid slideClose-effect on page-reload??*/}
-        {initialMenu && (
+        {_initialState && (
           <div
             ref={ref}
             className={`  
