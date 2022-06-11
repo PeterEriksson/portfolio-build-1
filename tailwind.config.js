@@ -26,6 +26,9 @@ module.exports = {
       height: {
         projectCard: "450px",
       },
+      transitionDuration: {
+        850: "850ms",
+      },
     },
   },
   variants: {

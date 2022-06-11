@@ -22,15 +22,15 @@
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .highlightCard {
     animation-duration: 2.4s;
     animation-name: _highlightMobile;
     animation-timing-function: ease-in-out;
   }
-}
+} */
 
-@keyframes _highlightMobile {
+/* @keyframes _highlightMobile {
   0% {
     background: rgb(243, 244, 246);
   }
@@ -42,4 +42,4 @@
   100% {
     background: rgb(243, 244, 246);
   }
-}
+} */

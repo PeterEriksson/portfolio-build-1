@@ -7,9 +7,20 @@ import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 
-function Navigation() {
+//getStaticProps correct or other function???
+export async function getStaticProps() {
+  const initialMenuState = false;
+  return {
+    props: {
+      initialMenuState,
+    },
+  };
+}
+
+function Navigation({ initialMenuState }) {
   const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
-    useComponentVisible(false);
+    useComponentVisible(initialMenuState);
+  //replaced false with initialMenuState
 
   const [linkActive, setLinkActive] = useState("");
 
@@ -28,7 +39,7 @@ function Navigation() {
       className="fixed top-0 w-screen z-40"
       style={{ background: "#091c29" }}
     >
-      <section className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col sm:flex-row  sm:flex">
+      <section className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col /sm:flex-row  /sm:flex md:flex md:flex-row">
         {/* LEFT div */}
         <section className="flex justify-between items-center //bg-red-500 w-full">
           <ScrollLink
@@ -61,11 +72,11 @@ function Navigation() {
           <section
             /* onClick={() => setIsComponentVisible((prev) => !prev)} */
             onClick={handleMenuClick}
-            className={`sm:hidden ${stylesMobile.menuBtn}   opacity-opacityNavLink hover:opacity-100`}
+            className={`md:hidden /sm:hidden ${stylesMobile.menuBtn}   opacity-opacityNavLink hover:opacity-100`}
           >
             {/* menu-btn__burger */}
             <section
-              className={`sm:hidden ${
+              className={`md:hidden /sm:hidden ${
                 isMenuComponentVisible && stylesMobile.burgerAnimation
               } ${stylesMobile.burger}`}
             ></section>
@@ -73,7 +84,7 @@ function Navigation() {
         </section>
 
         {/* RIGHT div */}
-        <section className="space-x-5 mt-2  sm:flex hidden">
+        <section className="space-x-5 mt-2  /sm:flex md:flex hidden">
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               to={item.to}
@@ -100,16 +111,14 @@ function Navigation() {
 
         {/*HAMBURGER MENU-CONTAINER */}
         {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
-        {/* (solution for window resizing issue?) */}
-        {/* avoid slideClose-effect on page-reload:-> hasInteracted && ... */}
-        {/* ... with before-after-css we can remove hasInteracted plus solve issue..? Just like with hamburger cross transition */}
+        {/* avoid slideClose-effect on page-reload??*/}
         <div
           ref={ref}
-          className={`  transform transition duration-1000 ease-in-out ${
+          className={`  transform transition duration-850 ease-in-out ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
-              : "opacity-0 scale-y-0 origin-top"
-          }     sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+              : "opacity-0 /opacity-60 scale-y-0 origin-top"
+          }    md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
             /* TEST TEMP onClick */
