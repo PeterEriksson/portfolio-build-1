@@ -6,16 +6,7 @@ import Stack from "../components/Stack";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
 
-export async function getStaticProps() {
-  let _initialState = true;
-  return {
-    props: {
-      _initialState,
-    },
-  };
-}
-
-export default function Home({ _initialState }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -24,7 +15,7 @@ export default function Home({ _initialState }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navigation _initialState={_initialState} />
+      <Navigation />
       <Header />
       <Stack />
       <Work />
