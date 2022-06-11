@@ -28,6 +28,7 @@ module.exports = {
       },
       transitionDuration: {
         850: "850ms",
+        menuTest: "1ms",
       },
     },
   },
