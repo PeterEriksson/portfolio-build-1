@@ -116,62 +116,59 @@ function Navigation() {
         {/*HAMBURGER MENU-CONTAINER */}
         {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
         {/* avoid slideClose-effect on page-reload??*/}
-
-        <div
-          ref={ref}
-          className={`  
+        {initialMenu && (
+          <div
+            ref={ref}
+            className={`  
           transform transition duration-850 ease-in-out  
           
-           ${
-             initialMenu &&
-             ` ${
-               isMenuComponentVisible
-                 ? "scale-y-100 origin-top"
-                 : "opacity-0 /opacity-60 scale-y-0 origin-top"
-             }  `
-           }
+          ${
+            isMenuComponentVisible
+              ? "scale-y-100 origin-top"
+              : "opacity-0 /opacity-60 scale-y-0 origin-top"
+          }
 
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
-        >
-          <ScrollLink
-            /* TEST TEMP onClick */
-            onClick={() => setIsMenuComponentVisible(false)}
-            to="header"
-            smooth="true"
-            //activeClass={styles._active}
-            spy={true}
-            className="flex justify-center "
           >
-            <p
-              className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    ${
-                linkActive === "header" && "opacity-100 "
-              }`}
-            >
-              Intro
-            </p>
-          </ScrollLink>
-          {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               /* TEST TEMP onClick */
               onClick={() => setIsMenuComponentVisible(false)}
-              key={i}
-              to={item.to}
+              to="header"
               smooth="true"
-              activeClass={styles._active}
+              //activeClass={styles._active}
               spy={true}
-              className="flex justify-center border-b-2 border-mainDarkBlue"
+              className="flex justify-center "
             >
               <p
-                className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 ${
-                  linkActive === item.to && "opacity-100 "
+                className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    ${
+                  linkActive === "header" && "opacity-100 "
                 }`}
               >
-                {item.text}
+                Intro
               </p>
             </ScrollLink>
-          ))}
-        </div>
-
+            {resumeData.nav.links.map((item, i) => (
+              <ScrollLink
+                /* TEST TEMP onClick */
+                onClick={() => setIsMenuComponentVisible(false)}
+                key={i}
+                to={item.to}
+                smooth="true"
+                activeClass={styles._active}
+                spy={true}
+                className="flex justify-center border-b-2 border-mainDarkBlue"
+              >
+                <p
+                  className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 ${
+                    linkActive === item.to && "opacity-100 "
+                  }`}
+                >
+                  {item.text}
+                </p>
+              </ScrollLink>
+            ))}
+          </div>
+        )}
         {/* -- */}
       </section>
     </nav>
