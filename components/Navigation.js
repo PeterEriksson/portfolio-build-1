@@ -11,6 +11,9 @@ function Navigation() {
   const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
     useComponentVisible(false);
 
+  /* TEST TEMP */
+  const [initialMenu, setInitialMenu] = useState(false);
+
   const [linkActive, setLinkActive] = useState("");
 
   const handleSetActive = (to) => {
@@ -21,6 +24,7 @@ function Navigation() {
 
   const handleMenuClick = () => {
     setIsMenuComponentVisible((prev) => !prev);
+    setInitialMenu(true);
   };
 
   return (
@@ -103,12 +107,16 @@ function Navigation() {
         {/* avoid slideClose-effect on page-reload??*/}
         <div
           ref={ref}
-          className={`  transform transition duration-850 ease-in-out
+          className={`  
+          transform transition duration-850 ease-in-out   
           ${
-            !isMenuComponentVisible &&
-            "opacity-0 /opacity-60 scale-y-0 origin-top"
+            isMenuComponentVisible
+              ? "scale-y-100 origin-top"
+              : ` ${
+                  !initialMenu && isMenuComponentVisible && "hidden"
+                } opacity-0 /opacity-60 scale-y-0 origin-top`
           }
-          ${isMenuComponentVisible && "scale-y-100 origin-top"}
+          
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
