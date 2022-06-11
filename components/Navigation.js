@@ -8,7 +8,7 @@ import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 
 /* export async function getStaticProps() {
-  letinitialState = true;
+  let initialState = true;
 
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
@@ -16,7 +16,7 @@ import useComponentVisible from "../utils/menuVisibleHelper";
     props: {
       initialState,
     },
-  };  
+  };
 } */
 
 function Navigation() {
@@ -24,10 +24,9 @@ function Navigation() {
     useComponentVisible(false);
 
   /* TEST TEMP */
-  const [initialMenu, setInitialMenu] = useState(false);
+  const [initialMenu, setInitialMenu] = useState(true);
 
   const [linkActive, setLinkActive] = useState("");
-
   const handleSetActive = (to) => {
     setLinkActive(to);
     /*  console.log(linkActive); */
@@ -121,16 +120,17 @@ function Navigation() {
         <div
           ref={ref}
           className={`  
-          transform transition duration-850 ease-in-out   
-          ${
-            isMenuComponentVisible
-              ? "scale-y-100 origin-top"
-              : `${
-                  initialMenu && "!opacity-0 !scale-y-0 !origin-top"
-                }   opacity-0  scale-y-0 origin-top `
-          }
-
+          transform transition duration-850 ease-in-out  
           
+           ${
+             initialMenu &&
+             ` ${
+               isMenuComponentVisible
+                 ? "scale-y-100 origin-top"
+                 : "opacity-0 /opacity-60 scale-y-0 origin-top"
+             }  `
+           }
+
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
