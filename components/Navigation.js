@@ -108,14 +108,15 @@ function Navigation() {
         <div
           ref={ref}
           className={`  
-         ${initialMenu && "transform transition duration-850 ease-in-out "}  
+
+          ${!initialMenu && "transform transition duration-100 ease-in-out "}
+          ${initialMenu && "transform transition duration-850 ease-in-out "}
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
               : "opacity-0 /opacity-60 scale-y-0 origin-top"
           }
-          
-
+ 
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
