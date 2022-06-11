@@ -12,7 +12,7 @@ function Navigation() {
     useComponentVisible(false);
 
   /* TEST TEMP */
-  const [initialMenu, setInitialMenu] = useState(true);
+  const [initialMenu, setInitialMenu] = useState(false);
 
   const [linkActive, setLinkActive] = useState("");
   const handleSetActive = (to) => {
