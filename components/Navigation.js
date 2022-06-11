@@ -109,10 +109,7 @@ function Navigation() {
           ref={ref}
           className={`  
 
-          ${
-            !initialMenu &&
-            "transform transition duration-menuTest ease-in-out "
-          }
+          ${!initialMenu && "transform transition duration-100 ease-in-out "}
           ${initialMenu && "transform transition duration-850 ease-in-out "}
           ${
             isMenuComponentVisible
