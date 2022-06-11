@@ -7,20 +7,9 @@ import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 
-//getStaticProps correct or other function???
-export async function getStaticProps() {
-  const initialMenuState = false;
-  return {
-    props: {
-      initialMenuState,
-    },
-  };
-}
-
-function Navigation({ initialMenuState }) {
+function Navigation() {
   const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
-    useComponentVisible(initialMenuState);
-  //replaced false with initialMenuState
+    useComponentVisible(false);
 
   const [linkActive, setLinkActive] = useState("");
 
@@ -114,11 +103,13 @@ function Navigation({ initialMenuState }) {
         {/* avoid slideClose-effect on page-reload??*/}
         <div
           ref={ref}
-          className={`  transform transition duration-850 ease-in-out ${
-            isMenuComponentVisible
-              ? "scale-y-100 origin-top"
-              : "opacity-0 /opacity-60 scale-y-0 origin-top"
-          }    md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+          className={`  transform transition duration-850 ease-in-out
+          ${
+            !isMenuComponentVisible &&
+            "opacity-0 /opacity-60 scale-y-0 origin-top"
+          }
+          ${isMenuComponentVisible && "scale-y-100 origin-top"}
+             md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
             /* TEST TEMP onClick */
