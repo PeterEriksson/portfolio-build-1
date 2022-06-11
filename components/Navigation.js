@@ -12,6 +12,7 @@ function Navigation() {
     useComponentVisible(false);
 
   /* TEST TEMP */
+  /* avoid slideClose-effect on page-reload??*/
   const [initialMenu, setInitialMenu] = useState(false);
 
   const [linkActive, setLinkActive] = useState("");
@@ -111,7 +112,7 @@ function Navigation() {
 
           ${
             !initialMenu &&
-            "transform transition duration-100 ease-in-out    test: opacity-0"
+            "transform transition duration-100 ease-in-out    test: !opacity-0"
           }
           ${initialMenu && "transform transition duration-850 ease-in-out "}
           ${
