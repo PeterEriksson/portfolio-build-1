@@ -110,8 +110,8 @@ function Navigation() {
 
         {/*HAMBURGER MENU-CONTAINER */}
         {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
-        {/* avoid slideClose-effect on page-reload??*/}
-        {/* Temp solution using initialMenuState (initial solution see notes)*/}
+        {/* avoid slideClose-effect on page-reload? -> */}
+        {/* ...-> useEffect+timeoutFcn solution working fine. Using timeoutFcn: after 100ms setInitialMenuState(true). In CSS: !initialMenuState && "hidden"  */}
         <div
           ref={ref}
           className={`  
@@ -122,7 +122,7 @@ function Navigation() {
               ? "scale-y-100 origin-top"
               : "opacity-0 scale-y-0 origin-top"
           }
-             md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
+             md:hidden flex flex-col space-y-1 items-center pb-2 w-full absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
             /* TEST TEMP onClick */
