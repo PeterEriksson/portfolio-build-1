@@ -21,9 +21,9 @@ function Header() {
     >
       <div className="w-10/12 flex flex-col md:flex-row-reverse items-center justify-between ">
         <div className="md:w-2/5 w-full">
-          <LazyLoadImage
+          <img
             src={resumeData.header.img}
-            effect="blur"
+            /* effect="blur" */
             className={`rounded-xl`}
           />
         </div>
