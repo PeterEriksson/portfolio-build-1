@@ -18,7 +18,7 @@ function Navigation() {
   useEffect(() => {
     setTimeout(() => {
       setInitialMenuState(true);
-    }, 5000);
+    }, 100);
   }, []);
 
   const [linkActive, setLinkActive] = useState("");
@@ -30,7 +30,7 @@ function Navigation() {
 
   const handleMenuClick = () => {
     setIsMenuComponentVisible((prev) => !prev);
-    setInitialMenuState(true);
+    /* setInitialMenuState(true); */
   };
 
   return (
@@ -115,15 +115,13 @@ function Navigation() {
         <div
           ref={ref}
           className={`  
-          transform transition duration-850 ease-in-out  ${
-            !initialMenuState && "hidden"
-          }
+          transform transition duration-850 ease-in-out 
+           ${!initialMenuState && "hidden"}
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
               : "opacity-0 scale-y-0 origin-top"
           }
-
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
