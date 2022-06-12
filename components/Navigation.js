@@ -120,7 +120,7 @@ function Navigation() {
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
-              : "opacity-0 scale-y-0 origin-top"
+              : `${initialMenuState && "opacity-0 scale-y-0 origin-top"} `
           }
              md:hidden flex flex-col space-y-1 items-center pb-2 w-full absolute top-14 bg-mainDarkBlue  `}
         >
