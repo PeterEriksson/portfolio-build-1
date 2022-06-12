@@ -13,7 +13,7 @@ function Navigation() {
 
   /* TEST TEMP */
   /* avoid slideClose-effect on page-reload??*/
-  const [initialMenu, setInitialMenu] = useState(false);
+  const [initialMenuState, setInitialMenuState] = useState(false);
 
   const [linkActive, setLinkActive] = useState("");
   const handleSetActive = (to) => {
@@ -24,7 +24,7 @@ function Navigation() {
 
   const handleMenuClick = () => {
     setIsMenuComponentVisible((prev) => !prev);
-    setInitialMenu(true);
+    setInitialMenuState(true);
   };
 
   return (
@@ -105,20 +105,16 @@ function Navigation() {
         {/*HAMBURGER MENU-CONTAINER */}
         {/* in handleCLickOutside:  if event.target.tagName.toLowerCase()=="section" then return. Maybe not best solution, since section tag where hamburger+cross lives ought to be unique */}
         {/* avoid slideClose-effect on page-reload??*/}
-
+        {/* Temp solution using initialMenuState (initial solution see notes)*/}
         <div
           ref={ref}
           className={`  
 
-          ${
-            !initialMenu &&
-            "transform transition duration-100 ease-in-out    test: !opacity-0"
-          }
-          ${initialMenu && "transform transition duration-850 ease-in-out "}
+          transform transition duration-850 ease-in-out  
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
-              : "opacity-0 scale-y-0 origin-top"
+              : "opacity-0 /scale-y-0 origin-top"
           }
  
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
