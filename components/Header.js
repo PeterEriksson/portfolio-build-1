@@ -29,7 +29,7 @@ function Header() {
             }`}
           />
         </div>
-        <div className="text-white text-center md:text-left    pt-5 xs:pt-0">
+        <div className="text-white text-center md:text-left    pt-4 xs:pt-0">
           <h1
             className={`
           ${

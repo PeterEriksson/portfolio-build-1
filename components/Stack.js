@@ -33,7 +33,7 @@ function Stack() {
         )}
       </InView>
 
-      <div className="flex flex-wrap justify-center mt-5  max-w-3xl  ">
+      <div className="flex flex-wrap justify-center max-w-3xl   mt-1.5 xs:mt-5  ">
         <InView /* triggerOnce */>
           {({
             inView: myStackCardsElementIsVisible,

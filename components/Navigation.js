@@ -116,7 +116,7 @@ function Navigation() {
           ref={ref}
           className={`  
           transform transition duration-850 ease-in-out 
-           ${!initialMenuState && "hidden"}
+           ${!initialMenuState && "!hidden"}
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
