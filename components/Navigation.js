@@ -110,11 +110,17 @@ function Navigation() {
           ref={ref}
           className={`  
 
-          transform transition duration-850 ease-in-out  
+          ${
+            !initialMenuState &&
+            "test: !opacity-0    transform transition duration-75 ease-in-out    "
+          }
+          ${
+            initialMenuState && "transform transition duration-850 ease-in-out "
+          }
           ${
             isMenuComponentVisible
               ? "scale-y-100 origin-top"
-              : "opacity-0 /scale-y-0 origin-top"
+              : "opacity-0 scale-y-0 origin-top"
           }
  
              md:hidden /sm:hidden flex flex-col space-y-1 items-center pb-2 w-full ///ForTakingUpTheWholeSpace: absolute top-14 bg-mainDarkBlue  `}
