@@ -29,3 +29,38 @@
     transform: translateY(0);
   }
 }
+
+/* ------------------------------------- */
+/* SHAPE DIVIDER */
+/* bg-gray-200 -> rgb(229,231,235) -> #E5E7EB */
+/* mainBlue -> #091c29 */
+
+.customShapeDividerTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.customShapeDividerTop svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 38px;
+}
+
+.shapeFill {
+  fill: #091c29;
+}
+.customShapeDividerTop {
+  fill: #091c29;
+}
+
+/* @media (max-width: 767px) {
+  .customShapeDividerTop svg {
+    width: calc(201% + 1.3px);
+    height: 82px;
+  }
+} */

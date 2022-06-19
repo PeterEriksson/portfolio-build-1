@@ -12,8 +12,23 @@ function Stack() {
   return (
     <div
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-200   "
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-200     forShapeDivider:-> relative "
     >
+      {/* TEST SHAPE DIVIDER */}
+      <div className={`${styles.customShapeDividerTop}`}>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+            className={`${styles.shapeFill}`}
+          ></path>
+        </svg>
+      </div>
+
       <InView /* triggerOnce */>
         {({
           inView: myStackCardsElementIsVisible,
