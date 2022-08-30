@@ -6,9 +6,8 @@ import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
-import useNavbarVisible from "../utils/navShowHideHelper";
 import { debounce } from "../utils/debounceHelper";
-import useNavbarVisible2 from "../utils/navShowHideHelper2";
+import useNavbarVisible from "../utils/navShowHideHelper";
 
 function Navigation() {
   const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
@@ -17,7 +16,7 @@ function Navigation() {
   /*  const { show } = useNavbarVisible(); */
   /*  navShowHide using debounceHelper.js(not lodash library) ------ move to own file and hook into instead ----*/
 
-  const { visible } = useNavbarVisible2();
+  const { visible } = useNavbarVisible();
   /* ------- */
 
   /* avoid slideClose-effect on page-reload*/
@@ -42,6 +41,7 @@ function Navigation() {
   };
 
   /* const navBarTransp = true; */
+
   return (
     <nav
       className={`fixed top-0 w-screen z-40    transform transition duration-500 ease-in-out
@@ -97,7 +97,7 @@ function Navigation() {
         </section>
 
         {/* RIGHT div */}
-        <section className="space-x-5 mt-2  /sm:flex md:flex hidden">
+        <section className="space-x-5 mt-2  md:flex hidden">
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               to={item.to}
@@ -140,11 +140,10 @@ function Navigation() {
              md:hidden flex flex-col space-y-1 items-center pb-2 w-full absolute top-14 bg-mainDarkBlue  `}
         >
           <ScrollLink
-            /* TEST TEMP onClick */
             onClick={() => setIsMenuComponentVisible(false)}
             to="header"
             smooth="true"
-            //activeClass={styles._active}
+            activeClass={styles._active}
             spy={true}
             className="flex justify-center "
           >
@@ -177,8 +176,6 @@ function Navigation() {
             </ScrollLink>
           ))}
         </div>
-
-        {/* -- */}
       </section>
     </nav>
   );

@@ -16,10 +16,13 @@ export default function Home() {
       </Head>
 
       <Navigation />
-      <Header />
-      <Stack />
-      <Work />
-      <Contact />
+      {/* TEST temp: div + opacity ...ok? */}
+      <div className="/opacity-80">
+        <Header />
+        <Stack />
+        <Work />
+        <Contact />
+      </div>
     </div>
   );
 }

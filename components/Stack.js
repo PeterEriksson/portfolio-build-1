@@ -12,7 +12,7 @@ function Stack() {
   return (
     <div
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-200     forShapeDivider:-> relative "
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-200     forShapeDivider:-> relative      "
     >
       {/* TEST SHAPE DIVIDER */}
       <div className={`${styles.customShapeDividerTop}`}>
@@ -63,7 +63,7 @@ function Stack() {
                   myStackCardsElementIsVisible
                     ? "transform transition duration-1000  ease-in-out "
                     : "transform transition duration-1000  ease-in-out opacity-0"
-                }    group bg-white xs:p-3  /w-24 /h-24 p-1.5 w-20 h-20   xs:w-36 xs:h-36 shadow-2xl m-3 flex flex-col justify-center  rounded-full`}
+                }    group bg-white xs:p-3  p-1.5 w-20 h-20   xs:w-36 xs:h-36 shadow-2xl m-3 flex flex-col justify-center  rounded-full  `}
               >
                 <LazyLoadImage
                   src={item.img}

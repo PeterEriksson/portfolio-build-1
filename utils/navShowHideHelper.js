@@ -1,68 +1,39 @@
-/* https://stackoverflow.com/questions/69473259/how-to-show-or-hide-navbar-when-scroll-use-react-js */
-
-/* performance! use some sort of useCallback. debounce... */
-
-/* usefule info: https://www.devtwins.com/blog/sticky-navbar-hides-scroll */
-
-/* import { debounce } from "lodash"; uninstalled... */
-/* import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { debounce } from "./debounceHelper";
 
 export default function useNavbarVisible() {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(10000); //set high Number, -> initial show is true */
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
-/* const controlNavbar = () => {
-    if (typeof window == "undefined") return;
-    if (window.scrollY > lastScrollY) {
-      // if scroll down hide the navbar
-      setShow(false);
-    } else {
-      // if scroll up show the navbar
-      setShow(true);
-    }
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.scrollY;
 
-    // remember current page location to use in the next move
-    setLastScrollY(window.scrollY);
+    /* last || -> if just a little scroll down, keep nav in place. Only apply when navbar is visible */
+    setVisible(
+      (prevState) =>
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 120) ||
+        currentScrollPos < 10 ||
+        (prevState && prevScrollPos - currentScrollPos > -100)
+    );
 
-    // performance... issue ...use debounce (npm i lodash) ?
-    console.log("test");
-    console.log(lastScrollY, window.scrollY);
-  }; */
+    /* setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 120) ||
+        currentScrollPos < 10 ||
+        prevScrollPos - currentScrollPos > -100
+    ); */
+    console.log("test debounce");
+    setPrevScrollPos(currentScrollPos);
+  }, 200);
 
-/* const controlNavbar = useCallback(
-    debounce((t) => {
-      const curr = window.scrollY;
-      if (typeof window == "undefined") return;
-      if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
-        setShow(false);
-      } else {
-        // if scroll up show the navbar
-        setShow(true);
-      }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
 
-      // remember current page location to use in the next move
-      setLastScrollY(curr);
-
-      /* console.log(t.path[1].pageYOffset); */
-
-// performance... issue ...use debounce (npm i lodash) ?
-//console.log("test");
-//console.log(lastScrollY, window.scrollY); */
-/* }, 100),[]); */
-
-/* useEffect(() => {
-    if (typeof window == "undefined") return;
-
-    window.addEventListener("scroll", controlNavbar);
-
-    // cleanup function
-    return () => {
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, [lastScrollY]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
 
   return {
-    show,
-  }; */
-//}
+    visible,
+  };
+}
