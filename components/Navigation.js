@@ -2,22 +2,21 @@ import resumeData from "../resumeData.json";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "../styles/navigation.module.css";
 import stylesMobile from "../styles/navMobile-effects.module.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
 import { debounce } from "../utils/debounceHelper";
 import useNavbarVisible from "../utils/navShowHideHelper";
+import { Context } from "../Context";
 
 function Navigation() {
-  const { ref, isMenuComponentVisible, setIsMenuComponentVisible } =
+  const { ref /* isMenuComponentVisible, setIsMenuComponentVisible */ } =
     useComponentVisible(false);
-
-  /*  const { show } = useNavbarVisible(); */
-  /*  navShowHide using debounceHelper.js(not lodash library) ------ move to own file and hook into instead ----*/
+  const { isMenuComponentVisible, setIsMenuComponentVisible } =
+    useContext(Context);
 
   const { visible } = useNavbarVisible();
-  /* ------- */
 
   /* avoid slideClose-effect on page-reload*/
   const [initialMenuState, setInitialMenuState] = useState(false);
@@ -137,7 +136,7 @@ function Navigation() {
               ? "scale-y-100 origin-top"
               : ` opacity-0 scale-y-0 origin-top `
           }
-             md:hidden flex flex-col space-y-1 items-center pb-2 w-full absolute top-14 bg-mainDarkBlue  `}
+             md:hidden flex flex-col space-y-1 items-center pb-2 w-full absolute top-14 bg-mainDarkBlue     shadow-2xl `}
         >
           <ScrollLink
             onClick={() => setIsMenuComponentVisible(false)}

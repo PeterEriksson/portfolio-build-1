@@ -1,11 +1,15 @@
 /* https://stackoverflow.com/questions/32553158/detect-click-outside-react-component */
 /* You can create a reusable hook called useComponentVisible. */
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { Context } from "../Context";
 
-export default function useComponentVisible(initialIsVisible) {
-  const [isMenuComponentVisible, setIsMenuComponentVisible] =
-    useState(initialIsVisible);
+export default function useComponentVisible(/* initialIsVisible */) {
+  /* const [isMenuComponentVisible, setIsMenuComponentVisible] =
+    useState(initialIsVisible); */
+  const { isMenuComponentVisible, setIsMenuComponentVisible } =
+    useContext(Context);
+
   const ref = useRef(null);
 
   const handleClickOutside = (event) => {

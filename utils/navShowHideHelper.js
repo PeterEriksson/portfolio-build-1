@@ -1,28 +1,27 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useContext } from "react";
+import { Context } from "../Context";
 import { debounce } from "./debounceHelper";
 
 export default function useNavbarVisible() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const { isMenuComponentVisible, setIsMenuComponentVisible } =
+    useContext(Context);
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.scrollY;
 
     /* last || -> if just a little scroll down, keep nav in place. Only apply when navbar is visible */
-    setVisible(
-      (prevState) =>
-        (prevScrollPos > currentScrollPos &&
-          prevScrollPos - currentScrollPos > 120) ||
-        currentScrollPos < 10 ||
-        (prevState && prevScrollPos - currentScrollPos > -100)
-    );
+    /* testing new feat. only do the following IF !isMenuComponentVisible. works ok? */
+    !isMenuComponentVisible &&
+      setVisible(
+        (prevState) =>
+          (prevScrollPos > currentScrollPos &&
+            prevScrollPos - currentScrollPos > 120) ||
+          currentScrollPos < 10 ||
+          (prevState && prevScrollPos - currentScrollPos > -100)
+      );
 
-    /* setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 120) ||
-        currentScrollPos < 10 ||
-        prevScrollPos - currentScrollPos > -100
-    ); */
     console.log("test debounce");
     setPrevScrollPos(currentScrollPos);
   }, 200);

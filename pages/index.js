@@ -5,8 +5,12 @@ import Header from "../components/Header";
 import Stack from "../components/Stack";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
+import { useContext } from "react";
+import { Context } from "../Context";
 
 export default function Home() {
+  const { isMenuComponentVisible } = useContext(Context);
+
   return (
     <div>
       <Head>
@@ -17,7 +21,11 @@ export default function Home() {
 
       <Navigation />
       {/* TEST temp: div + opacity ...ok? */}
-      <div className="/opacity-80">
+      <div
+        className={`${
+          isMenuComponentVisible ? "opacity-80" : "opacity-100"
+        } transform transition duration-500 ease-in`}
+      >
         <Header />
         <Stack />
         <Work />
