@@ -84,11 +84,11 @@ function Navigation() {
           {/* menu-btn. Toggle between hamburger and cross */}
           <section
             onClick={handleMenuClick}
-            className={`md:hidden /sm:hidden ${stylesMobile.menuBtn}   opacity-opacityNavLink hover:opacity-100`}
+            className={`md:hidden  ${stylesMobile.menuBtn}   opacity-opacityNavLink hover:opacity-100`}
           >
             {/* menu-btn__burger */}
             <section
-              className={`md:hidden /sm:hidden ${
+              className={`md:hidden  ${
                 isMenuComponentVisible && stylesMobile.burgerAnimation
               } ${stylesMobile.burger}`}
             ></section>
@@ -146,14 +146,14 @@ function Navigation() {
             spy={true}
             className="flex justify-center "
           >
-            <p
+            <span
               className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    
               //linkActive === "/header" && "//opacity-100 "      ${
-                "header" === linkActive && styles.hoverAnimation
+                "header" !== linkActive && styles.hoverAnimation
               }    `}
             >
               Intro
-            </p>
+            </span>
           </ScrollLink>
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
