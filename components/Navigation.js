@@ -149,7 +149,7 @@ function Navigation() {
             <p
               className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    
               //linkActive === "/header" && "//opacity-100 "      ${
-                "header" !== linkActive && styles.hoverAnimation
+                "header" === linkActive && styles.hoverAnimation
               }    `}
             >
               Intro
