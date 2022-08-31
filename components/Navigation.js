@@ -30,7 +30,7 @@ function Navigation() {
   const [linkActive, setLinkActive] = useState("");
   const handleSetActive = (to) => {
     setLinkActive(to);
-    /*  console.log(linkActive); */
+    console.log(linkActive);
     /* setIsComponentVisible(false); */
   };
 
@@ -147,9 +147,10 @@ function Navigation() {
             className="flex justify-center "
           >
             <p
-              className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    ${
-                linkActive === "header" && "opacity-100 "
-              }`}
+              className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    
+              //linkActive === "/header" && "//opacity-100 "      ${
+                "header" !== linkActive && styles.hoverAnimation
+              }    `}
             >
               Intro
             </p>
@@ -165,13 +166,14 @@ function Navigation() {
               spy={true}
               className="flex justify-center border-b-2 border-mainDarkBlue"
             >
-              <p
-                className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 ${
-                  linkActive === item.to && "opacity-100 "
-                }`}
+              <span
+                className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 
+                //{
+                  linkActive === item.to && "/opacity-100 "
+                }   ${item.to !== linkActive && styles.hoverAnimation}   `}
               >
                 {item.text}
-              </p>
+              </span>
             </ScrollLink>
           ))}
         </div>

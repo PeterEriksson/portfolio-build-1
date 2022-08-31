@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <Navigation />
-      {/* TEST temp: div + opacity ...ok? */}
+      {/* lower opacity(on rest of the site) when hamburgermenu is active */}
       <div
         className={`${
           isMenuComponentVisible ? "opacity-80" : "opacity-100"

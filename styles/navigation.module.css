@@ -1,5 +1,7 @@
 ._active {
   border-bottom: 2px solid white;
+
+  transition-duration: 700ms;
 }
 
 ._active > span {
