@@ -148,7 +148,7 @@ function Navigation() {
           >
             <span
               className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    
-              //linkActive === "/header" && "//opacity-100 "      ${
+              ${linkActive === "header" && "opacity-100 "}      {
                 "header" !== linkActive && styles.hoverAnimation
               }    `}
             >
@@ -168,9 +168,9 @@ function Navigation() {
             >
               <span
                 className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 
-                //{
-                  linkActive === item.to && "/opacity-100 "
-                }   ${item.to !== linkActive && styles.hoverAnimation}   `}
+                ${
+                  linkActive === item.to && "opacity-100 "
+                }   {item.to !== linkActive && styles.hoverAnimation}   `}
               >
                 {item.text}
               </span>

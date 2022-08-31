@@ -24,7 +24,7 @@ export default function Home() {
       <div
         className={`${
           isMenuComponentVisible ? "opacity-80" : "opacity-100"
-        } transform transition duration-500 ease-in`}
+        } transform transition duration-500 ease-in   `}
       >
         <Header />
         <Stack />
