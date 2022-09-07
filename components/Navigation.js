@@ -6,7 +6,6 @@ import { useState, useEffect, useContext } from "react";
 import { Transition } from "@headlessui/react";
 import mobileStyles from "../styles/navMobile-effects.module.css";
 import useComponentVisible from "../utils/menuVisibleHelper";
-import { debounce } from "../utils/debounceHelper";
 import useNavbarVisible from "../utils/navShowHideHelper";
 import { Context } from "../Context";
 
@@ -20,7 +19,6 @@ function Navigation() {
 
   /* avoid slideClose-effect on page-reload*/
   const [initialMenuState, setInitialMenuState] = useState(false);
-
   useEffect(() => {
     setTimeout(() => {
       setInitialMenuState(true);
@@ -30,31 +28,33 @@ function Navigation() {
   const [linkActive, setLinkActive] = useState("");
   const handleSetActive = (to) => {
     setLinkActive(to);
-    console.log(linkActive);
-    /* setIsComponentVisible(false); */
+    /* console.log(linkActive); */
   };
 
   const handleMenuClick = () => {
     setIsMenuComponentVisible((prev) => !prev);
-    /* setInitialMenuState(true); */
   };
 
-  /* const navBarTransp = true; */
+  /* const navBarTranspTest = true; */
 
   return (
     <nav
-      className={`fixed top-0 w-screen z-40    transform transition duration-500 ease-in-out
-        ${visible ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}    `}
+      className={`fixed top-0 w-screen z-40   transform transition duration-500 ease-in-out !//bg-red-400
+        $//{visible ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}    `}
       style={{ background: "#091c29" }}
+
+      /* testing changing opacity on Nav(maybe for other projects): -> */
       /* style={
-        navBarTransp
-          ? { background: "rgba(9, 28, 41, 0.75)" }
+        navBarTranspTest
+          ? { background: "rgba(9, 28, 41, 0.7)" }
           : { background: "#091c29" }
       } */
     >
       <section className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col /sm:flex-row  /sm:flex md:flex md:flex-row">
-        {/* LEFT div */}
-        <section className="flex justify-between items-center //bg-red-500 w-full">
+        {/* LEFT div  (PE-logo + hamburger icon) */}
+        <section className="flex justify-between items-center /bg-red-500 w-full">
+          {/* PE-logo */}
+
           <ScrollLink
             to="header"
             smooth="true"

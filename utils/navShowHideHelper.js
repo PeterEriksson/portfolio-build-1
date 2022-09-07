@@ -22,7 +22,7 @@ export default function useNavbarVisible() {
           (prevState && prevScrollPos - currentScrollPos > -100)
       );
 
-    console.log("test debounce");
+    /* console.log("test debounce"); */
     setPrevScrollPos(currentScrollPos);
   }, 200);
 

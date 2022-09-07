@@ -16,7 +16,7 @@ export default function useComponentVisible(/* initialIsVisible */) {
     /* in Navigation, we give the parent div of MENU-CONTAINER ref={ref} */
     if (ref.current && !ref.current.contains(event.target)) {
       /* menu is now active .. -> */
-      /* if click equals the cross or nav then return. We are already handling that + we dont want to close the menu is user accidently clicks up top*/
+      /* if click equals the cross or nav then return. We are already handling that + we dont want to close the menu if user accidently clicks up top*/
       /* console.log(event.target.tagName.toLowerCase()); */
       if (event.target.tagName.toLowerCase() === "section") return;
       if (event.target.tagName.toLowerCase() === "nav") return;
