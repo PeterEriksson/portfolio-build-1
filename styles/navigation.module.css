@@ -13,6 +13,7 @@
   color: white;
 }
 
+/* Cool hovering effect BUT bugs when visible becomes true...-> comment out and check */
 .hoverAnimation::after {
   content: "";
   position: absolute;

@@ -40,7 +40,9 @@ function Navigation() {
   return (
     <nav
       className={`fixed top-0 w-screen z-40   transform transition duration-500 ease-in-out !//bg-red-400
-        $//{visible ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}    `}
+        ${
+          visible ? "scale-y-100 origin-top" : "scale-y-0 origin-top opacity-0"
+        }    `}
       style={{ background: "#091c29" }}
 
       /* testing changing opacity on Nav(maybe for other projects): -> */
@@ -54,7 +56,6 @@ function Navigation() {
         {/* LEFT div  (PE-logo + hamburger icon) */}
         <section className="flex justify-between items-center /bg-red-500 w-full">
           {/* PE-logo */}
-
           <ScrollLink
             to="header"
             smooth="true"
@@ -65,14 +66,12 @@ function Navigation() {
             /* for some space between link and border -> */
             /* className="pb-1" */
             /* avoid navbar changing height -> have an "invinsible" bottom border -> */
-            className={`border-b-2 border-mainDarkBlue ${
-              linkActive !== "header" && styles.hoverAnimation
-            } `}
+            className={`border-b-2 border-mainDarkBlue $//{styles.hoverAnimation moved down->} `}
           >
             <h1
               className={`cursor-pointer text-3xl font-bold  opacity-opacityNavLink hover:opacity-100   ${
                 "header" == linkActive && "!opacity-100"
-              }   `}
+              } ${styles.hoverAnimation}  `}
             >
               {resumeData.nav.logo}
               <span
@@ -111,9 +110,7 @@ function Navigation() {
               className={` //avoidNavChangingSize: border-b-2 border-mainDarkBlue `}
             >
               <span
-                className={`cursor-pointer text-xl    ${
-                  item.to !== linkActive && styles.hoverAnimation
-                }  opacity-opacityNavLink hover:opacity-100  `}
+                className={`cursor-pointer text-xl    ${styles.hoverAnimation}  opacity-opacityNavLink hover:opacity-100  `}
               >
                 {item.text}
               </span>
