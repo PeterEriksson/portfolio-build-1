@@ -66,12 +66,12 @@ function Navigation() {
             /* for some space between link and border -> */
             /* className="pb-1" */
             /* avoid navbar changing height -> have an "invinsible" bottom border -> */
-            className={`border-b-2 border-mainDarkBlue $//{styles.hoverAnimation moved down->} `}
+            className={`border-b-2 border-mainDarkBlue    /hover:!border-white /transform /transition /duration-300 /ease-in-out   `}
           >
             <h1
               className={`cursor-pointer text-3xl font-bold  opacity-opacityNavLink hover:opacity-100   ${
                 "header" == linkActive && "!opacity-100"
-              } ${styles.hoverAnimation}  `}
+              } $//{styles.hoverAnimation}  `}
             >
               {resumeData.nav.logo}
               <span
@@ -110,7 +110,7 @@ function Navigation() {
               className={` //avoidNavChangingSize: border-b-2 border-mainDarkBlue `}
             >
               <span
-                className={`cursor-pointer text-xl    ${styles.hoverAnimation}  opacity-opacityNavLink hover:opacity-100  `}
+                className={`cursor-pointer text-xl    $//{styles.hoverAnimation}  opacity-opacityNavLink hover:opacity-100  `}
               >
                 {item.text}
               </span>
