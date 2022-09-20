@@ -24,7 +24,8 @@
   }
   100% {
     /* in parent div-container of Contact apply: overflow-hidden */
-    transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
+    /* transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0); decrease scale(rocket looks "suddig") */
+    transform: scale(6) translate3D(100vw, -100vh, 0) rotate(0);
   }
 }
 

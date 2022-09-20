@@ -53,11 +53,11 @@ function Contact(
               }) => (
                 <p
                   ref={myEmojiRef}
-                  className={`${styles.eomji} ${
+                  className={` ${
                     myEmojiElementIsVisible ? styles.animateEmoji : ""
-                  } /sm:inline-block /hidden h-0.5 w-0.5 /xs:h-0 /xs:w-0 z-10 relative`}
+                  }  for-mobile-need-to-declare h+w: h-0.5 w-0.5    z-10 relative`}
                 >
-                  {/* ☎️  */}
+                  {/* ☎️  🚀 */}
                   🚀
                 </p>
               )}
