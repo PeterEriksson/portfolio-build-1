@@ -33,44 +33,52 @@
       {
         "img": "https://i.pinimg.com/236x/53/19/88/5319885958f89815e5431363f39ff937.jpg",
         "alt": "CSS HTML JS",
-        "desc": ""
+        "desc": "",
+        "percentage": "85%"
       },
       {
         "img": "https://i.pinimg.com/236x/e4/92/e5/e492e5c18a7f6d7aa650b36438b75860.jpg",
         "alt": "React",
-        "desc": ""
+        "desc": "",
+        "percentage": "85%"
       },
 
       {
         "img": "https://i.pinimg.com/236x/09/63/a6/0963a6051212c3268e25d640c0410583.jpg",
         "alt": "Firebase",
-        "desc": ""
+        "desc": "",
+        "percentage": "80%"
       },
       {
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANKY-1lmxsQlt1ucGeiN-ImnopzhvgaKzBQ&usqp=CAU",
         "alt": "Sanity",
-        "desc": ""
+        "desc": "",
+        "percentage": "50%"
       },
       {
         "img": "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
         "alt": "Tailwind",
-        "desc": ""
+        "desc": "",
+        "percentage": "90%"
       },
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png",
         "alt": "Next.js",
-        "desc": ""
+        "desc": "",
+        "percentage": "75%"
       },
       {
         "img": "https://i.pinimg.com/564x/66/d5/23/66d5238900aab3d7b86dc5e53a77c817.jpg",
         "alt": "Typescript",
-        "desc": ""
+        "desc": "",
+        "percentage": "50%"
       },
 
       {
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAOPBUXd1_EelWgweD4mpQgj305mtMC-Vgw&usqp=CAU",
         "alt": "Redux",
-        "desc": ""
+        "desc": "",
+        "percentage": "70%"
       }
     ],
     "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend, can also use Sanity. For state management I can use Context api, Redux or Recoil. Currently learning Typescript and also React Native. Write in VS Code.",
