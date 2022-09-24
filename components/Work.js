@@ -152,7 +152,7 @@ function Work() {
             <span
               onClick={() => setIndex(i)}
               key={i}
-              className={`h-2 w-2 cursor-pointer rounded-full  mx-1 transition duration-300 ease-in ${
+              className={`h-2 w-2 cursor-pointer rounded-full  mx-1 transition transform duration-300 ease-in hover:scale-120 ${
                 i === index ? "bg-black" : "bg-gray-500"
               }`}
             ></span>

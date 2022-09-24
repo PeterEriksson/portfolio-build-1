@@ -31,6 +31,9 @@ module.exports = {
         menuTest: "1ms",
         600: "600ms",
       },
+      scale: {
+        120: "1.20",
+      },
     },
   },
   variants: {
