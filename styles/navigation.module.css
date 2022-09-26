@@ -1,3 +1,4 @@
+/* Not using anymore -> */
 ._active {
   border-bottom: 2px solid white;
   transition-duration: 700ms;
@@ -12,6 +13,7 @@
   position: relative;
   color: white;
 }
+/* ------------- */
 
 /* Cool hovering effect BUT bugs when visible becomes true...-> comment out and check */
 .hoverAnimation::after {

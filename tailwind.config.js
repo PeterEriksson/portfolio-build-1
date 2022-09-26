@@ -22,6 +22,7 @@ module.exports = {
       },
       opacity: {
         opacityNavLink: 0.81,
+        85: 0.85,
       },
       height: {
         projectCard: "450px",
@@ -33,6 +34,9 @@ module.exports = {
       },
       scale: {
         120: "1.20",
+      },
+      translate: {
+        navTranslateTest: "-52px",
       },
     },
   },

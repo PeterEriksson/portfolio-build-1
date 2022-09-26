@@ -138,11 +138,11 @@ function Work() {
         <div className="flex mt-3 space-x-2">
           <ArrowCircleLeftIcon
             onClick={handleClickLeft}
-            className="xs:h-8 h-7 cursor-pointer   "
+            className="xs:h-8 h-7 cursor-pointer  hover:opacity-85 "
           />
           <ArrowCircleRightIcon
             onClick={handleClickRight}
-            className="xs:h-8 h-7 cursor-pointer"
+            className="xs:h-8 h-7 cursor-pointer  hover:opacity-85 "
           />
         </div>
 
@@ -152,9 +152,9 @@ function Work() {
             <span
               onClick={() => setIndex(i)}
               key={i}
-              className={`h-2 w-2 cursor-pointer rounded-full  mx-1 transition transform duration-300 ease-in hover:scale-120 ${
-                i === index ? "bg-black" : "bg-gray-500"
-              }`}
+              className={`h-2 w-2 cursor-pointer rounded-full  mx-1 transition transform duration-300 ease-in ${
+                i !== index && "hover:scale-120"
+              }  ${i === index ? "bg-black" : "bg-gray-500"}`}
             ></span>
           ))}
         </div>

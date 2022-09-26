@@ -39,9 +39,11 @@ function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-screen z-40   transform transition duration-500 ease-in-out !//bg-red-400
+      className={`fixed top-0 w-screen z-40   transform transition duration-500 ease-in-out 
         ${
-          visible ? "scale-y-100 origin-top" : "scale-y-0 origin-top opacity-0"
+          visible
+            ? "/scale-y-100 /origin-top"
+            : "/scale-y-0 /origin-top /opacity-0 different-style->: translate-y-navTranslateTest "
         }    `}
       style={{ background: "#091c29" }}
 
@@ -52,7 +54,7 @@ function Navigation() {
           : { background: "#091c29" }
       } */
     >
-      <section className="flex items-center  text-white justify-between  w-10/12 mx-auto    py-3 flex-col /sm:flex-row  /sm:flex md:flex md:flex-row">
+      <section className="flex items-center  text-white justify-between  w-10/12 mx-auto   py-3 flex-col   md:flex md:flex-row">
         {/* LEFT div  (PE-logo + hamburger icon) */}
         <section className="flex justify-between items-center /bg-red-500 w-full">
           {/* PE-logo */}
@@ -157,9 +159,7 @@ function Navigation() {
           >
             <span
               className={`cursor-pointer text-lg font-semibold   opacity-opacityNavLink hover:opacity-100    
-              ${linkActive === "header" && "opacity-100 "}      {
-                "header" !== linkActive && styles.hoverAnimation
-              }    `}
+              ${linkActive === "header" && "opacity-100 "}          `}
             >
               Intro
             </span>
@@ -177,9 +177,7 @@ function Navigation() {
             >
               <span
                 className={`cursor-pointer text-lg font-semibold opacity-opacityNavLink hover:opacity-100 
-                ${
-                  linkActive === item.to && "opacity-100 "
-                }   {item.to !== linkActive && styles.hoverAnimation}   `}
+                ${linkActive === item.to && "opacity-100 "}      `}
               >
                 {item.text}
               </span>
