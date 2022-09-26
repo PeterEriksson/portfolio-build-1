@@ -59,24 +59,29 @@ function Navigation() {
           <ScrollLink
             to="header"
             smooth="true"
-            activeClass={styles._active}
+            /* activeClass={styles._active} */
             spy={true}
             offset={-40}
             onSetActive={handleSetActive}
             /* for some space between link and border -> */
             /* className="pb-1" */
             /* avoid navbar changing height -> have an "invinsible" bottom border -> */
-            className={`border-b-2 border-mainDarkBlue    hover:!border-white transform transition duration-300 ease-in-out   `}
+            className={`relative  group  transform transition duration-300 ease-in-out  cursor-pointer`}
           >
             <h1
-              className={`cursor-pointer text-3xl font-bold  opacity-opacityNavLink hover:opacity-100   ${
+              className={` text-3xl font-bold  opacity-opacityNavLink hover:opacity-100   ${
                 "header" == linkActive && "!opacity-100"
-              } $//{styles.hoverAnimation}  transform transition duration-300 ease-in-out`}
+              }  transform transition duration-300 ease-in-out`}
             >
               {resumeData.nav.logo}
               <span
                 className={` w-2 h-2 bg-red-500 inline-block rounded-full ml-2 mb-1`}
               ></span>
+              <div
+                className={`${
+                  "header" === linkActive && "!opacity-100"
+                }  absolute border-b-2 opacity-0 group-hover:opacity-100   w-full transform transition duration-300 ease-in-out`}
+              />
             </h1>
           </ScrollLink>
 
@@ -101,19 +106,26 @@ function Navigation() {
               to={item.to}
               smooth="true"
               key={i}
-              activeClass={styles._active}
+              /* activeClass={styles._active} */
               spy={true}
               onSetActive={handleSetActive}
               /* offset={} */
               /* for some space between link and border -> */
               /* className="pb-1" */
-              className={` //avoidNavChangingSize: border-b-2 border-mainDarkBlue     hover:!border-white transform transition duration-300 ease-in-out`}
+              className={`relative  group ${
+                item.to === linkActive && "!opacity-100"
+              } opacity-opacityNavLink hover:opacity-100  transform transition duration-300 ease-in-out cursor-pointer`}
             >
               <span
-                className={`cursor-pointer text-xl    $//{styles.hoverAnimation}      opacity-opacityNavLink hover:opacity-100  transform transition duration-300 ease-in-out`}
+                className={` text-xl  transform transition duration-300 ease-in-out`}
               >
                 {item.text}
               </span>
+              <div
+                className={`${
+                  item.to === linkActive && "!opacity-100"
+                }  absolute border-b-2 opacity-0 group-hover:opacity-100  w-full transform transition duration-300 ease-in-out`}
+              />
             </ScrollLink>
           ))}
         </section>
