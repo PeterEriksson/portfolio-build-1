@@ -36,7 +36,8 @@ module.exports = {
         120: "1.20",
       },
       translate: {
-        navTranslateTest: "-52px",
+        /*  navTranslateTest: "-52px", */
+        navTranslateTest: "-85%",
       },
     },
   },

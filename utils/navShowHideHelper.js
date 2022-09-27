@@ -17,7 +17,7 @@ export default function useNavbarVisible() {
       setVisible(
         (prevState) =>
           (prevScrollPos > currentScrollPos &&
-            prevScrollPos - currentScrollPos > 50) ||
+            prevScrollPos - currentScrollPos > 30) ||
           currentScrollPos < 10 ||
           (prevState && currentScrollPos - prevScrollPos < 100)
       );

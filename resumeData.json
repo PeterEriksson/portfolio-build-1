@@ -17,10 +17,10 @@
     "typical": [
       "Front-end Developer 🖥",
       1500,
-      "Firebase Developer 🔥",
+      "Seeking a React role⚛️",
       1500,
       "Explorer 🌎",
-      1500,
+      1000,
       "Peter 😎",
       1500
     ],
@@ -65,7 +65,7 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png",
         "alt": "Next.js",
         "desc": "",
-        "percentage": "75%"
+        "percentage": "80%"
       },
       {
         "img": "https://i.pinimg.com/564x/66/d5/23/66d5238900aab3d7b86dc5e53a77c817.jpg",
@@ -81,7 +81,7 @@
         "percentage": "70%"
       }
     ],
-    "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend, can also use Sanity. For state management I can use Context api, Redux or Recoil. Currently learning Typescript and also React Native. Write in VS Code.",
+    "dummyText2": "Solid understanding of HTML, CSS & Javascript. In to React after completing the Scrimba react bootcamp. Big fan of TailwindCss for styling, also familiar with styled components and BEM. Often use Firebase for serverless backend, can also use Sanity. For state management I can use Context api, Redux or Recoil. Currently learning Typescript. Write in VS Code.",
     "descAdditional": "75 credits computer science at university. Fluent in Swedish and English.",
     "additionalTypical": [
       "75 credits computer science at university.",
