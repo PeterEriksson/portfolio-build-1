@@ -45,7 +45,7 @@ function Work() {
         <h1 className="xs:text-5xl text-3xl font-bold    //center: pt-6">
           Projects
         </h1>
-        <h3 className="xs:text-xl text-lg font-extralight  ">
+        <h3 className="xs:text-xl text-base font-extralight  ">
           Some of my work
         </h3>
       </div>

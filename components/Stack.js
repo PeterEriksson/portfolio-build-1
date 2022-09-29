@@ -35,16 +35,21 @@ function Stack() {
           ref: myStackCardsRef,
           entry,
         }) => (
-          <h1
+          <div
             ref={myStackCardsRef}
-            className={`${
+            className={`flex flex-col items-center space-y-1   ${
               myStackCardsElementIsVisible
                 ? "transform transition duration-1000  ease-in-out"
                 : "transform transition duration-1000  ease-in-out opacity-0"
-            }   text-3xl xs:text-5xl font-bold pt-4`}
+            }  `}
           >
-            Tech I use
-          </h1>
+            <h1 className={`text-3xl xs:text-5xl font-bold pt-4  `}>
+              Tech I use
+            </h1>
+            <h3 className="xs:text-xl text-base font-extralight ">
+              Hover for proficiency
+            </h3>
+          </div>
         )}
       </InView>
 
