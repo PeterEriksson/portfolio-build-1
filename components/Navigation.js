@@ -79,10 +79,11 @@ function Navigation() {
               <span
                 className={` w-2 h-2 bg-red-500 inline-block rounded-full ml-2 mb-1`}
               ></span>
+              {/* UNDERLYING BORDER for when active */}
               <div
                 className={`${
                   "header" === linkActive && "!opacity-100"
-                }  absolute border-b-2 opacity-0 group-hover:opacity-100   w-full transform transition duration-300 ease-in-out`}
+                }    absolute border-b-2 opacity-0 group-hover:opacity-100   w-full transform transition duration-300 ease-in-out`}
               />
             </h1>
           </ScrollLink>
@@ -102,7 +103,7 @@ function Navigation() {
         </section>
 
         {/* RIGHT div */}
-        <section className="space-x-5 mt-2  md:flex hidden">
+        <section className="space-x-5 /mt-2  md:flex hidden">
           {resumeData.nav.links.map((item, i) => (
             <ScrollLink
               to={item.to}

@@ -15,7 +15,7 @@ function Stack() {
       className="min-h-screen flex flex-col items-center justify-center bg-gray-200     forShapeDivider:-> relative      "
     >
       {/* TEST SHAPE DIVIDER */}
-      <div className={`${styles.customShapeDividerTop}`}>
+      {/* <div className={`${styles.customShapeDividerTop}`}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ function Stack() {
             className={`${styles.shapeFill}`}
           ></path>
         </svg>
-      </div>
+      </div> */}
 
       <InView /* triggerOnce */>
         {({
@@ -53,7 +53,7 @@ function Stack() {
         )}
       </InView>
 
-      <div className="flex flex-wrap justify-center max-w-3xl   mt-1.5 xs:mt-5  ">
+      <div className="flex flex-wrap justify-center max-w-3xl   mt-1.5 xs:mt-4  ">
         <InView /* triggerOnce */>
           {({
             inView: myStackCardsElementIsVisible,
