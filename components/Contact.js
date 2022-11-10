@@ -170,16 +170,16 @@ function Contact(
                     </p>
                   </button>
 
-                  {/* Header + SOCIALS MOBILE BUTTONS */}
-                  <h2 className="font-semibold mt-2 xs:hidden">Socials</h2>
+                  {/* SOCIALS + SOCIALS MOBILE BUTTONS */}
+                  {/* <h2 className="font-semibold mt-2 xs:hidden">Socials</h2> */}
                   <a
                     href="https://www.linkedin.com/in/peter-eriksson-13b8b1120/"
                     target="_blank"
-                    className="mt-1.5 py-2 /px-3 border flex space-x-1.5
-                    items-center justify-center border-gray-300 rounded-2xl w-11/12 xs:hidden"
+                    className=" py-1  mt-1  flex space-x-1.5  
+                    items-center    rounded-2xl   xs:hidden  justify-start w-2/3"
                   >
                     <img
-                      className="h-5 w-5  rounded-lg  "
+                      className="h-3.5 w-3.5  rounded-sm  "
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
                       alt="linkedin"
                     />
@@ -188,11 +188,11 @@ function Contact(
                   <a
                     href="https://github.com/PeterEriksson"
                     target="_blank"
-                    className="mt-1.5 py-2 /px-3 border flex space-x-1.5
-                    items-center justify-center border-gray-300 rounded-2xl w-11/12 xs:hidden"
+                    className=" py-1  mt-0.5 flex space-x-1.5  
+                    items-center   rounded-2xl  xs:hidden  justify-start w-2/3"
                   >
                     <img
-                      className="w-5 h-5  rounded-lg  "
+                      className="h-3.5 w-3.5  rounded-sm  "
                       src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"
                       alt="github"
                     />
