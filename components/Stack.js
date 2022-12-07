@@ -47,7 +47,7 @@ function Stack() {
               Tech I use
             </h1>
             <h3 className="xs:text-xl text-base font-extralight ">
-              Hover for proficiency
+              Hover for current proficiency
             </h3>
           </div>
         )}

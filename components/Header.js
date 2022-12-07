@@ -55,8 +55,14 @@ function Header() {
             />
           </h2>
           <ScrollLink to="skills" smooth="true">
-            <button className="bg-indigo-500 transition duration-150 transform hover:scale-110 py-3 px-10 text-lg uppercase rounded-xl mt-5 mb-3 focus:outline-none">
-              {resumeData.header.btnText}
+            <button className=" group relative hover:bg-indigo-600 bg-indigo-700 transition duration-300 transform hover:scale-105 py-3 px-10 text-lg/ uppercase/ rounded-xl mt-5 mb-3 focus:outline-none">
+              {/* {resumeData.header.btnText} */}
+              <p className=" text-lg uppercase">discover more</p>
+              <span
+                className={`absolute right-5 top-3  group-hover:opacity-100 group-hover:translate-x-2   md:inline hidden opacity-0  !transition !duration-500 transform ease-in-out `}
+              >
+                🔍
+              </span>
             </button>
           </ScrollLink>
         </div>
