@@ -94,6 +94,7 @@ function Stack() {
                   px-10  max-w-twoPointFivexl text-center font-extralight mt-4 mb-2 text-verySmall  xs:text-base`}
           >
             {resumeData.stack.dummyText2}
+            test
           </article>
         )}
       </InView>
